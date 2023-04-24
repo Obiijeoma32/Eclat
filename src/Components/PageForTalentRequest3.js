@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import TalentRequestSideBar from "./TalentRequestSideBar";
 
-import Geocode from "react-geocode";
 import Select from "react-select";
 import seun from "./seun.jpeg";
-import { useState } from "react";
 
 const skills = [
   { value: "AI", label: " Artificial intelligence (AI)" },

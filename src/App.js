@@ -30,15 +30,15 @@ import TalentRequest from "./ComponentAdmin/TalentRequest";
 import TalentRequest2 from "./ComponentAdmin/TalentRequest2";
 import ResourceDetails2 from "./Components/ResourceDetails2";
 import ResourceDetails3 from "./Components/ResourceDetails3";
-// import HomePageForApplicant from "./Components/HomePageForApplicant";
-// import EditPersona from "./Components/EditPersona";
-// import ForgotPassword from "./Components/ForgotPassword";
-// import CreatePassword from "./Components/CreatePassword";
-// import SignToNetwork from "./Components/SignToNetwork";
-// import Otp from "./Components/Otp";
+import HomePageForApplicant from "./Components/HomePageForApplicant";
+import EditPersona from "./Components/EditPersona";
+import ForgotPassword from "./Components/ForgotPassword";
+import CreatePassword from "./Components/CreatePassword";
+import SignToNetwork from "./Components/SignToNetwork";
+import Otp from "./Components/Otp";
 import PageForTalentRequest from "./Components/PageForTalentRequest";
-// import PageForTalentRequest2 from "./Components/PageForTalentRequest2";
-// import PageForTalentRequest3 from "./Components/PageForTalentRequest3";
+import PageForTalentRequest2 from "./Components/PageForTalentRequest2";
+import PageForTalentRequest3 from "./Components/PageForTalentRequest3";
 import "./App.css";
 
 function App() {
@@ -86,14 +86,14 @@ function App() {
           <Route path="/resourcedetails/resourcesdetails2" element={<ResourceDetails2 />} />
           <Route path="/resourcedetails/resourcesdetails2/resourcedetails3" element={<ResourceDetails3 />} />
           <Route path="/pagefortalentrequest" element={<PageForTalentRequest />} />
-          {/* <Route path="/homeforapplicant" element={<HomePageForApplicant />} />
+          <Route path="/homeforapplicant" element={<HomePageForApplicant />} />
           <Route path="/editpersona2" element={<EditPersona />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/createpassword" element={<CreatePassword />} />
           <Route path="/signintonetwork" element={<SignToNetwork />} />
           <Route path="/otp" element={<Otp />} />
           <Route path="/pagefortalentrequest/pagefortalentrequest2" element={<PageForTalentRequest2 />} />
-          <Route path="/pagefortalentrequest/pagefortalentrequest2/pagefortalentrequest3" element={<PageForTalentRequest3 />} /> */}
+          <Route path="/pagefortalentrequest/pagefortalentrequest2/pagefortalentrequest3" element={<PageForTalentRequest3 />} />
         </Routes>
       </BrowserRouter>
     </>

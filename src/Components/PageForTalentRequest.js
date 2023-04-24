@@ -150,7 +150,7 @@ function PageForTalentRequest() {
                 </svg>
                 <h2 className=" text-[18px] text-[#38761D] mt-[16px] ">Weekly newsletter</h2>
 
-                {/* <p className=" mt-[10px] text-[14px] w-[250px] text-[#7D90B8]">We’ll keep you updated when the best new remote jobs pop up on Techeclat</p> */}
+                <p className=" mt-[10px] text-[14px] w-[250px] text-[#7D90B8]">We’ll keep you updated when the best new remote jobs pop up on Techeclat</p>
                 <form>
                   <input className=" pl-[10px] outline-none text-[#7D90B8] text-[14px] h-[45px] bg-[#fff] rounded-[10px] mt-[8px] w-[250px] border-[#97A6C6] border-[1px] border-opacity-[50%] " type="email" placeholder="Enter your email" />
                   <button type="submit" className="w-[250px] mt-[36px] h-[45px] rounded-[50px] text-[16px] font-[400] text-[#fff] bg-[#38761D] ">
