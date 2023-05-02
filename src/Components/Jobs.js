@@ -1,16 +1,16 @@
-// import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
-// import countryList from "react-select-country-list";
+import React, { useState, useMemo } from "react";
+import countryList from "react-select-country-list";
 import HeaderForSignup from "./HeaderForSignup";
 
 function Jobs() {
-  // const [value, setValue] = useState("");
-  // const options = useMemo(() => countryList().getData(), []);
+  const [value, setValue] = useState("");
+  const options = useMemo(() => countryList().getData(), []);
 
-  // const changeHandler = (value) => {
-  //   setValue(value);
-  // };
+  const changeHandler = (value) => {
+    setValue(value);
+  };
   const customStyles = {
     menu: (base) => ({
       ...base,
@@ -29,7 +29,7 @@ function Jobs() {
       color: "rgba(10, 10, 10, 0.5)",
       paddingLeft: "7px",
       outline: "none",
-      width: "420px",
+
       borderRadius: "2px",
       boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
     }),
@@ -37,29 +37,29 @@ function Jobs() {
 
   return (
     <>
-      <div className=" bg-[#fff] w-[100%] h-[150vh]">
+      <div className=" bg-[#fff] md:w-[100%] 3xxl:w-[505px] h-[150vh]">
         <HeaderForSignup />
-        <div className="pt-[7%] pb-[20px] ml-[30%] 4xl:ml-[35%] 5xl:ml-[38%] ">
-          <div className=" bg-white rounded-[5px]   shadow-lg w-[512px]  h-[636px] ">
+        <div className="md:pt-[7%] 3xxl:pt-[11rem] pb-[20px] md:ml-[30%] 3xxl:ml-[50px]   4xl:ml-[35%] 5xl:ml-[38%] ">
+          <div className=" bg-white rounded-[5px] 3xxl:w-[380px]   shadow-lg md:w-[562px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[14px] text-center text-[#0A0A0A] opacity-40">
                 Become An <span className=" text-[#38761D] ">ÉCLAT</span>
               </h4>
               <h1 className=" text-[36px] text-center text-[#38761D] font-[600] opacity-90">Sign Up</h1>
               <p className=" pt-4  text-[16px] text-center text-[#0A0A0A] opacity-40">Enter your details to continue</p>
-              <form autoComplete="on" className="ml-[3rem] mt-7" action="">
-                <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="text" placeholder="First Name" />
+              <form autoComplete="on" className="md:ml-[3rem] mt-7" action="">
+                <input required className=" 3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="text" placeholder="First Name" />
                 <br />
-                <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="text" placeholder="Last Name" />
+                <input required className=" 3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="text" placeholder="Last Name" />
                 <br />
-                <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="tel" placeholder="Phone Number" />
+                <input required className=" 3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="tel" placeholder="Phone Number" />
                 <br />
-                <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="email" placeholder="Email" />
+                <input required className=" 3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="email" placeholder="Email" />
                 <br />
-                <Select required styles={customStyles} placeholder="Country" />
-                {/* value={value} onChange={changeHandler}  */}
+                <Select options={options} value={value} onChange={changeHandler} className="3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px]" required styles={customStyles} placeholder="Country" />
+
                 <Link className="" to="/jobs2">
-                  <div className="mt-[40px] tracking-[2px] w-[420px] rounded-[2px] h-[50px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
+                  <div className="mt-[40px] tracking-[2px] 3xxl:ml-[30px] 3xxl:w-[320px] md:w-[420px] rounded-[2px] h-[50px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
                     <h1>NEXT STEP</h1>
                   </div>
                 </Link>

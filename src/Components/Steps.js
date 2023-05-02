@@ -6,7 +6,7 @@ function Steps() {
       <div className=" md:block hidden ml-[6rem] mt-[7rem] w-[85%] 5xl:ml-[5%]">
         <h1 className=" text-center  text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
         <div className=" flex justify-between items-center">
-          <div className=" bg-white rounded-[10px] shadow-lg w-[320px] h-[450px] ">
+          <div className=" bg-white rounded-[10px] shadow-lg w-[320px]   h-[450px] ">
             <div className="ml-[90px] mb-[30px] mt-7 ">
               <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="75" cy="75" r="75" fill="#36CD77" fillOpacity="0.3" />
@@ -103,7 +103,7 @@ function Steps() {
           </div>
         </div>
       </div>
-      <div className=" md:hidden block  ml-[2rem] mt-[5rem] w-[85%]">
+      <div className=" md:hidden block  ml-[90px] mt-[5rem] w-[85%]">
         <h1 className=" text-center  text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
         <div className=" justify-evenly grid">
           <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] h-[450px] ">

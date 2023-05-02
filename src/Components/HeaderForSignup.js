@@ -111,7 +111,7 @@ function HeaderForSignup() {
             />
           </svg>
         </Link>
-        <div className=" w-[65px]  h-[25px]">
+        <div className=" w-[70px]  h-[40px]">
           <Link onClick={handleButtonClick} to="" className="mt-[45px]  text-[16px] ">
             <div className=" w-[100px] rounded-[3px] h-[40px] flex  items-center justify-evenly opacity-80 font-[600] text-[#fff] bg-[#38761D]">
               LOGIN{" "}

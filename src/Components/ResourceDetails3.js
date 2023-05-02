@@ -47,6 +47,7 @@ function ResourceDetails3() {
                   type="number"
                 />
               </div>
+              <br />
               <div>
                 <label className=" text-[16px] text-[#1E2757]" htmlFor="period of employment">
                   Year of graduation ?

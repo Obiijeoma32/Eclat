@@ -10,12 +10,12 @@ function LoginUser() {
     <>
       <div className=" bg-[#fff] w-[100%] h-[150vh]">
         <HeaderForSignup />
-        <div className="pt-[7%] pb-[20px] ml-[30%]">
-          <div className="w-[512px]  h-[636px] ">
+        <div className="md:pt-[7%] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] pb-[20px] md:ml-[30%] 5xl:ml-[38%]">
+          <div className="md:w-[512px] 3xxl:w-[390px]  h-[636px] ">
             <div className=" pt-5 ">
-              <h4 className=" text-[30px] text-center text-[#1E2757] ">Join the Network</h4>
-              <div className=" w-[420px]   mt-[20px] mb-[20px] h-[50px]  border-[#DCDDE5]  ml-[50px]   rounded-[5px]  border-[1px] ">
-                <div className=" w-[230px] ml-[90px] h-[50px] flex items-center justify-evenly">
+              <h4 className=" 3xxl:ml-[40px] text-[30px] text-center text-[#1E2757] ">Join the Network</h4>
+              <div className=" md:w-[420px] 3xxl:w-[340px]   mt-[20px] mb-[20px] h-[50px]  border-[#DCDDE5]  ml-[50px]   rounded-[5px]  border-[1px] ">
+                <div className=" 3xxl:ml-[50px] w-[230px] md:ml-[90px] h-[50px] flex items-center justify-evenly">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M22.5006 12.2336C22.5006 11.3702 22.4291 10.7402 22.2744 10.0869H12.2148V13.9835H18.1196C18.0006 14.9519 17.3577 16.4102 15.9291 17.3902L15.909 17.5207L19.0897 19.9354L19.3101 19.9569C21.3339 18.1253 22.5006 15.4302 22.5006 12.2336Z"
@@ -37,19 +37,19 @@ function LoginUser() {
                   <h3 className=" text-[#97A6C6] text-[14px] ">Sign up with Google</h3>
                 </div>
               </div>
-              <div className="w-[466px] rounded-[4px] mt-[20px] items-center flex justify-between">
-                <h3 className=" w-[200px] border-[1px] h-[0px] ml-[50px] border-[#DCDDE5] ">{/* intentional break */}</h3>
+              <div className="md:w-[466px] 3xxl:w-[385px] rounded-[4px] mt-[20px] items-center flex justify-between">
+                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] ml-[50px] border-[#DCDDE5] ">{/* intentional break */}</h3>
                 <h4 className=" text-[#181819] m-[7px] text-opacity-[42%] text-[14px]">OR</h4>
-                <h3 className=" w-[200px] border-[1px] h-[0px] border-[#DCDDE5] ">{/* intentional break */}</h3>
+                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] border-[#DCDDE5] ">{/* intentional break */}</h3>
               </div>
               <form autoComplete="on" className="ml-[3rem] mt-7" action="">
-                <div className="w-[420px] flex justify-between items-center">
+                <div className="md:w-[420px] 3xxl:w-[350px] flex justify-between items-center">
                   <div>
                     <label className=" text-[16px]  text-[#1E2757]" htmlFor="fname">
                       First Name
                     </label>
                     <br />
-                    <input required className=" w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
+                    <input required className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
                     <br />
                   </div>
                   <div>
@@ -57,7 +57,7 @@ function LoginUser() {
                       Last Name
                     </label>
                     <br />
-                    <input required className=" w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
+                    <input required className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
                     <br />
                   </div>
                 </div>
@@ -65,21 +65,21 @@ function LoginUser() {
                   Email Address
                 </label>
                 <br />
-                <input required className=" w-[420px] mt-[11px]  mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="email" placeholder="" />
+                <input required className=" 3xxl:w-[350px] md:w-[420px] mt-[11px]  mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="email" placeholder="" />
                 <br />
                 <label className=" text-[16px]  text-[#1E2757]" htmlFor="Phone">
                   Phone Number
                 </label>
                 <br />
-                <input required className=" w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="tel" placeholder="" /> <br />
+                <input required className=" 3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="tel" placeholder="" /> <br />
                 <label className=" text-[16px]  text-[#1E2757]" htmlFor="password">
                   Password
                 </label>
                 <br />
-                <input required className=" w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="password" placeholder="" /> <br />
-                <div className=" mt-[40px] mb-5 ml-[-2px] flex justify-between w-[420px] items-center ">
+                <input required className="  3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="password" placeholder="" /> <br />
+                <div className=" 3xxl:w-[350px] mt-[40px] mb-5 ml-[-2px] flex justify-between md:w-[420px] items-center ">
                   <input className="w-[20px] h-[20px] border-[#568B3F] border-[1px] " type="checkbox" required />
-                  <label className="text-[#1E2757]   w-[380px]  text-[14px]   " htmlFor="privacy and Terms">
+                  <label className="text-[#1E2757] 3xxl:w-[320px]   md:w-[380px]  text-[14px]   " htmlFor="privacy and Terms">
                     I accept to the
                     <span
                       onClick={() => {
@@ -102,7 +102,7 @@ function LoginUser() {
                   </label>
                 </div>
                 <Link className="" to="/signintonetwork">
-                  <div className="mt-[30px] tracking-[2px] w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[11px] opacity-90 text-[#fff]">
+                  <div className="mt-[30px] tracking-[2px] 3xxl:w-[350px] md:w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[11px] opacity-90 text-[#fff]">
                     <h1>Register</h1>
                   </div>
                 </Link>

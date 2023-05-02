@@ -39,7 +39,7 @@ function Jobs2() {
   const customStyles = {
     menu: (base) => ({
       ...base,
-      width: "420px",
+      // width: "420px",
     }),
     text: (base) => ({
       ...base,
@@ -58,7 +58,6 @@ function Jobs2() {
       color: "rgba(10, 10, 10, 0.5)",
       paddingLeft: "7px",
       outline: "none",
-      width: "420px",
       borderRadius: "2px",
       boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
     }),
@@ -67,31 +66,31 @@ function Jobs2() {
   return (
     <>
       <>
-        <div className=" bg-[#fff] w-[100%] h-[150vh]">
+        <div className=" bg-[#fff] md:w-[100%] 3xxl:w-[505px] h-[150vh]">
           <HeaderForSignup />
-          <div className="pt-[8%] pb-[20px] ml-[30%] 5xl:ml-[38%]">
-            <div className=" bg-white rounded-[5px]   shadow-lg w-[512px]  h-[660px] ">
-              <div className=" pt-5 ">
+          <div className="md:pt-[7%] 3xxl:pt-[11rem] pb-[20px] md:ml-[30%] 3xxl:ml-[50px]   4xl:ml-[35%] 5xl:ml-[38%] ">
+            <div className=" bg-white rounded-[5px] 3xxl:w-[380px]   shadow-lg md:w-[562px]  h-[636px] ">
+              <div className=" 3xxl:ml-[20px] pt-5 ">
                 <h4 className=" text-[14px] text-center text-[#0A0A0A] opacity-40">
                   Become An <span className=" text-[#38761D] ">ÉCLAT</span>
                 </h4>
                 <h1 className=" text-[36px] text-center text-[#38761D] font-[600] opacity-90">Sign Up</h1>
                 <p className=" pt-4  text-[16px] text-center text-[#0A0A0A] opacity-40">Enter your details to continue</p>
-                <form autoComplete="on" className="ml-[3rem] mt-7" action="">
-                  <Select required placeholder="English Proficiency" styles={customStyles} className="lg:w-[670px]  w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[670px] 2xl:w-[900px] " options={englishProficiency} />
+                <form autoComplete="on" className="md:ml-[3rem] 3xxl:ml-[10px] mt-7" action="">
+                  <Select required placeholder="English Proficiency" styles={customStyles} className="lg:w-[670px] 3xxl:w-[320px]  md:w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[670px] 2xl:w-[900px] " options={englishProficiency} />
                   <br />
-                  <Select required placeholder="Skill" styles={customStyles} className="lg:w-[670px]  w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[670px] 2xl:w-[900px] " options={options} />
+                  <Select required placeholder="Skill" styles={customStyles} className="lg:w-[670px] 3xxl:w-[320px]  md:w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[670px] 2xl:w-[900px] " options={options} />
                   <br />
-                  <Select required placeholder="Year of Experience" styles={customStyles} className="lg:w-[670px]  w-[640px] h-[40px]  mt-2 text-[#38761D]     outline-none  xl:w-[670px] 2xl:w-[900px] " options={years} />
+                  <Select required placeholder="Year of Experience" styles={customStyles} className="lg:w-[670px]  3xxl:w-[320px] md:w-[640px] h-[40px]  mt-2 text-[#38761D]     outline-none  xl:w-[670px] 2xl:w-[900px] " options={years} />
                   <br />
 
-                  <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Set Password" />
+                  <input required className=" 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Set Password" />
                   <br />
-                  <input required className=" w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Confirm Password" />
+                  <input required className=" 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Confirm Password" />
                   <br />
 
                   <Link to="/loginuser">
-                    <div className="mt-[35px] tracking-[2px] w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
+                    <div className="mt-[35px] 3xxl:w-[320px] tracking-[2px] md:w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
                       <h1>SUBMIT</h1>
                     </div>
                   </Link>

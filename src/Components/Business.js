@@ -78,9 +78,9 @@ function Business() {
           </p>
         </div>
       </div>
-      <div className="md:hidden block mt-[9rem] w-[85%]  ">
+      <div className="md:hidden block mt-[9rem]   ">
         <div className="w-[70%] mt-[40%] ">
-          <div className="flex justify-between ml-[30px] items-center text-center ">
+          <div className="flex justify-between ml-[20px] items-center text-center ">
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_206_2755)">
@@ -113,7 +113,7 @@ function Business() {
             </div>
 
             <div className="w-[400px]">
-              <h1 className=" font-[500] text-[40px] w-[350px] text-[#001F0E]">We offer flexible options</h1>
+              <h1 className=" font-[500] text-[40px] w-[350px] text-[#001F0E] mt-[20px]">We offer flexible options</h1>
             </div>
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ function Business() {
               </svg>
             </div>
           </div>
-          <p className="w-[450px] tracking-[1px] mt-[20px] text-[17px] ml-[35px] text-center font-[400] text-[#001F0E]  ">
+          <p className="w-[450px] tracking-[1px] mt-[20px] text-[17px] ml-[25px] text-center font-[400] text-[#001F0E]  ">
             At times, you may prefer to source talent independently, while on other occasions, you may require assistance. We offer you the flexibility to choose between both options, giving you peace of mind.
           </p>
         </div>

@@ -34,16 +34,16 @@ function Dashboard() {
           </div>
           <img className=" w-[400px]  h-[450px]" src={dashimg} alt="Eclat" />
         </div>
-        <div className=" md:hidden grid  ml-[1rem] w-[60%]  mt-[6rem] h-[500px] items-center justify-between ">
+        <div className=" md:hidden grid   ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
           <div className="  mt-[1rem] ">
-            <div className="flex justify-between ml-[20px]">
-              <h1 className=" text-left  w-[450px] text-[38px] font-[600] text-[#000] opacity-80 ">Uncovering exceptional talent across the globe.</h1>
-              <img className=" w-[220px]   h-[220px]" src={dashimg} alt="Eclat" />
+            <div className="grid justify-between ml-[20px]">
+              <h1 className=" text-left  w-[400px] text-[38px] font-[600] text-[#000] opacity-80 ">Uncovering exceptional talent across the globe.</h1>
+              <img className=" w-[400px] mt-1  h-[450px]" src={dashimg} alt="Eclat" />
             </div>
-            <p className="tracking-[1px] mt-[20px] ml-[20px] w-[450px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            <p className="tracking-[1px] mt-[40px] ml-[20px] w-[400px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
               Join Tech Eclat to assemble a top-tier team of developers, engineers, product designers, and exceptional remote technology experts..
             </p>
-            <div className="flex w-[80%px] ml-[25px] justify-between mt-[30px] ">
+            <div className="flex w-[90%] ml-[25px] justify-between mt-[30px] ">
               <Link className="w-[170px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/eclatjobs">
                 Find Talent
                 <svg className="mt-1" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">

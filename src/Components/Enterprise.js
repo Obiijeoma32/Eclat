@@ -13,7 +13,7 @@ function Enterprise() {
     <>
       <EnterpriseDashboard />
       <Partners />
-      <div className="mt-5 justify-between ml-[4rem] w-[85%] flex 5xl:ml-[5%]">
+      <div className="md:flex hidden mt-5 justify-between ml-[4rem] w-[85%]  5xl:ml-[5%]">
         <img className=" w-[500px] mt-[5rem] h-[400px]" src={shakir} alt="Business manager" />
         <div className="mt-[8rem]">
           <h1 className=" text-left  w-[450px] text-[48px] font-[600] text-[#222222]  ">You decide what best suits you</h1>
@@ -33,7 +33,27 @@ function Enterprise() {
           </ul>
         </div>
       </div>
-      <div className=" ml-[5rem] w-[85%]  mt-[4rem] h-[600px] items-center justify-between flex 5xl:ml-[5%]">
+      <div className="md:hidden grid mt-[40px] justify-between ml-[40px] w-[380px]  ">
+        <img className=" w-[350px] mt-[5rem] h-[300px]" src={shakir} alt="Business manager" />
+        <div className="mt-[8rem]">
+          <h1 className=" text-left  w-[450px] text-[48px] font-[600] text-[#222222]  ">You decide what best suits you</h1>
+          <ul className="tracking-[1px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
+            <li className="flex items-center mb-1 w-[450px] justify-between">
+              {" "}
+              <span className="w-[40px] mb-6">•</span> Uncover compensation packages that align with your expertise and qualifications.
+            </li>
+            <li className="flex items-center mb-1 w-[450px] justify-between">
+              {" "}
+              <span className="w-[34px] mb-6">•</span> Partner exclusively with companies that we have confidence in.
+            </li>
+            <li className="flex items-center mb-1 w-[450px] justify-between">
+              {" "}
+              <span className="w-[40px] mb-6">•</span> Obtain timely payments in either your local currency, USD, or cryptocurrency.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="md:flex hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:ml-[5%]">
         <div className=" w-[80%] ">
           <h1 className=" text-left  w-[650px] text-[36px] font-[600] text-[#000] opacity-80 ">Discover fulfilling employment opportunities with reputable organizations.</h1>
           <p className="tracking-[1px] mt-3 w-[500px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
@@ -53,6 +73,30 @@ function Enterprise() {
           </div>
         </div>
         <img className="w-[500px]  h-[400px]" src={talentimg} alt="Eclat" />
+      </div>
+      <div className=" md:hidden grid  ml-[40px] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
+        <div className="  mt-[1rem] ">
+          <div className="grid justify-between ml-[30px]">
+            <h1 className=" text-left  w-[400px] text-[28px] font-[600] text-[#000] opacity-80 ">Discover fulfilling employment opportunities with reputable organizations.</h1>
+            <img className=" w-[400px] mt-[25px]  h-[300px]" src={talentimg} alt="Eclat" />
+          </div>
+          <p className="tracking-[1px] mt-[20px] ml-[30px] w-[400px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
+          </p>
+          <div className=" ml-[20px] mt-[30px] ">
+            <Link className="w-[186px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/jobs">
+              Access Network
+              <svg className="mt-1" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 5H12M12 5L7.5 1M12 5L7.5 9.5" stroke="currentColor" strokeWidth="2" />
+              </svg>
+            </Link>
+          </div>
+          <div className=" ml-[20px] mt-7">
+            <img className=" w-[300px]" src={people} alt="people" />
+            <p className="text-[#000000] w-[300px] font-[600] text-[14px]">12,000+ people already joined Techeclat Get started today!</p>
+          </div>
+        </div>
+        {/* <img className="w-[500px]  h-[400px]" src={talentimg} alt="Eclat" /> */}
       </div>
       <FooterEnterprise />
     </>

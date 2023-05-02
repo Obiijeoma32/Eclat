@@ -78,7 +78,7 @@ body {
   border: 1px solid #38761d;
   background-color: #f4f4f6;
   padding-top: 10px;
-  width: 250px;
+
   height: 40px;
   border-radius: 20px;
   text-align: center;
@@ -90,7 +90,6 @@ body {
   border: 1px solid #38761d;
   background-color: #f4f4f6;
   padding-top: 10px;
-  width: 280px;
   height: 40px;
   border-radius: 20px;
   text-align: center;
@@ -101,8 +100,7 @@ body {
 .job3-type :nth-child(3) {
   border: 1px solid #38761d;
   background-color: #f4f4f6;
-  padding-top: 10px;
-  width: 470px;
+
   height: 40px;
   border-radius: 20px;
   text-align: center;
