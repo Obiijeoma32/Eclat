@@ -10,7 +10,7 @@ function FooterEnterprise() {
     <>
       <div className="md:block hidden mt-[9rem]">
         <div className="footer-container-content">
-          <div className=" ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[28%] 5xl:ml-[37%] ">
+          <div className="6xl:ml-[20rem] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[28%] 5xl:ml-[37%] ">
             <div className="w-[500px] ml-[25%] pt-[5%]">
               <h1 className="  font-[700] text-[48px] text-[#fff] ">Get started today on TechEclat now. </h1>
               <div className="ml-[150px] mt-4">

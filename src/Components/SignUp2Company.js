@@ -4,9 +4,9 @@ import HeaderForSignup from "./HeaderForSignup";
 function SignUp2Company() {
   return (
     <>
-      <div className=" bg-[#fff] w-[100%] h-[130vh]">
+      <div className=" bg-[#fff] w-[100%] 4xxl:w-[510px] h-[130vh]">
         <HeaderForSignup />
-        <div className="pt-[7%] pb-[20px] ml-[30%]">
+        <div className="pt-[7%] 4xl:pl-[35%] 4xxl:h-[180vh] 4xxl:pt-[150px]    pb-[20px] md:pl-[30%]">
           <div className="w-[512px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[30px] text-center text-[#1E2757] ">Sign in to the Network</h4>

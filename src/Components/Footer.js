@@ -11,7 +11,7 @@ function Footer() {
     <>
       <div className="md:block hidden mt-[9rem]">
         <div className="footer-container-content">
-          <div className=" ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[28%] 5xl:ml-[37%] ">
+          <div className="6xl:ml-[20rem] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[28%] 5xl:ml-[37%] ">
             <div className="w-[500px] ml-[25%] pt-[5%]">
               <h1 className="  font-[700] text-[48px] text-[#fff] ">Get started today on TechEclat now. </h1>
               <div className="ml-[150px] mt-4">
@@ -327,7 +327,7 @@ function Footer() {
         <div className=" bg-[#27282B] 4xxl:w-[125%] 3xxl:w-[140%] pt-[40px] h-[710px] mt-[8rem] ">
           <div className="">
             <div className=" items-center  ">
-              <Link className="w-[70%]" to="/dashboard">
+              <Link onClick={() => window.scrollTo(0, 0)} className="w-[70%]" to="/dashboard">
                 <div className=" ml-[85px]  ">
                   <svg width="300" height="101" viewBox="0 0 300 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_206_2968)">

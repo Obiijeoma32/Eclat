@@ -37,10 +37,10 @@ function Dashboard() {
         <div className=" md:hidden grid   ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
           <div className="  mt-[1rem] ">
             <div className="grid justify-between ml-[20px]">
-              <h1 className=" text-left  w-[400px] text-[38px] font-[600] text-[#000] opacity-80 ">Uncovering exceptional talent across the globe.</h1>
-              <img className=" w-[400px] mt-1  h-[450px]" src={dashimg} alt="Eclat" />
+              <h1 className=" text-left  w-[380px] text-[38px] font-[600] text-[#000] opacity-80 ">Uncovering exceptional talent across the globe.</h1>
+              <img className=" w-[370px] mt-1  h-[420px]" src={dashimg} alt="Eclat" />
             </div>
-            <p className="tracking-[1px] mt-[40px] ml-[20px] w-[400px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            <p className="tracking-[1px] mt-[40px] ml-[20px] w-[380px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
               Join Tech Eclat to assemble a top-tier team of developers, engineers, product designers, and exceptional remote technology experts..
             </p>
             <div className="flex w-[90%] ml-[25px] justify-between mt-[30px] ">

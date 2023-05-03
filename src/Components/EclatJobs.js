@@ -9,7 +9,7 @@ function Eclatjobs() {
       <Heading />
       <div className=" flex  5xl:ml-[5%] ">
         <SideBar />
-        <div className=" mt-[11%] ml-[25rem] ">
+        <div className=" mt-[11%] ml-[25rem]  ">
           <h1 className=" text-[#38761D] text-[30px] font-[600] opacity-80 ">Let's start with your information</h1>
           <p className=" p text-[#B6D7A8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]  4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
           <form className=" mt-7" action="">

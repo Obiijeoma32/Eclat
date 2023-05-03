@@ -6,7 +6,7 @@ function Features() {
         <div className=" text-center  ml-[3rem]">
           <h4 className=" text-[18px] opacity-80 text-[#38761DCC] font-[300] ">Our Community</h4>
           <h2 className=" text-[36px] opacity-80  text-[#000] font-[600] ">Some Of Our Main Feature</h2>
-          <p className=" text-[16px] w-[350px] ml-[26rem] text-[#656464] font-[300] 5xl:ml-[43%] 5xl:w-[400px] 4xl:w-[350px] 4xl:ml-[40%]">The wise man therefore always holds in these matters to this principle of selection.</p>
+          <p className=" 6xl:ml-[39%]  text-[16px] w-[350px] md:ml-[26rem] text-[#656464] font-[300] 5xl:ml-[43%] 5xl:w-[400px] 4xl:w-[350px] 4xl:ml-[40%]">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
         <div className="flex mt-[6rem] justify-evenly">
           <div className=" bg-white rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">

@@ -78,7 +78,6 @@ body {
   border: 1px solid #38761d;
   background-color: #f4f4f6;
   padding-top: 10px;
-
   height: 40px;
   border-radius: 20px;
   text-align: center;
@@ -146,10 +145,10 @@ body {
 }
 @media only screen and (min-width: 2560px) {
   .job-type h3 {
-    width: 500px;
+    width: 580px;
   }
   .job2-type h3 {
-    width: 550px;
+    /* width: 0px; */
   }
   .job3-type :nth-child(2),
   .job3-type :nth-child(4),

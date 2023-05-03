@@ -2,7 +2,7 @@ function ChooseUsBusiness() {
   return (
     <>
       <div className=" ">
-        <div className="md:ml-[23rem] 3xxl:mt-[5rem]  md:mt-[10rem] chooseus-details 4xl:ml-[33%] 5xl:ml-[38%]">
+        <div className="md:ml-[23rem] 3xxl:mt-[5rem] 6xl:ml-[31rem]  md:mt-[10rem] chooseus-details 4xl:ml-[33%] 5xl:ml-[38%]">
           <div className="md:flex 3xxl:grid md:ml-[3.6rem]  3xxl:ml-[40px] 3xxl:w-[400px]  md:w-[600px] justify-between ">
             <div className=" md:hidden 3xxl:w-[300px] 3xxl:flex 3xxl:justify-end  items-center  hidden">
               <svg width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
