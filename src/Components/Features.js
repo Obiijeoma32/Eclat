@@ -2,14 +2,16 @@
 function Features() {
   return (
     <>
-      <div className="md:block hidden w-[98%] ml-1 mt-[12rem] ">
-        <div className=" text-center  ml-[3rem]">
+      <div className="md:block 1halfxl:block 2xl:block 3xl:block 4xl:block 5xl:block  820xxl:hidden hidden w-[98%] ml-1 mt-[12rem] ">
+        <div className=" md:text-center 1halfxl:w-[90%] 820xxl:w-[80%] 5xl:ml-[4rem]  ml-[3rem]">
           <h4 className=" text-[18px] opacity-80 text-[#38761DCC] font-[300] ">Our Community</h4>
-          <h2 className=" text-[36px] opacity-80  text-[#000] font-[600] ">Some Of Our Main Feature</h2>
-          <p className=" 6xl:ml-[39%]  text-[16px] w-[350px] md:ml-[26rem] text-[#656464] font-[300] 5xl:ml-[43%] 5xl:w-[400px] 4xl:w-[350px] 4xl:ml-[40%]">The wise man therefore always holds in these matters to this principle of selection.</p>
+          <h2 className=" text-[36px] opacity-80  text-[rgb(0,0,0)] font-[600] ">Some Of Our Main Feature</h2>
+          <p className=" 1xl:w-[400px]  1halfxl:ml-[370px]  1xl:ml-[30px]   6xl:ml-[39%] 2xl:w-[400px] 2xl:ml-[32rem]  text-[16px] md:w-[350px] md:ml-[26rem] text-[#656464] 3xl:w-[400px] 3xl:ml-[37.5%] font-[300] 5xl:ml-[41%] 5xl:w-[450px] 4xl:w-[350px] 4xl:ml-[40%]">
+            The wise man therefore always holds in these matters to this principle of selection.
+          </p>
         </div>
-        <div className="flex mt-[6rem] justify-evenly">
-          <div className=" bg-white rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
+        <div className="flex mt-[6rem]  justify-evenly">
+          <div className=" bg-white rounded-[10px] 1xl:w-[460px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
             <div className=" ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_206_2764)">
@@ -65,7 +67,7 @@ function Features() {
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
+          <div className=" bg-white rounded-[10px] 1xl:w-[460px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
             <div className=" ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_206_2777)">
@@ -99,8 +101,8 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="flex mt-[4rem] justify-evenly">
-          <div className=" bg-white rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
+        <div className="flex mt-[4rem] 1xl:justify-evenly 1xl:ml-[20px">
+          <div className=" bg-white 1xl:w-[460px] rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
             <div className=" ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_206_2800)">
@@ -130,14 +132,14 @@ function Features() {
                 </defs>
               </svg>
             </div>
-            <div className="">
+            <div className=" 2xl:pr-[30px]">
               <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skills</h1>
-              <p className="font-[300] w-[400px] tracking-[0.7px]  text-[#4f4f4f]  text-left text-[12px]">
+              <p className="font-[300] 1xl:w-[300px] w-[400px] tracking-[0.7px]  text-[#4f4f4f]  text-left text-[12px]">
                 Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
+          <div className=" bg-white 1xl:w-[460px] rounded-[10px] pt-[40px] pl-[7px] pr-[10px] flex justify-between shadow-lg w-[540px] h-[253px] ">
             <div className=" ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_206_2787)">
@@ -186,15 +188,15 @@ function Features() {
           </div>
         </div>
       </div>
-      <div className="md:hidden block w-[80%] ml-1 mt-[7rem] ">
-        <div className=" text-center  ml-[70px]">
-          <h4 className=" text-[18px] opacity-80 text-[#38761DCC] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" text-[36px] opacity-80  text-[#000] font-[600] w-[370px]">Some Of Our Main Feature</h2>
-          <p className=" text-[16px] w-[370px] mt-[20px]  text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
+      <div className="md:hidden 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
+        <div className=" text-center 820xxl:ml-[75px]  ml-[70px]">
+          <h4 className=" text-[18px] opacity-80 text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
+          <h2 className=" text-[36px] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <p className=" text-[16px] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
         <div className="grid mt-[6rem] ml-[80px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] justify-evenly items-center ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46876)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46876)" />
@@ -225,7 +227,7 @@ function Features() {
                 />
                 <defs>
                   <filter id="filter0_d_4273_46876" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46876" />
                     <feOffset dy="10" />
@@ -240,19 +242,27 @@ function Features() {
                   </linearGradient>
                 </defs>
               </svg>
-              <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
+              <div>
+                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
+                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    We collaborate with you to gain a comprehensive understanding of your technical shortcomings, company culture, industry regulations, and strategic trajectory. You can promptly view a handpicked collection of technologist profiles
+                    that satisfy your requirements.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="w-[300px] ml-[40px] text-center">
+            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                 We collaborate with you to gain a comprehensive understanding of your technical shortcomings, company culture, industry regulations, and strategic trajectory. You can promptly view a handpicked collection of technologist profiles that
                 satisfy your requirements.
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] justify-evenly items-center ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_206_2777)">
+                <g filter="url(#filter0_d_4273_46889)">
                   <rect x="20" y="12" width="66" height="66" rx="24" fill="#36CD77" />
                 </g>
                 <path
@@ -262,30 +272,38 @@ function Features() {
                   fill="white"
                 />
                 <defs>
-                  <filter id="filter0_d_206_2777" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <filter id="filter0_d_4273_46889" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_206_2777" />
+                    <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46889" />
                     <feOffset dy="8" />
                     <feGaussianBlur stdDeviation="11" />
                     <feColorMatrix type="matrix" values="0 0 0 0 0.971137 0 0 0 0 0.341921 0 0 0 0 0.36709 0 0 0 0.3 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_206_2777" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_206_2777" result="shape" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46889" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46889" result="shape" />
                   </filter>
                 </defs>
               </svg>
-              <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
+
+              <div>
+                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
+                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="w-[300px] ml-[40px] text-center">
-              <p className="font-[300] tracking-[0.7px]  text-[#4f4f4f]  text-left text-[12px]">
-                Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.{" "}
+            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+              <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.
               </p>
             </div>
           </div>
         </div>
         <div className="grid mt-[1rem] ml-[80px]  w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] justify-evenly items-center ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46912)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46912)" />
@@ -314,16 +332,23 @@ function Features() {
                 </defs>
               </svg>
 
-              <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skills</h1>
+              <div>
+                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skills</h1>
+                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="w-[300px] ml-[40px] text-center">
-              <p className="font-[300]  tracking-[0.7px]  text-[#4f4f4f] text-left   text-[12px]">
+            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+              <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                 Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] justify-evenly items-center ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46899)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46899)" />
@@ -362,11 +387,18 @@ function Features() {
                 </defs>
               </svg>
 
-              <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
+              <div>
+                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
+                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="w-[300px] ml-[40px] text-center">
-              <p className="font-[300] tracking-[0.7px]  text-[#4f4f4f] text-left text-[12px]">
-                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.{" "}
+            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+              <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
               </p>
             </div>
           </div>

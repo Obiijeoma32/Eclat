@@ -7,18 +7,20 @@ function Eclatjobs() {
   return (
     <>
       <Heading />
-      <div className=" flex  5xl:ml-[5%] ">
+      <div className=" flex 820xxl:mt-[8%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
         <SideBar />
-        <div className=" mt-[11%] ml-[25rem]  ">
-          <h1 className=" text-[#38761D] text-[30px] font-[600] opacity-80 ">Let's start with your information</h1>
-          <p className=" p text-[#B6D7A8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]  4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
+        <div className=" mt-[11%] 820xxl:ml-[30%] ml-[25rem] 1xl:ml-[22rem]  ">
+          <h1 className=" text-[#38761D] 820xxl:w-[400px] 1halfxl:w-[640px] text-[30px] font-[600] opacity-80 ">Let's start with your information</h1>
+          <p className=" p text-[#B6D7A8] 820xxl:hidden 1halfxl:block text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]  4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
+          <p className=" 820xxl:block text-[#B6D7A8] 1halfxl:hidden hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] text-[18px] font-[300] mt-[14px] ">Please fill in the details below so we can get in touch with you</p>
+
           <form className=" mt-7" action="">
             <label className=" text-[#38761D] text-[14px] font-[400] opacity-80 " htmlFor="name">
               Full Name
             </label>
             <br />
             <input
-              className=" text-[14px] w-[640px] h-[60px] pl-[10px] mt-2 text-[#38761D] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] placeholder:text-[#38761D] bg-inherit  outline-none 5xl:w-[1220px] 4xl:w-[920px]"
+              className=" text-[14px] 1halfxl:w-[640px] 820xxl:w-[400px] w-[640px] h-[60px] pl-[10px] mt-2 text-[#38761D] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] placeholder:text-[#38761D] bg-inherit  outline-none 5xl:w-[1220px] 4xl:w-[920px]"
               autoComplete="on"
               type="text"
               placeholder="Enter Name"
@@ -31,7 +33,7 @@ function Eclatjobs() {
             </label>
             <br />
             <input
-              className=" w-[640px] h-[60px] text-[14px]  pl-[10px] mt-2 text-[#38761D] placeholder:text-[#38761D] bg-inherit border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4]   outline-none 5xl:w-[1220px] 4xl:w-[920px]"
+              className=" w-[640px] 1halfxl:w-[640px] 820xxl:w-[400px] h-[60px] text-[14px]  pl-[10px] mt-2 text-[#38761D] placeholder:text-[#38761D] bg-inherit border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4]   outline-none 5xl:w-[1220px] 4xl:w-[920px]"
               autoComplete="on"
               type="email"
               placeholder="ex:janedoe000@mail.com"
@@ -44,14 +46,14 @@ function Eclatjobs() {
             </label>
             <br />
             <input
-              className=" text-[14px]  w-[640px] h-[60px] pl-[10px] mt-2 text-[#38761D] placeholder:text-[#38761D] bg-inherit border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] outline-none 5xl:w-[1220px] 4xl:w-[920px]"
+              className=" text-[14px] 1halfxl:w-[640px] 820xxl:w-[400px] w-[640px] h-[60px] pl-[10px] mt-2 text-[#38761D] placeholder:text-[#38761D] bg-inherit border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] outline-none 5xl:w-[1220px] 4xl:w-[920px]"
               autoComplete="on"
               type="tel"
               placeholder="Enter Phone Number"
               required
             />
           </form>
-          <div className=" flex w-[640px] h-[30%] justify-between mt-7 5xl:w-[1220px]  4xl:w-[920px]">
+          <div className=" flex w-[640px] 1halfxl:w-[640px] 820xxl:w-[400px] h-[30%] justify-between mt-7 5xl:w-[1220px]  4xl:w-[920px]">
             <Link
               onClick={() => {
                 window.scrollTo(0, 0);

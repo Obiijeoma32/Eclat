@@ -128,10 +128,10 @@ function HomePageForApplicant() {
             </svg>
           </div>
         </Link>
-        <div className=" ml-[80px]  flex  pt-[101px]  ">
+        <div className=" ml-[80px] 820xxl:ml-[10px] 820xxl:pl-[5px] flex  pt-[101px]  ">
           <ApplicantProfile />
 
-          <div className="flex ml-[12rem] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
+          <div className="flex ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
             <div className="w-[600px] mr-[50px] 5xl:w-[1700px] 4xl:w-[950px]">
               <div className="flex items-center justify-between">
                 <img className=" rounded-[50%] w-[68px] h-[68px] " src={seun} alt="persona" />
@@ -233,7 +233,7 @@ function HomePageForApplicant() {
                 </div>
               </div>
               {isOpen && (
-                <div className=" ml-[10px]">
+                <div className=" 820xxl:h-[50vh] ml-[10px]">
                   <div className=" w-[65px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
                   <div className="w-[600px] mt-[36px] flex justify-between">
                     <h2 className=" text-[20px] text-[#192850]">Product Designer</h2>
@@ -299,9 +299,9 @@ function HomePageForApplicant() {
                 </div>
               )}
               {history && (
-                <div className=" ml-[10px]">
-                  <div className=" ml-[95px] w-[172px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
-                  <div className="w-[600px] mt-[36px] flex justify-between">
+                <div className=" 820xxl:h-[53vh] ml-[10px]">
+                  <div className=" ml-[95px]  w-[172px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
+                  <div className="w-[600px] mt-[36px]  flex justify-between">
                     <h2 className=" text-[20px] text-[#192850]">Front End Developer</h2>
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -353,7 +353,7 @@ function HomePageForApplicant() {
                 </div>
               )}
               {education && (
-                <div className=" ml-[10px]">
+                <div className=" 820xxl:h-[10vh] ml-[10px]">
                   <div className=" ml-[324px] w-[80px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
                   <div className="w-[600px] mt-[36px] flex justify-between">
                     <div className="w-[320px] flex justify-between items-center">
@@ -397,7 +397,7 @@ function HomePageForApplicant() {
               )}
             </div>
             <div className="w-[300px] mt-[-30px] mr-[30px]">
-              <div className="flex w-[200px] ml-[100px] justify-between items-center">
+              <div className="flex w-[200px] 820xxl:hidden ml-[100px] justify-between items-center">
                 <img className="w-[39.6px] rounded-[50%] h-[40.42px]" src={seun} alt="persona" />
                 <h3 className=" text-[#1E2757] text-[14px]">Your profile history</h3>
               </div>

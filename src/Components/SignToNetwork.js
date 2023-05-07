@@ -6,7 +6,7 @@ function SignToNetwork() {
     <>
       <div className=" bg-[#fff] w-[100%] h-[130vh]">
         <HeaderForSignup />
-        <div className="pt-[7%] pb-[20px] ml-[30%] 5xl:ml-[38%]">
+        <div className="pt-[7%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[140px] 820xxl:pt-[150px] pb-[20px] ml-[30%] 3xl:ml-[33%] 1xl:pt-[15%] 3xl:pt-[10%] 4xl:ml-[35%] 6xl:ml-[33%] 5xl:ml-[38%]">
           <div className="w-[512px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[30px] text-center text-[#1E2757] ">Sign in to the Network</h4>

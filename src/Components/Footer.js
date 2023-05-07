@@ -11,19 +11,19 @@ function Footer() {
     <>
       <div className="md:block hidden mt-[9rem]">
         <div className="footer-container-content">
-          <div className="6xl:ml-[20rem] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[28%] 5xl:ml-[37%] ">
-            <div className="w-[500px] ml-[25%] pt-[5%]">
-              <h1 className="  font-[700] text-[48px] text-[#fff] ">Get started today on TechEclat now. </h1>
+          <div className="6xl:ml-[23%] 1halfxl:ml-[18%]  820xxl:w-[600px] 820xxl:ml-[110px] 5xl:w-[1200px] 2xl:w-[950px] 1xl:w-[800px] 1xl:ml-[140px] 2xl:ml-[17%] 3xl:ml-[23%] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[25%] 5xl:ml-[28%] ">
+            <div className="w-[500px] 820xxl:ml-[10%]  ml-[25%] 5xl:ml-[31%] 2xl:ml-[25%] 1xl:ml-[20%] pt-[5%]">
+              <h1 className="  font-[700] text-[48px] 820xxl:text-[40px] 820xxl:mt-[40px] text-[#fff] ">Get started today on TechEclat now. </h1>
               <div className="ml-[150px] mt-4">
-                <Link to="/eclatjobs">
+                <Link onClick={() => window.scrollTo(0, 0)} to="/eclatjobs">
                   <h1 className="w-[200px] pt-4 h-[60px] rounded-[10px] bg-[#fff] text-center text-[#38761D] ">Get Started</h1>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] w-[100%] h-[430px] mt-[8rem] ">
-          <div className="flex  w-[85%] justify-between">
+        <div className=" bg-[#27282B] w-[100%] 820xxl:h-[500px] 5xl:w-[100%] 4xl:w-[100%] h-[430px] mt-[8rem] ">
+          <div className="flex 1xl:w-[95%] 820xxl:w-[98%]  w-[85%] justify-between">
             <div>
               <Link onClick={handleButtonClick} to="/dashboard">
                 <svg width="300" height="101" viewBox="0 0 300 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +152,7 @@ function Footer() {
                 </svg>{" "}
               </Link>
               <div className="ml-[2rem]">
-                <p className="w-[420px] text-[16px] text-[#8C8C8C] ">
+                <p className="w-[420px] 5xl:w-[550px] 5xl:h-[200px] 820xxl:w-[300px] text-[16px] text-[#8C8C8C] ">
                   We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
                   collective impact transcends individual contributions!...
                 </p>
@@ -262,7 +262,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex w-[500px] justify-between mt-[50px] ml-[18%] ">
+            <div className="flex w-[500px] 820xxl:w-[500px] 820xxl:ml-[10%]  justify-between mt-[50px] ml-[18%] ">
               <div>
                 <h2 className="text-[#fff] mb-3 font-[400] text-[18px] ">About</h2>
 
@@ -305,7 +305,7 @@ function Footer() {
           <div className="text-[#8C8C8C] font-[400] text-[18px] text-center mt-[3rem] ">
             {" "}
             © 2000-{year}, All Rights Reserved{" "}
-            <a className=" hover:underline" href="https://www.nubeero.com/">
+            <a className=" hover:underline hover:text-[#fff]" href="https://www.nubeero.com/">
               Nubeero
             </a>
           </div>
@@ -608,7 +608,7 @@ function Footer() {
           </div>
           <div className="text-[#8C8C8C] font-[400] text-[18px] ml-[50px] mt-[3rem] ">
             © 2000-{year}, All Rights Reserved{" "}
-            <a className=" hover:underline" href="https://www.nubeero.com/">
+            <a className=" hover:underline hover:text-[#fff]" href="https://www.nubeero.com/">
               Nubeero
             </a>
           </div>

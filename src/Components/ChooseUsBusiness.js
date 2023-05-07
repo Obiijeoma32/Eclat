@@ -2,8 +2,8 @@ function ChooseUsBusiness() {
   return (
     <>
       <div className=" ">
-        <div className="md:ml-[23rem] 3xxl:mt-[5rem] 6xl:ml-[31rem]  md:mt-[10rem] chooseus-details 4xl:ml-[33%] 5xl:ml-[38%]">
-          <div className="md:flex 3xxl:grid md:ml-[3.6rem]  3xxl:ml-[40px] 3xxl:w-[400px]  md:w-[600px] justify-between ">
+        <div className="md:ml-[23rem] 820xxl:ml-[100px]  xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem] chooseus-details 4xl:ml-[33%] 5xl:ml-[30%]">
+          <div className="md:flex  3xxl:grid md:ml-[3.6rem]  5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[400px]  md:w-[600px] justify-between ">
             <div className=" md:hidden 3xxl:w-[300px] 3xxl:flex 3xxl:justify-end  items-center  hidden">
               <svg width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -12,7 +12,7 @@ function ChooseUsBusiness() {
                 />
               </svg>
             </div>{" "}
-            <h1 className=" 3xxl:w-[400px] text-center  md:w-[450px] text-[48px] font-[600] text-[#222222] h1 ">Here’s why you should choose us:</h1>
+            <h1 className=" 3xxl:w-[400px] text-center 5xl:w-[850px]   md:w-[450px] text-[48px] font-[600] text-[#222222] h1 ">Here’s why you should choose us:</h1>
             <div className=" md:block 3xxl:hidden block">
               <svg width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -22,12 +22,12 @@ function ChooseUsBusiness() {
               </svg>
             </div>
           </div>
-          <p className=" 3xxl:w-[400px] 3xxl:ml-[40px] tracking-[1px] mt-3 md:w-[550px] font-[400] text-[#4f4f4f] text-center text-[16px]">
+          <p className="  3xxl:w-[400px] xl:w-[600px] 820xxl:w-[600px] 820xxl:ml-[-20px] xl:ml-[-10px] 3xxl:ml-[40px] 2xl:w-[700px] 2xl:ml-[-40px] 3xl:ml-[-30px] 3xl:w-[700px] 4xl:ml-[-40px] 4xl:w-[700px] 5xl:w-[800px]  tracking-[1px] 5xl:mt-[20px] 5xl:ml-[80px] md:mt-3 md:w-[550px] font-[400] text-[#4f4f4f] text-center text-[16px]">
             We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
             collective impact transcends individual contributions!
           </p>
         </div>
-        <div className="3xxl:flex hidden md:hidden  ml-[40px] pt-[3rem]  w-[100%] justify-between  ">
+        <div className="3xxl:flex 820xxl:flex 820xxl:w-[85%] 820xxl:ml-[70px] hidden md:hidden  ml-[40px] pt-[3rem]  w-[100%] justify-between  ">
           <div className="  w-[100px]  ">
             <svg width="50" className=" ml-[12px]" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -131,7 +131,7 @@ function ChooseUsBusiness() {
             </div>
           </div>
         </div>
-        <div className="3xxl:hidden flex ml-[8rem] md:flex  mt-[6rem]  w-[85%] justify-between  ">
+        <div className="3xxl:hidden 820xxl:hidden flex ml-[8rem] md:flex  mt-[6rem]  w-[85%] justify-between  ">
           <div className="  w-[150px]  ">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

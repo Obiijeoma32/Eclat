@@ -36,7 +36,7 @@ function ApplicantProfile({ children }) {
   ];
   return (
     <>
-      <div className=" w-[170px]  fixed  h-[500px] border-r-[1px] border-r-[#F3F3F3]">
+      <div className=" w-[170px] 820xxl:hidden fixed  h-[500px] border-r-[1px] border-r-[#F3F3F3]">
         {menuList.map((item, index) => (
           <NavLink
             to={item.path}
@@ -47,6 +47,24 @@ function ApplicantProfile({ children }) {
               <div className="  ">{item.icon}</div>
 
               <h2 className=" ml-[15px]">{item.name}</h2>
+            </div>
+          </NavLink>
+        ))}
+      </div>
+      <div className=" w-[150px] h-[460px]  border-r-[1px] border-r-[#f3f3f3] 820xxl:block hidden fixed ">
+        {menuList.map((item, index) => (
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            to={item.path}
+            key={index}
+            className={({ isActive }) => (isActive ? " items-center text-[18px]  text-left font-[400] flex justify-between w-[90px] text-[#38761D]" : " items-center text-[18px]   text-left font-[400] flex justify-between w-[90px] text-[#38761d] ")}
+          >
+            <div className="  w-[90px] justify-between flex">
+              <div className=" w-[40px]  ">{item.icon}</div>
+
+              <h2 className=" ml-[30px] ">{item.name}</h2>
             </div>
           </NavLink>
         ))}

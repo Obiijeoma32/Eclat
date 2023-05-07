@@ -8,9 +8,9 @@ function Business() {
   return (
     <>
       <Heading />
-      <div className="md:block hidden mt-[9rem] w-[85%]  ">
-        <div className="w-[70%] mt-[20%] ml-[24%]">
-          <div className="flex justify-between  items-center text-center ">
+      <div className="md:block hidden mt-[9rem] 5xl:h-[500px] 5xl:w-[80%] w-[85%]  ">
+        <div className="w-[70%] 1halfxl:h-[400px] 820xxl:w-[80%] 820xxl:ml-[35px] 1xl:w-[80%] 1halfxl:w-[75%]  1xl:ml-[22%]   mt-[20%] ml-[24%]">
+          <div className="flex justify-between 1halfxl:w-[95%] 1halfxl:ml-[10px] 820xxl:w-[750px]   items-center text-center ">
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_206_2755)">
@@ -41,7 +41,7 @@ function Business() {
                 </defs>
               </svg>
             </div>
-            <h1 className=" font-[500] text-[50px] text-[#001F0E]">We offer flexible options</h1>
+            <h1 className="  font-[500] text-[50px] text-[#001F0E]">We offer flexible options</h1>
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_206_2755)">
@@ -73,7 +73,7 @@ function Business() {
               </svg>
             </div>
           </div>
-          <p className="w-[600px] tracking-[1px] 6xl:ml-[210px]  mt-[20px] text-[17px] md:ml-[5rem] text-center font-[400] text-[#001F0E] 5xl:w-[630px] 5xl:ml-[29%] 4xl:w-[630px] 4xl:ml-[23%]  ">
+          <p className="w-[600px] 820xxl:w-[650px] 820xxl:ml-[50px]  1halfxl:ml-[95px] 1halfxl:w-[600px] 2xl:w-[700px] 2xl:ml-[130px] 3xl:w-[700px] 3xl:ml-[190px] 3xl:mt-[-15px] tracking-[1px] 6xl:ml-[230px]  mt-[20px] text-[17px] md:ml-[5rem] text-center font-[400] text-[#001F0E] 5xl:w-[700px] 5xl:ml-[25%] 4xl:w-[630px] 4xl:ml-[26%]  ">
             At times, you may prefer to source talent independently, while on other occasions, you may require assistance. We offer you the flexibility to choose between both options, giving you peace of mind.
           </p>
         </div>

@@ -16,10 +16,10 @@ function Heading() {
   return (
     <>
       <div>
-        <div className=" 3xxl:w-[100%] flex fixed heading-container h-[70px] md:w-[100%] pl-[30px] pr-[55px] pt-[15px] items-center justify-between">
-          <div className="flex w-[10%px] items-center justify-between ">
+        <div className=" 3xxl:w-[100%]  flex fixed heading-container h-[90px] xl:w-[100%] pl-[30px] pr-[25px] pt-[15px] 4xxl:w-[100%] items-center justify-between">
+          <div className="flex w-[10%] mb-[15px] items-center justify-between ">
             <Link onClick={handleButtonClick} to="/dashboard">
-              <svg className=" mb-2" width="180" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className=" mb-2" width="190" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M158 22.6821C157.281 22.724 156.604 22.825 156.056 23.6148C155.86 23.8985 155.413 23.9194 155 24C155.467 23.4533 156.08 23.0465 156.545 22.4603C157.128 21.7249 157.533 21.9236 158 22.6821Z" fill="#38761D" />
                 <path d="M158.927 24C158.533 23.6977 158.264 23.3774 158 23C158.663 23.1627 159.32 23.3824 160 23.6096C159.66 23.743 159.356 23.8625 158.927 24Z" fill="#38761D" />
                 <path
@@ -117,12 +117,12 @@ function Heading() {
               </svg>
             </Link>
           </div>
-          <div onClick={handleHamBurgerMenu} className=" md:hidden cursor-pointer flex justify-end h-[100px]   w-[50%] mt-[70px]  ">
+          <div onClick={handleHamBurgerMenu} className=" xl:hidden  2xl:hidden  cursor-pointer flex justify-end h-[100px]   w-[50%] mt-[70px]  ">
             <svg width="35" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 27.5H42.5M2.5 15H42.5M2.5 2.5H42.5" stroke="#38761D" strokeWidth="3.75" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             {hamBurgerMenu && (
-              <div className=" fixed left-[280px]  ">
+              <div className=" fixed 820xxl:left-[590px] 3xxl:left-[280px] 1xl:ml-[55%]  ">
                 <div className=" shadow-lg   mt-[30px] opacity-90 rounded-[5px] h-[300px] w-[220px]   z-[99] bg-[#fafafa] p-[20px]   grid">
                   <Link onClick={handleButtonClick} className=" text-[14px]  opacity-80 font-[600]  text-[#38761D]  " to="/techexpert">
                     For Technology Experts
@@ -148,8 +148,8 @@ function Heading() {
               </div>
             )}
           </div>
-          <div className="md:flex w-[80%] items-center justify-evenly hidden">
-            <div className=" w-[70%] flex justify-between">
+          <div className="xl:flex w-[84%]     items-center justify-evenly hidden">
+            <div className=" w-[80%] flex justify-between">
               <Link onClick={handleButtonClick} className=" hover:underline text-[16px] opacity-80 font-[600] text-[#38761D] active:text-[#B6D7A8] " to="/techexpert">
                 For Technology Experts
               </Link>
@@ -164,12 +164,10 @@ function Heading() {
               <Link onClick={handleButtonClick} className="hover:underline text-[16px]  font-[600] text-[#38761D]" to="/jobs">
                 <h3 className="text-[#38761D]">Find Jobs</h3>
               </Link>
+              <Link onClick={handleButtonClick} className=" text-[16px] mt-[-10px]  opacity-80 font-[600] talent  bg-[#38761d] bg-opacity-90 text-[#fff]" to="/eclatjobs">
+                Find Talent
+              </Link>
             </div>
-
-            <Link onClick={handleButtonClick} className=" mr-[40px] text-[16px] ml-[40px]  opacity-80 font-[600] talent  bg-[#38761d] bg-opacity-90 text-[#fff]" to="/eclatjobs">
-              Find Talent
-            </Link>
-
             <DropdownMenu />
           </div>
         </div>

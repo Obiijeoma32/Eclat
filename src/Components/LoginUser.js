@@ -10,7 +10,7 @@ function LoginUser() {
     <>
       <div className=" bg-[#fff] w-[100%] h-[150vh]">
         <HeaderForSignup />
-        <div className="md:pt-[7%] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] pb-[20px] md:ml-[30%] 5xl:ml-[38%]">
+        <div className="md:pt-[7%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[129px] 820xxl:pt-[150px] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] 1xl:pt-[15%] pb-[20px] md:ml-[30%] 6xl:ml-[33%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] 5xl:ml-[38%]">
           <div className="md:w-[512px] 3xxl:w-[390px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" 3xxl:ml-[40px] text-[30px] text-center text-[#1E2757] ">Join the Network</h4>

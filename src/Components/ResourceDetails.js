@@ -84,7 +84,7 @@ function ResourceDetails() {
       <Heading />
       <div className=" h-[200vh] flex 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[12%] ml-[25rem]">
+        <div className=" mt-[12%] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
           <h1 className=" text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
           <p className="  text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
           <div className=" mt-[40.5px] w-[550px] items-center text-center flex justify-center">

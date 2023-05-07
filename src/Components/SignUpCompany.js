@@ -8,9 +8,9 @@ function SignUpCompany() {
 
   return (
     <>
-      <div className=" bg-[#fff] w-[100%] 4xxl:w-[510px] h-[200vh]">
+      <div className=" bg-[#fff] 6xl:w-[100%] w-[100%] 4xxl:w-[510px] h-[200vh]">
         <HeaderForSignup />
-        <div className="  ">
+        <div className="  bg-[#fff]  ">
           <div className="pt-[7%] 4xl:pl-[35%] 4xxl:h-[180vh] 4xxl:pt-[150px]    pb-[20px] md:pl-[30%]">
             <div className="w-[512px]   h-[636px] ">
               <div className=" pt-5 ">

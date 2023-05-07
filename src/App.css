@@ -26,7 +26,7 @@ body {
 }
 
 .footer-container {
-  width: 1000px;
+  /* width: 1000px; */
   height: 330px;
   background-image: url("./Components/footerimg.jpeg");
   background-repeat: no-repeat;
@@ -129,6 +129,11 @@ body {
 /* .table th td {
   width: 120px;
 } */
+@media only screen and (min-width: 1080) {
+  .footer-container {
+    width: 700px;
+  }
+}
 @media only screen and (min-width: 1920px) {
   .job-type h3 {
     width: 420px;

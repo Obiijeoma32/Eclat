@@ -47,7 +47,7 @@ function SideBar({ children }) {
   ];
   return (
     <>
-      <div className=" sidebar-container fixed mt-[12%]">
+      <div className=" sidebar-container 1halfxl:block 820xxl:hidden fixed mt-[12%]">
         {secondMenu.map((item, index) => (
           <NavLink
             onClick={() => {
@@ -63,6 +63,24 @@ function SideBar({ children }) {
               <div className="  ">{item.icon}</div>
 
               <h2 className=" mt-[19px] tracking-[1px] ml-[30px] ">{item.name}</h2>
+            </div>
+          </NavLink>
+        ))}
+      </div>
+      <div className=" w-[220px] h-[460px] 1halfxl:hidden border-r-[1px] border-r-[#38761d] 820xxl:block hidden fixed mt-[12%]">
+        {secondMenu.map((item, index) => (
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            to={item.path}
+            key={index}
+            className={({ isActive }) => (isActive ? " items-center text-[14px]  text-left font-[400] flex justify-between  text-[#b6d7a8]" : " items-center text-[16px]  text-left font-[400] flex justify-between  text-[#38761d] ")}
+          >
+            <div className=" items-center m-[10px] w-[150px] justify-between flex">
+              <div className=" w-[40px]  ">{item.icon}</div>
+
+              <h2 className=" ml-[30px] ">{item.name}</h2>
             </div>
           </NavLink>
         ))}
