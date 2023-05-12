@@ -1,7 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../App.css";
 
 function SideBar({ children }) {
+  const [side, setSideBar] = useState(false);
+  const handleSideBar = () => {
+    setSideBar(!side);
+  };
+  const closeSideBar = () => {
+    setSideBar(false);
+  };
   const secondMenu = [
     {
       path: "/eclatjobs",
@@ -47,7 +55,7 @@ function SideBar({ children }) {
   ];
   return (
     <>
-      <div className=" sidebar-container 1halfxl:block 820xxl:hidden fixed mt-[12%]">
+      <div className=" sidebar-container 3xxl:hidden 1halfxl:block 820xxl:hidden fixed mt-[12%]">
         {secondMenu.map((item, index) => (
           <NavLink
             onClick={() => {
@@ -67,7 +75,7 @@ function SideBar({ children }) {
           </NavLink>
         ))}
       </div>
-      <div className=" w-[220px] h-[460px] 1halfxl:hidden border-r-[1px] border-r-[#38761d] 820xxl:block hidden fixed mt-[12%]">
+      <div className=" w-[220px] 3xxl:hidden  h-[460px] 1halfxl:hidden border-r-[1px] border-r-[#38761d] 820xxl:block hidden fixed mt-[12%]">
         {secondMenu.map((item, index) => (
           <NavLink
             onClick={() => {
@@ -85,6 +93,58 @@ function SideBar({ children }) {
           </NavLink>
         ))}
       </div>
+      <div className=" 3xxl:block hidden 820xxl:hidden w-[80px] pl-[20px] mt-[15%]">
+        <div>
+          <svg onClick={handleSideBar} width="35" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 27.5H42.5M2.5 15H42.5M2.5 2.5H42.5" stroke="#38761D" strokeWidth="3.75" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        {side && (
+          <div className=" w-[414px] fixed z-40  top-0 left-0 h-[150vh] bg-[#000] bg-opacity-40">
+            <div className=" w-[300px] pt-[130px] pl-[20px] h-[150vh] bg-[#fff]">
+              <div className=" flex w-[240px] h-[80px] justify-end">
+                <svg onClick={closeSideBar} width="24" height="24" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L35.75 35.75" stroke="black" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2 35.75L35.75 2" stroke="black" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              {secondMenu.map((item, index) => (
+                <NavLink
+                  onClick={closeSideBar}
+                  className={({ isActive }) => (isActive ? " items-center text-[16px]  text-left font-[400] flex justify-between  text-[#b6d7a8]" : " items-center text-[16px]   text-left font-[400] flex justify-between  text-[#38761d] ")}
+                  to={item.path}
+                  key={index}
+                >
+                  <div className=" items-center mb-[40px]   justify-between flex">
+                    <div className=" w-[40px]   ">{item.icon}</div>
+
+                    <h2 className=" ml-[30px] whitespace-nowrap ">{item.name}</h2>
+                  </div>
+                </NavLink>
+              ))}
+            </div>
+            {/* <div className={`h-[100vh]  bg-[#fff] fixed  pl-[20px]  z-50 inset-y-0 left-0 w-64 transition duration-300 transform ${side ? "translate-x-0" : "-translate-x-full"}`}>
+                {secondMenu.map((item, index) => (
+                  <NavLink
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                    className={({ isActive }) => (isActive ? " items-center text-[16px]  text-left font-[400] flex justify-between  text-[#b6d7a8]" : " items-center text-[16px]   text-left font-[400] flex justify-between  text-[#38761d] ")}
+                    to={item.path}
+                    key={index}
+                  >
+                    <div className=" items-center mb-[40px]   justify-between flex">
+                      <div className=" w-[40px]   ">{item.icon}</div>
+
+                      <h2 className=" ml-[30px] whitespace-nowrap ">{item.name}</h2>
+                    </div>
+                  </NavLink>
+                ))}
+              </div> */}
+          </div>
+        )}
+      </div>
+
       <main>{children}</main>
     </>
   );

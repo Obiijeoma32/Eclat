@@ -28,7 +28,7 @@ function ChooseUs() {
             collective impact transcends individual contributions!
           </p>
         </div>
-        <div className="3xxl:flex 820xxl:flex 820xxl:w-[85%] 820xxl:ml-[70px] hidden md:hidden  ml-[40px] pt-[3rem]  w-[100%] justify-between  ">
+        <div className="3xxl:flex 820xxl:flex 820xxl:w-[85%] 5xl:hidden 820xxl:ml-[70px] hidden md:hidden  ml-[40px] pt-[3rem]  w-[100%] justify-between  ">
           <div className="  w-[100px]  ">
             <svg width="50" className=" ml-[12px]" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -132,7 +132,7 @@ function ChooseUs() {
             </div>
           </div>
         </div>
-        <div className="3xxl:hidden 820xxl:hidden flex ml-[8rem] md:flex  mt-[6rem]  w-[85%] justify-between  ">
+        <div className="3xxl:hidden 820xxl:hidden 5xl:flex flex ml-[8rem] md:flex  mt-[6rem]  w-[85%] justify-between  ">
           <div className="  w-[150px]  ">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -238,24 +238,24 @@ function ChooseUs() {
         </div>
         <div className="md:ml-[30px] 1halfxl:ml-[45px] md:mr-[30px] 1halfxl:w-[95%] 820xxl:w-[80%] 820xxl:ml-[170px]  md:mt-[8rem]  3xxl:ml-[90px] 3xxl:mt-[3rem] ">
           <div className="md:flex md:ml-[7.5rem] 1halfxl:mb-[40px] 1halfxl:flex  820xxl:grid 1halfxl:ml-[90px]   820xxl:ml-[10px] 6xl:ml-[165px] 3xl:ml-[140px] xl:w-[83%] 2xl:w-[85%] 5xl:w-[85%] 5xl:ml-[200px] md:mb-[26px] 3xxl:w-[85%] md:w-[80%] 4xl:w-[83%]   items-center justify-between 3xxl:grid">
-            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px] ">
+            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[510px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px] ">
               DevOps Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[510px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Frontend Software Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[510px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Backend Software Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[300px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[510px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Data Architects
             </h3>
           </div>
           <div className="md:flex 6xl:ml-[80px] 1halfxl:flex 1halfxl:ml-[40px]  820xxl:mt-[-30px] 820xxl:ml-[10px]  820xxl:grid 4xl:w-[92%] xl:w-[92%] 2xl:w-[92%] md:ml-[4rem] md:mb-[26px] 5xl:w-[95%] 3xxl:w-[85%] md:w-[90%] job-type  items-center justify-between 3xxl:grid">
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 1xl:w-[224px]   3xxl:w-[300px] 6xl:w-[360px] ">Data Engineers/Analysts</h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px]">Software Testers</h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px]">Cloud Architects</h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px] ">Cloud Engineers</h3>
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px]  1xl:w-[224px]   3xxl:w-[300px] 6xl:w-[360px] ">Data Engineers/Analysts</h3>
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px]  1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px]">Software Testers</h3>
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px]  1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px]">Cloud Architects</h3>
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px]  1xl:w-[224px]   3xxl:w-[300px]  6xl:w-[360px] ">Cloud Engineers</h3>
           </div>
           <div className="md:flex  w-[100%] job3-type 1halfxl:flex 1halfxl:ml-[2px] 820xxl:mt-[-10px] 820xxl:grid items-center justify-between">
             <h3 className=" 4xl:whitespace-nowrap 1halfxl:pt-[2px] md:w-[380px] 5xl:w-[300px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 820xxl:pt-[10px] 1xl:w-[320px] 2xl:pt-[6px] 1xl:pb-[3px] 3xl:w-[400px] 3xl:pt-[6px] md:pt-[2px] 6xl:w-[400px] 3xxl:w-[300px] ">

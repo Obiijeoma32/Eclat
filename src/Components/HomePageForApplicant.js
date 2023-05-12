@@ -131,7 +131,7 @@ function HomePageForApplicant() {
         <div className=" ml-[80px] 820xxl:ml-[10px] 820xxl:pl-[5px] flex  pt-[101px]  ">
           <ApplicantProfile />
 
-          <div className="flex ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
+          <div className="flex 1halfxl:flex 1halfxl:ml-[14rem] ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
             <div className="w-[600px] mr-[50px] 5xl:w-[1700px] 4xl:w-[950px]">
               <div className="flex items-center justify-between">
                 <img className=" rounded-[50%] w-[68px] h-[68px] " src={seun} alt="persona" />

@@ -6,7 +6,7 @@ function EnterpriseDashboard() {
   return (
     <>
       <Heading />
-      <div className="md:flex hidden h-[550px] 1xl:h-[700px] 1xl:w-[89%] 1xl:items-center   md:mt-[12%] 5xl:items-center  justify-between ml-[5%] w-[90%]  ">
+      <div className="md:flex 820xxl:mt-[71px] hidden h-[550px] 1xl:h-[700px] 1xl:w-[89%] 1xl:items-center   md:mt-[12%] 5xl:items-center  justify-between ml-[5%] w-[90%]  ">
         <div>
           <h1 className="  text-[40px] 2xl:w-[700px] font-[700px] 1xl:w-[500px] 4xl:w-[850px] 5xl:w-[1100px] md:w-[600px] text-left text-[#000000]">
             Our mission is to support you in forming an outstanding team that is globally recognized for its excellence.

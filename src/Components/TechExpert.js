@@ -14,14 +14,14 @@ function TechExpert() {
     <>
       <div>
         <Heading />
-        <div className="md:flex 820xxl:mt-[9rem] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:ml-[5%]">
-          <div className=" w-[85%]  1xl:w-[50%] ">
+        <div className="md:flex 820xxl:mt-[9rem] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:mt-[130px] 5xl:ml-[5%]">
+          <div className=" w-[85%]   1xl:w-[50%] ">
             <h1 className=" text-left 820xxl:w-[650px] 820xxl:h-[200px] 4xl:w-[1100px] 1xl:w-[500px]  md:w-[650px] 5xl:w-[1100px] text-[36px] font-[600] text-[#000] opacity-80 ">
               Discover fulfilling employment opportunities with reputable organizations.
             </h1>
             <img className="md:w-[500px] hidden 1halfxl:hidden  820xxl:w-[650px] 820xxl:h-[500px] 820xxl:block 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
 
-            <p className="tracking-[1px] mt-3 820xxl:w-[650px] 4xl:w-[900px] 1xl:w-[450px] md:w-[500px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            <p className="tracking-[1px] mt-3 2xl:mt-[-60px] 820xxl:w-[650px] 4xl:w-[900px] 1xl:w-[450px] md:w-[500px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
               Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
             </p>
             <div className=" mt-[30px] ">

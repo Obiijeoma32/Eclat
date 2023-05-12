@@ -454,7 +454,7 @@ function FooterBusiness() {
                   </svg>
                 </div>
               </Link>
-              <p className="w-[480px] ml-[15px] 5xl:w-[550px] 5xl:h-[200px] text-center text-[14px] text-[#8C8C8C] ">
+              <p className="w-[480px] ml-[15px] 5xl:w-[550px] 5xl:h-[200px] 1halfxl:w-[420px] text-center text-[14px] text-[#8C8C8C] ">
                 We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
                 collective impact transcends individual contributions!...
               </p>

@@ -151,7 +151,7 @@ function FooterEnterprise() {
                 </svg>{" "}
               </Link>
               <div className="ml-[2rem]">
-                <p className="w-[420px] 5xl:w-[550px] 5xl:h-[200px] 820xxl:w-[300px] text-[16px] text-[#8C8C8C] ">
+                <p className="w-[420px] 5xl:w-[550px] 5xl:h-[200px] 1halfxl:w-[420px] 820xxl:w-[300px] text-[16px] text-[#8C8C8C] ">
                   We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
                   collective impact transcends individual contributions!...
                 </p>

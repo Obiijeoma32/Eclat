@@ -69,44 +69,54 @@ function BasicInfo() {
   return (
     <>
       <Heading />
-      <div className=" flex 820xxl:mt-[8%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
+      <div className=" 3xxl:mt-[10%] flex 820xxl:mt-[8%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
         <SideBar />
-        <div className=" mt-[11%] 820xxl:ml-[34%] ml-[25rem] 1xl:ml-[22rem]  ">
-          <h1 className=" text-[#38761D]  820xxl:w-[400px] text-[30px] font-[600] opacity-80 ">Confirm the resource</h1>
-          <p className=" p text-[#B6D7A8] 1halfxl:block 820xxl:hidden text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]    4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
-          <p className=" 820xxl:block 1halfxl:hidden text-[#B6D7A8] hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] text-[18px] font-[300] mt-[14px] ">Please fill in the details below so we can get in touch with you</p>
+        <div className=" mt-[11%] 3xxl:ml-[1rem] 820xxl:ml-[34%] ml-[25rem] 1xl:ml-[22rem]  ">
+          <h1 className=" 3xxl:w-[300px] text-[#38761D]  820xxl:w-[400px] text-[30px] font-[600] opacity-80 ">Confirm the resource</h1>
+          <p className=" 3xxl:hidden p text-[#B6D7A8] 1halfxl:block 820xxl:hidden text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]    4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
+          <p className="3xxl:w-[300px] 820xxl:block 1halfxl:hidden text-[#B6D7A8] hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] text-[18px] font-[300] mt-[14px] ">Please fill in the details below so we can get in touch with you</p>
           <form className="mt-7" action="">
             <label className=" text-[#38761D] text-[14px] font-[400] opacity-80 " htmlFor="name">
               What role would you like to hire ?
             </label>
             <br />
-            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="w-[640px] 1halfxl:w-[640px]   mt-2 text-[#38761D]  outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={jobRole} />
+            <Select
+              placeholder="Select the role you would like to hire"
+              styles={customStyles}
+              className="w-[640px] 3xxl:w-[300px] 1halfxl:w-[640px]   mt-2 text-[#38761D]  outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              options={jobRole}
+            />
             <br />
 
             <label className=" text-[#38761D] text-[14px] font-[400] opacity-80 " htmlFor="address">
               What skill are you looking out for ?
             </label>
             <br />
-            <Select placeholder="Select the skills required" styles={customStyles} className=":w-[640px]  1halfxl:w-[640px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={options} />
+            <Select placeholder="Select the skills required" styles={customStyles} className=":w-[640px] 3xxl:w-[300px]  1halfxl:w-[640px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={options} />
             <br />
 
             <label className=" text-[#38761D] text-[14px] font-[400] opacity-80 " htmlFor="text">
               What job type ?
             </label>
             <br />
-            <Select placeholder="Select the job type" styles={customStyles} className="w-[640px] 1halfxl:w-[640px]   mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={jobType} />
+            <Select placeholder="Select the job type" styles={customStyles} className="w-[640px] 1halfxl:w-[640px] 3xxl:w-[300px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={jobType} />
             <br />
 
             <label className=" text-[#38761D] text-[14px] font-[400] opacity-80 " htmlFor="text">
               What level of experience are you looking for ?
             </label>
             <br />
-            <Select placeholder="Select the experience level you need" styles={customStyles} className="w-[640px]  1halfxl:w-[640px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={years} />
+            <Select
+              placeholder="Select the experience level you need"
+              styles={customStyles}
+              className="w-[640px]  1halfxl:w-[640px]  mt-2 text-[#38761D] 3xxl:w-[300px]    outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              options={years}
+            />
           </form>
 
-          <div className=" flex justify-end w-[640px] mb-6 1halfxl:w-[640px] mt-[3rem] 5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]">
+          <div className=" flex justify-end w-[640px] 3xxl:w-[300px] mb-6 1halfxl:w-[640px] mt-[3rem] 5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]">
             <Link className="" to="">
-              <h1 className=" w-[157px] h-[45px] bg-[#38761D] pt-3 opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">SUBMIT</h1>
+              <h1 className=" w-[157px]  h-[45px] bg-[#38761D] pt-3 opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">SUBMIT</h1>
             </Link>
           </div>
         </div>

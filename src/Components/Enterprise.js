@@ -56,7 +56,7 @@ function Enterprise() {
       <div className="md:flex hidden ml-[5rem] 2xl:w-[89%] w-[85%] 1xl:w-[89%]  mt-[6rem] h-[600px] items-center justify-between 5xl:ml-[5%]">
         <div className=" w-[80%] 1xl:w-[50%] ">
           <h1 className=" text-left 4xl:w-[1100px] 2xl:w-[700px] 1xl:w-[400px]  md:w-[650px] 5xl:w-[1100px] text-[36px] font-[600] text-[#000] opacity-80 ">Discover fulfilling employment opportunities with reputable organizations.</h1>
-          <p className="tracking-[1px] mt-3 4xl:w-[900px] md:w-[500px] 2xl:w-[650px] 1xl:w-[400px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
+          <p className="tracking-[1px] mt-3 4xl:w-[900px]  5xl:h-[200px] md:w-[500px] 2xl:w-[650px] 1xl:w-[400px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
             Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
           </p>
           <div className=" mt-[30px] ">
