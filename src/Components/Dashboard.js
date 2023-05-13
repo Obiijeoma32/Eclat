@@ -46,14 +46,14 @@ function Dashboard() {
               Join Tech Eclat to assemble a top-tier team of developers, engineers, product designers, and exceptional remote technology experts..
             </p>
             <div className="flex w-[90%] 820xxl:w-[500px] 820xxl:ml-[50px] 820xxl:mt-[40px] ml-[25px] justify-between mt-[30px] ">
-              <Link className="w-[170px] 820xxl:w-[230px] 820xxl:h-[50px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/eclatjobs">
+              <Link onClick={() => window.scrollTo(0, 0)} className="w-[170px] 820xxl:w-[230px] 820xxl:h-[50px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/eclatjobs">
                 Find Talent
                 <svg className="mt-1" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.5 5H12M12 5L7.5 1M12 5L7.5 9.5" stroke="currentColor" strokeWidth="2" />
                 </svg>
               </Link>
 
-              <Link className="w-[180px] 820xxl:w-[230px] 820xxl:h-[50px] h-[45px] rounded-[5px] text-[16px] bg-[#fff] flex items-center justify-evenly font-[600] text-[#38761D]" to="/jobs">
+              <Link onClick={() => window.scrollTo(0, 0)} className="w-[180px] 820xxl:w-[230px] 820xxl:h-[50px] h-[45px] rounded-[5px] text-[16px] bg-[#fff] flex items-center justify-evenly font-[600] text-[#38761D]" to="/jobs">
                 Find Jobs
                 <svg className="mt-1" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.5 5H12M12 5L7.5 1M12 5L7.5 9.5" stroke="currentColor" strokeWidth="2" />

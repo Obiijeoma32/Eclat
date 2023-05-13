@@ -22,7 +22,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] w-[100%] 820xxl:h-[500px] 5xl:w-[100%] 4xl:w-[100%] h-[430px] mt-[8rem] ">
+        <div className=" bg-[#27282B] w-[100%] 820xxl:h-[520px] 5xl:w-[100%] 4xl:w-[100%] h-[430px] mt-[8rem] ">
           <div className="flex 1xl:w-[95%] 820xxl:w-[98%]  w-[85%] justify-between">
             <div>
               <Link onClick={handleButtonClick} to="/dashboard">

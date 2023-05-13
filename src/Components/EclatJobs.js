@@ -7,9 +7,9 @@ function Eclatjobs() {
   return (
     <>
       <Heading />
-      <div className=" 3xxl:mt-[8%] flex 820xxl:mt-[8%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
+      <div className=" 3xxl:mt-[8%] 5xl:mt-[-4%] flex 820xxl:mt-[2%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
         <SideBar />
-        <div className=" mt-[11%] 3xxl:mt-[15%] 820xxl:ml-[30%] 3xxl:ml-[1rem]  ml-[25rem] 1xl:ml-[22rem]  ">
+        <div className=" mt-[11%] 5xl:mt-[11%] 3xxl:mt-[15%] 820xxl:ml-[30%] 3xxl:ml-[1rem]  ml-[25rem] 1xl:ml-[22rem]  ">
           <h1 className=" 3xxl:w-[300px] text-[#38761D] 820xxl:w-[400px] 1halfxl:w-[640px] text-[30px] font-[600] opacity-80 ">Let's start with your information</h1>
           <p className=" p 3xxl:hidden text-[#B6D7A8] 820xxl:hidden 1halfxl:block text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]  4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
           <p className=" 3xxl:block 3xxl:w-[300px] 820xxl:block text-[#B6D7A8] 1halfxl:hidden hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] text-[18px] font-[300] mt-[14px] ">

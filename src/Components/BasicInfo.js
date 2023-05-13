@@ -69,9 +69,9 @@ function BasicInfo() {
   return (
     <>
       <Heading />
-      <div className=" 3xxl:mt-[10%] flex 820xxl:mt-[8%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%] ">
+      <div className=" 3xxl:mt-[8%] 5xl:mt-[-4%] flex 820xxl:mt-[2%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[11%] 3xxl:ml-[1rem] 820xxl:ml-[34%] ml-[25rem] 1xl:ml-[22rem]  ">
+        <div className=" mt-[11%] 5xl:mt-[11%] 3xxl:mt-[15%] 820xxl:ml-[30%] 3xxl:ml-[1rem]  ml-[25rem] 1xl:ml-[22rem]  ">
           <h1 className=" 3xxl:w-[300px] text-[#38761D]  820xxl:w-[400px] text-[30px] font-[600] opacity-80 ">Confirm the resource</h1>
           <p className=" 3xxl:hidden p text-[#B6D7A8] 1halfxl:block 820xxl:hidden text-[18px] font-[300] mt-[14px] 5xl:w-[1220px]    4xl:w-[920px]">Please fill in the details below so we can get in touch with you</p>
           <p className="3xxl:w-[300px] 820xxl:block 1halfxl:hidden text-[#B6D7A8] hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] text-[18px] font-[300] mt-[14px] ">Please fill in the details below so we can get in touch with you</p>

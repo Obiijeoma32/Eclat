@@ -5,7 +5,7 @@ function Steps() {
     <>
       <div className=" md:block hidden ml-[6rem]   820xxl:w-[80%] 2xl:w-[85%] 2xl:ml-[120px] mt-[7rem] 1xl:w-[95%] 1xl:ml-[40px] w-[85%] 5xl:w-[90%] 5xl:ml-[5%]">
         <h1 className=" text-center  text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
-        <div className=" 1halfxl:flex 1halfxl:ml-[50px] 1halfxl:w-[90%] 1halfxl:h-[500px] flex justify-between 820xxl:ml-[160px] 820xxl:h-[1500px] 820xxl:grid items-center">
+        <div className=" 1halfxl:flex 1halfxl:ml-[50px] 5xl:w-[95%] 1halfxl:w-[90%] 4xl:w-[1600px] 1halfxl:h-[500px] flex justify-between 820xxl:ml-[160px] 820xxl:h-[1500px] 820xxl:grid items-center">
           <div className=" bg-white 5xl:flex 5xl:justify-center  rounded-[10px] shadow-lg md:w-[320px] 5xl:w-[500px]   h-[450px] ">
             <div>
               <div className="md:ml-[90px] 5xl:ml-[120px]  mb-[30px] mt-7 ">

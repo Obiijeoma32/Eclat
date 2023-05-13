@@ -40,11 +40,11 @@ function ResourceDetails2() {
   return (
     <>
       <Heading />
-      <div className=" h-[200vh] flex 3xxl:mt-[10%] 820xxl:mt-[0px] 5xl:ml-[5%]">
+      <div className=" h-[200vh] flex 5xl:mt-[-5%] 3xxl:mt-[10%] 820xxl:mt-[0px] 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[12%] 820xxl:ml-[16rem] 3xxl:ml-[1rem] 1xl:ml-[22rem] ml-[25rem]">
+        <div className=" mt-[12%] 4xl:ml-[24rem] 820xxl:ml-[16rem] 5xl:ml-[25rem]  3xxl:ml-[1rem] 1xl:ml-[22rem] ml-[25rem]">
           <h1 className=" 3xxl:w-[300px] 820xxl:w-[471px] text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
-          <p className=" 3xxl:w-[300px] 820xxl:w-[700px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
+          <p className=" 3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
 
           <form className="mt-7" action="">
             <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
@@ -96,15 +96,15 @@ function ResourceDetails2() {
               Period of employment ?
             </label>
             <br />
-            <div className=" flex  justify-between 820xxl:w-[471px] 3xxl:w-[300px] w-[471px]">
+            <div className=" flex 5xl:w-[900px] 4xl:w-[900px]  justify-between 820xxl:w-[471px] 3xxl:w-[300px] w-[471px]">
               <input
-                className="text-[14px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                className="text-[14px] 5xl:w-[430px] 4xl:w-[430px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                 placeholder="Starting year"
                 type="number"
               />
 
               <input
-                className="text-[14px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px]  border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                className="text-[14px] 4xl:w-[430px] 5xl:w-[430px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px]  border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                 placeholder="End year"
                 type="number"
               />

@@ -73,7 +73,7 @@ function Business() {
               </svg>
             </div>
           </div>
-          <p className="w-[600px] 820xxl:w-[650px] 820xxl:ml-[50px]  1halfxl:ml-[95px] 1halfxl:w-[600px] 2xl:w-[700px] 2xl:ml-[130px] 3xl:w-[700px] 3xl:ml-[190px] 3xl:mt-[-15px] tracking-[1px] 6xl:ml-[230px]  mt-[20px] text-[17px] md:ml-[5rem] text-center font-[400] text-[#001F0E] 5xl:w-[700px] 5xl:ml-[25%] 4xl:w-[630px] 4xl:ml-[26%]  ">
+          <p className="w-[600px] 820xxl:w-[650px] 820xxl:ml-[50px]  1halfxl:ml-[95px] 1halfxl:w-[600px] 2xl:w-[700px] 2xl:ml-[130px] 3xl:w-[700px] 3xl:ml-[190px] 3xl:mt-[-15px] tracking-[1px] 6xl:ml-[230px]  mt-[20px] text-[17px] md:ml-[5rem] text-center font-[400] text-[#001F0E] 5xl:w-[700px] 5xl:ml-[25%] 4xl:w-[650px] 4xl:ml-[22.5%]  ">
             At times, you may prefer to source talent independently, while on other occasions, you may require assistance. We offer you the flexibility to choose between both options, giving you peace of mind.
           </p>
         </div>

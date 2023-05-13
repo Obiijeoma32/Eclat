@@ -82,11 +82,11 @@ function ResourceDetails() {
   return (
     <>
       <Heading />
-      <div className=" h-[200vh] 820xxl:mt-[0] 3xxl:mt-[10%] flex 5xl:ml-[5%]">
+      <div className=" h-[200vh] 5xl:mt-[-5%] 820xxl:mt-[0] 3xxl:mt-[10%] flex 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[12%] 3xxl:ml-[1rem] 820xxl:ml-[12rem] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
+        <div className=" mt-[12%] 4xl:ml-[24rem] 3xxl:ml-[1rem] 5xl:ml-[25rem] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
           <h1 className=" 3xxl:w-[350px] 820xxl:w-[471px] text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
-          <p className="3xxl:w-[300px] 820xxl:w-[600px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
+          <p className="3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
           <div className=" mt-[40.5px] 820xxl:w-[550px] 3xxl:w-[300px] w-[550px] items-center text-center flex justify-center">
             <div className=" ">
               <svg className=" ml-[40px]" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
