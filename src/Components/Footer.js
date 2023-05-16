@@ -9,10 +9,10 @@ function Footer() {
   };
   return (
     <>
-      <div className="md:block hidden mt-[9rem]">
+      <div className="md:block 3xxl:hidden hidden mt-[9rem]">
         <div className="footer-container-content">
           <div className="6xl:ml-[23%] 1halfxl:ml-[18%]  820xxl:w-[600px] 820xxl:ml-[110px] 5xl:w-[1200px] 2xl:w-[950px] 1xl:w-[800px] 1xl:ml-[140px] 2xl:ml-[17%] 3xl:ml-[23%] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[25%] 5xl:ml-[28%] ">
-            <div className="w-[500px] 820xxl:ml-[10%]  ml-[25%] 5xl:ml-[31%] 2xl:ml-[25%] 1xl:ml-[20%] pt-[5%]">
+            <div className="w-[500px] 820xxl:ml-[10%]  ml-[25%] 5xl:ml-[31%] mb-[40px] 2xl:ml-[25%] 1xl:ml-[20%] pt-[5%]">
               <h1 className="  font-[700] text-[48px] 820xxl:text-[40px] 820xxl:mt-[40px] text-[#fff] ">Get started today on TechEclat now. </h1>
               <div className="ml-[150px] mt-4">
                 <Link onClick={() => window.scrollTo(0, 0)} to="/eclatjobs">
@@ -311,24 +311,24 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="md:hidden block w-[100%] mt-[5rem]">
-        <div className="w-[450px] 4xxl:ml-[40px] 3xxl:ml-[30px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
-          <div className="w-[400px]  pt-[10%]">
-            <h1 className=" ml-[15%] font-[700] text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
+      <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
+        <div className="w-[450px] 3xxl:w-[290px] 3xxl:h-[200px] 4xxl:ml-[40px] 3xxl:ml-[30px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
+          <div className="w-[400px] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
+            <h1 className=" ml-[15%] 3xxl:text-[20px] font-[700] text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
             <div className=" mt-4">
               <Link className="w-[95%] " to="/eclatjobs">
-                <div className="ml-[30%]">
-                  <h1 className="w-[200px] pt-4 h-[60px] rounded-[10px] bg-white text-center text-[#38761D] ">Get Started</h1>
+                <div className="ml-[30%] 3xxl:ml-[35px]">
+                  <h1 className="w-[200px] 3xxl:w-[180px] pt-4 h-[60px] rounded-[10px] bg-white text-center text-[#38761D] ">Get Started</h1>
                 </div>
               </Link>
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] 4xxl:w-[125%] 3xxl:w-[140%] pt-[40px] h-[710px] mt-[8rem] ">
-          <div className="">
-            <div className=" items-center  ">
-              <Link onClick={() => window.scrollTo(0, 0)} className="w-[70%]" to="/dashboard">
-                <div className=" ml-[85px]  ">
+        <div className=" bg-[#27282B] 4xxl:w-[125%] 3xxl:w-[100%] 3xxl:h-[250vh] pt-[40px] h-[710px] mt-[8rem] ">
+          <div className="3xxl:w-[20%]">
+            <div className=" 3xxl:w-[3%] items-center  ">
+              <Link onClick={() => window.scrollTo(0, 0)} className="w-[70%] 3xxl:w-[50%]" to="/dashboard">
+                <div className=" ml-[85px] 3xxl:ml-[3px]  ">
                   <svg width="300" height="101" viewBox="0 0 300 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_206_2968)">
                       <path
@@ -455,11 +455,11 @@ function Footer() {
                   </svg>
                 </div>
               </Link>
-              <p className="w-[480px] ml-[15px] text-center text-[14px] text-[#8C8C8C] ">
+              <p className="w-[480px] 3xxl:w-[20%] ml-[15px] text-center text-[14px] text-[#8C8C8C] ">
                 We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
                 collective impact transcends individual contributions!...
               </p>
-              <div className=" ml-[100px]">
+              <div className=" ml-[100px] 3xxl:ml-[0px]">
                 <div className="flex justify-between w-[300px] mt-3">
                   <a href="https://www.facebook.com/profile.php?id=100091316116309&sk=about">
                     <div className=" w-[48px] bg-[#343538] flex items-center justify-evenly rounded-[50%] h-[48px]">
@@ -566,7 +566,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex w-[450px] text-center justify-evenly mt-[50px] ml-[40px] ">
+            <div className="flex w-[450px] 3xxl:w-[290px] 3xxl:ml-[0px] text-center justify-evenly mt-[50px] ml-[40px] ">
               <div>
                 <h2 className="text-[#fff] mb-3 font-[400] text-[18px] ">About</h2>
 
@@ -606,7 +606,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="text-[#8C8C8C] font-[400] text-[18px] ml-[50px] mt-[3rem] ">
+          <div className="text-[#8C8C8C] font-[400] text-[18px] ml-[50px] mt-[3rem] 3xxl:text-center 3xxl:w-[250px] 3xxl:ml-[0px] ">
             © 2000-{year}, All Rights Reserved{" "}
             <a className=" hover:underline hover:text-[#fff]" href="https://www.nubeero.com/">
               Nubeero

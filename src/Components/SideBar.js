@@ -93,21 +93,39 @@ function SideBar({ children }) {
           </NavLink>
         ))}
       </div>
-      <div className=" 3xxl:block hidden 820xxl:hidden w-[80px] pl-[20px] mt-[15%]">
-        <div>
-          <svg onClick={handleSideBar} width="35" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.5 27.5H42.5M2.5 15H42.5M2.5 2.5H42.5" stroke="#38761D" strokeWidth="3.75" strokeLinecap="round" strokeLinejoin="round" />
+      <div className=" 3xxl:block hidden 820xxl:hidden w-[40px] pl-[10px] mt-[15%]">
+        <div className="fixed w-[40px]" onClick={handleSideBar}>
+          <svg width="30" height="60" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M30 33.0398C34.1421 33.0398 37.5 29.6819 37.5 25.5398C37.5 21.3977 34.1421 18.0398 30 18.0398C25.8579 18.0398 22.5 21.3977 22.5 25.5398C22.5 29.6819 25.8579 33.0398 30 33.0398Z"
+              stroke="#38761d"
+              strokeWidth="1.4"
+              strokewiterlimit="10"
+            />
+            <path
+              d="M18.6309 39.6012C19.7835 37.6062 21.4408 35.9495 23.4363 34.7978C25.4319 33.6461 27.6954 33.0398 29.9995 33.0398C32.3035 33.0398 34.567 33.6462 36.5626 34.798C38.5581 35.9497 40.2154 37.6064 41.3679 39.6014"
+              stroke="#38761d"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg width="30" height="60" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.125 28.4148H35.625" stroke="#38761d" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M28.125 32.1648H35.625" stroke="#38761d" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="M39.375 19.9773H20.625C20.1072 19.9773 19.6875 20.397 19.6875 20.9148V39.6648C19.6875 40.1826 20.1072 40.6023 20.625 40.6023H39.375C39.8928 40.6023 40.3125 40.1826 40.3125 39.6648V20.9148C40.3125 20.397 39.8928 19.9773 39.375 19.9773Z"
+              stroke="#38761d"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path d="M24.375 19.9773V40.6023" stroke="#38761d" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         {side && (
           <div className=" w-[414px] fixed z-40  top-0 left-0 h-[150vh] bg-[#000] bg-opacity-40">
-            <div className=" w-[300px] pt-[130px] pl-[20px] h-[150vh] bg-[#fff]">
-              <div className=" flex w-[240px] h-[80px] justify-end">
-                <svg onClick={closeSideBar} width="24" height="24" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 2L35.75 35.75" stroke="black" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M2 35.75L35.75 2" stroke="black" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
+            <div className=" w-[300px] pt-[100px] pl-[20px] h-[150vh] bg-[#fafafa]">
               {secondMenu.map((item, index) => (
                 <NavLink
                   onClick={closeSideBar}
@@ -115,7 +133,7 @@ function SideBar({ children }) {
                   to={item.path}
                   key={index}
                 >
-                  <div className=" items-center mb-[40px]   justify-between flex">
+                  <div className=" items-center mb-[20px]   justify-between flex">
                     <div className=" w-[40px]   ">{item.icon}</div>
 
                     <h2 className=" ml-[30px] whitespace-nowrap ">{item.name}</h2>

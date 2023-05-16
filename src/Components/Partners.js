@@ -66,7 +66,7 @@ function Partners() {
           />
         </svg>
       </div>
-      <div className="md:hidden 3xxl:w-[100%]   flex  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
+      <div className="md:hidden 3xxl:w-[280px] 3xxl:ml-[0px] 3xxl:flex 3xxl:justify-between   flex  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
         <svg width="60" height="19" viewBox="0 0 155 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_206_2310)">
             <path
