@@ -1,7 +1,7 @@
 function Partners() {
   return (
     <>
-      <div className="md:flex  hidden 820xxl:hidden w-[90%] justify-between items-center mt-[4rem] ml-[4.5rem]">
+      <div className="md:flex 3xxl:hidden  hidden 820xxl:hidden w-[90%] justify-between items-center mt-[4rem] ml-[4.5rem]">
         <svg width="155" height="39" viewBox="0 0 155 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_206_2310)">
             <path
@@ -66,8 +66,8 @@ function Partners() {
           />
         </svg>
       </div>
-      <div className="md:hidden 3xxl:w-[280px] 3xxl:ml-[0px] 3xxl:flex 3xxl:justify-between   flex  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
-        <svg width="60" height="19" viewBox="0 0 155 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="md:hidden 3xxl:mt-[1rem]  3xxl:w-[280px] 3xxl:ml-[-20px] 3xxl:flex 3xxl:justify-between   flex  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="60" height="19" viewBox="0 0 155 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_206_2310)">
             <path
               fillRule="evenodd"
@@ -82,7 +82,7 @@ function Partners() {
             </clipPath>
           </defs>
         </svg>
-        <svg width="40" height="32" viewBox="0 0 76 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="40" height="32" viewBox="0 0 76 52" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -90,7 +90,7 @@ function Partners() {
             fill="#77B900"
           />
         </svg>
-        <svg width="30" height="24" viewBox="0 0 65 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="30" height="24" viewBox="0 0 65 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -98,7 +98,7 @@ function Partners() {
             fill="#EB1C24"
           />
         </svg>
-        <svg width="55" height="26" viewBox="0 0 92 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="55" height="26" viewBox="0 0 92 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -106,7 +106,7 @@ function Partners() {
             fill="#085FF7"
           />
         </svg>
-        <svg width="20" height="33" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="20" height="33" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -114,7 +114,7 @@ function Partners() {
             fill="#E50913"
           />
         </svg>
-        <svg width="49" height="25" viewBox="0 0 89 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="49" height="25" viewBox="0 0 89 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -122,7 +122,7 @@ function Partners() {
             fill="#415FFF"
           />
         </svg>
-        <svg width="37" height="42" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" 3xxl:w-10px 3xxl:h-[11px]" width="37" height="42" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -131,7 +131,7 @@ function Partners() {
           />
         </svg>
       </div>
-      <div className=" 820xxl:ml-[20px] 820xxl:flex hidden 820xxl:w-[90%]  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
+      <div className=" 820xxl:ml-[20px] 3xxl:hidden 820xxl:flex hidden 820xxl:w-[90%]  w-[380px] justify-between items-center mt-[2.5rem]  pl-[2rem]">
         <svg width="80" height="19" viewBox="0 0 155 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_206_2310)">
             <path

@@ -16,7 +16,7 @@ function Heading() {
   return (
     <>
       <div>
-        <div className="  3xxl:max-w-[90%] 3xxl:w-[85%] 3xxl:fixed   flex fixed heading-container h-[90px] xl:w-[100%] md:pl-[30px] md:pr-[25px] pt-[15px] 4xxl:w-[100%] items-center justify-between">
+        <div className="   3xxl:w-[100%] 3xxl:h-[70px] 3xxl:pl-[20px] 3xxl:pr-[20px] 3xxl:fixed   flex fixed heading-container h-[90px] xl:w-[100%] md:pl-[30px] md:pr-[25px] pt-[15px] 4xxl:w-[100%] items-center justify-between">
           <div className="flex w-[10%]  mb-[15px] items-center justify-between ">
             <Link onClick={handleButtonClick} to="/dashboard">
               <svg className=" 3xxl:w-[120px] mb-2" width="190" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
