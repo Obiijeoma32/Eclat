@@ -2,7 +2,7 @@ function ChooseUsBusiness() {
   return (
     <>
       <div className=" ">
-        <div className="md:ml-[23rem] 3xxl:w-[80%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[0px] 3xxl:ml-[-20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
+        <div className="md:ml-[23rem] 3xxl:w-[80%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[0px] 3xxl:ml-[5%] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
           <div className="md:flex     3xxl:grid md:ml-[3.6rem]   5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[240px]  md:w-[600px] justify-between ">
             <div className=" md:hidden 3xxl:w-[250px] 3xxl:flex 3xxl:justify-end items-center   hidden">
               <svg className=" 3xxl:w-[70px] 3xxl:h-[70px] " width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ function ChooseUsBusiness() {
             collective impact transcends individual contributions!
           </p>
         </div>
-        <div className=" 3xxl:flex 3xxl:ml-[0%] 4xxl:ml-[5%] 4xxl:w-[390px] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
+        <div className=" 3xxl:flex 3xxl:ml-[10%] 4xxl:ml-[5%] 4xxl:w-[390px] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
           <div className=" 3xxl:w-[50px] grid justify-center items-center   ">
             <svg width="50" className="3xxl:w-[30px] 3xxl:ml-[8px] 3xxl:h-[30px]" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

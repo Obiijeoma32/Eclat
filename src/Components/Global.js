@@ -28,9 +28,9 @@ function Global() {
           </svg>
         </div>{" "}
       </div>
-      <div className="md:hidden 1halfxl:hidden 3xxl:ml-[0px] 3xxl:w-[80%] 820xxl:block grid mt-[4rem] w-[380px] ml-[80px]  ">
+      <div className="md:hidden 1halfxl:hidden 3xxl:ml-[50px] 3xxl:w-[80%] 820xxl:block grid mt-[4rem] w-[380px] ml-[80px]  ">
         <div>
-          <h1 className=" text-left 3xxl:w-[70%] 3xxl:text-[20px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">Our global technologists undergo rigorous technical evaluations to ensure their competence.</h1>
+          <h1 className=" text-left 3xxl:w-[80%] 3xxl:text-[20px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">Our global technologists undergo rigorous technical evaluations to ensure their competence.</h1>
           <ul className="tracking-[1px] 820xxl:hidden mt-3 3xxl:text-[10px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
             <li className="flex items-center 3xxl:w-[230px]  820xxl:w-[650px] 820xxl:h-[60px] mb-1 w-[320px] justify-between">&#x2022; Rapid and streamlined recruitment processes to identify the ideal developer.</li>
             <li className="flex items-center 3xxl:w-[230px] mb-1 w-[320px] 820xxl:w-[650px] 820xxl:h-[60px] justify-between">&#x2022; Hassle-free recruitment of global talent minus the human resources (HR) obstacles.</li>

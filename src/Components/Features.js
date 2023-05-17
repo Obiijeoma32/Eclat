@@ -189,12 +189,12 @@ function Features() {
         </div>
       </div>
       <div className="md:hidden 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
-        <div className=" text-center 820xxl:ml-[75px] 3xxl:ml-[0px] ml-[70px]">
-          <h4 className=" 820xxl:text-[18px] opacity-80 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" 820xxl:text-[36px] 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
-          <p className=" text-[16px] 3xxl:text-[10px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
+        <div className=" text-center 820xxl:ml-[75px] 3xxl:ml-[40px] ml-[70px]">
+          <h4 className=" 820xxl:text-[18px]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
+          <h2 className=" 820xxl:text-[36px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <p className=" text-[16px] 3xxl:text-[10px]  3xxl:ml-[35px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
-        <div className="grid mt-[6rem] ml-[80px] 3xxl:ml-[0px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+        <div className="grid mt-[6rem] ml-[80px] 3xxl:ml-[50px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
           <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,7 +301,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 3xxl:ml-[0px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 3xxl:ml-[50px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
           <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               {" "}

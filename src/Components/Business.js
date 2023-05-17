@@ -78,8 +78,8 @@ function Business() {
           </p>
         </div>
       </div>
-      <div className="md:hidden block mt-[9rem] 3xxl:w-[80%]  ">
-        <div className="w-[70%] mt-[40%] ">
+      <div className="md:hidden block mt-[9rem]  ">
+        <div className="w-[70%] 3xxl:w-[85%] 3xxl:ml-[3%]  mt-[40%] ">
           <div className="flex justify-between ml-[20px] items-center text-center ">
             <div>
               <svg className=" 3xxl:w-[30px]" width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,8 +112,8 @@ function Business() {
               </svg>
             </div>
 
-            <div className="w-[400px] 3xxl:w-[50%]">
-              <h1 className=" font-[500] text-[40px] 3xxl:text-[16px] 3xxl:w-[80%] w-[350px] text-[#001F0E] mt-[20px]">We offer flexible options</h1>
+            <div className="w-[400px] 3xxl:w-[70%]">
+              <h1 className=" font-[500] text-[40px] 3xxl:whitespace-nowrap 3xxl:text-[16px] 3xxl:w-[100%] w-[350px] text-[#001F0E] mt-[20px]">We offer flexible options</h1>
             </div>
             <div>
               <svg className=" 3xxl:w-[30px]" width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ function Business() {
               </svg>
             </div>
           </div>
-          <p className="w-[450px] 3xxl:text-[10px] 3xxl:w-[80%] tracking-[1px] mt-[20px] text-[17px] ml-[25px] text-center font-[400] text-[#001F0E]  ">
+          <p className="w-[450px] 3xxl:text-[10px] 3xxl:mt-[0px] 3xxl:w-[80%] 3xxl:ml-[15%] tracking-[1px] mt-[20px] text-[17px] ml-[25px] text-center font-[400] text-[#001F0E]  ">
             At times, you may prefer to source talent independently, while on other occasions, you may require assistance. We offer you the flexibility to choose between both options, giving you peace of mind.
           </p>
         </div>

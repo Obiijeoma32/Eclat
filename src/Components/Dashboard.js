@@ -36,7 +36,7 @@ function Dashboard() {
           </div>
           <img className=" xl:w-[400px] 1xl:w-[350px] 1xl:h-[350px]  xl:h-[450px] 5xl:h-[500px] 5xl:w-[500px] " src={dashimg} alt="Eclat" />
         </div>
-        <div className=" xl:hidden 3xxl:grid 3xxl:ml-[15%]  820xxl:w-[80%] 820xxl:ml-[110px]  820xxl:mt-[18%] lg:hidden 4xxl:grid 3xxl:mt-[0px] 3xxl:h-[570px]    3xxl:w-[85%] ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
+        <div className=" xl:hidden 3xxl:grid 3xxl:ml-[15%]  820xxl:w-[80%] 820xxl:ml-[110px]  820xxl:mt-[18%] lg:hidden 4xxl:grid 3xxl:mt-[50px] 3xxl:h-[570px]    3xxl:w-[85%] ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
           <div className=" 3xxl:mt-[3rem]  mt-[1rem] ">
             <div className="grid  justify-between 3xxl:ml-[0px] ml-[20px]">
               <h1 className=" text-left   3xxl:w-[80%] 3xxl:text-center 3xxl:text-[16px]   w-[380px] 820xxl:w-[600px] 820xxl:text-center 820xxl:h-[130px] text-[38px] font-[600] text-[#000] opacity-80 ">
