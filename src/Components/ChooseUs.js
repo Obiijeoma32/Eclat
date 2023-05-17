@@ -3,7 +3,7 @@ function ChooseUs() {
   return (
     <>
       <div className="  ">
-        <div className="md:ml-[23rem] 3xxl:w-[250px] 4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[-20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
+        <div className="md:ml-[23rem] 3xxl:w-[80%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
           <div className="md:flex     3xxl:grid md:ml-[3.6rem]   5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[240px]  md:w-[600px] justify-between ">
             <div className=" md:hidden 3xxl:w-[250px] 3xxl:flex 3xxl:justify-end items-center   hidden">
               <svg className=" 3xxl:w-[70px] 3xxl:h-[70px] " width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ function ChooseUs() {
             collective impact transcends individual contributions!
           </p>
         </div>
-        <div className=" 3xxl:flex 4xxl:ml-[5%] 4xxl:w-[390px] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
+        <div className=" 3xxl:flex 3xxl:ml-[10%] 4xxl:ml-[5%] 4xxl:w-[390px] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
           <div className=" 3xxl:w-[50px] grid justify-center items-center   ">
             <svg width="50" className="3xxl:w-[30px] 3xxl:ml-[8px] 3xxl:h-[30px]" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -340,7 +340,7 @@ function ChooseUs() {
             </div>
           </div>
         </div>
-        <div className="md:ml-[30px] 3xxl:ml-[20px] 4xxl:ml-[17%] 3xxl:grid 1halfxl:ml-[15px] md:mr-[30px] 1halfxl:w-[85%] 820xxl:w-[80%] 820xxl:ml-[170px]  md:mt-[8rem]   3xxl:w-[280px] 3xxl:mt-[3rem] ">
+        <div className="md:ml-[30px] 3xxl:ml-[15%] 4xxl:ml-[17%] 3xxl:grid 1halfxl:ml-[15px] md:mr-[30px] 1halfxl:w-[85%] 820xxl:w-[80%] 820xxl:ml-[170px]  md:mt-[8rem]   3xxl:w-[280px] 3xxl:mt-[3rem] ">
           <div className="md:flex md:ml-[7.5rem] 1halfxl:mb-[40px] 1halfxl:flex  820xxl:grid 1halfxl:ml-[90px]   820xxl:ml-[10px] 6xl:ml-[165px] 3xl:ml-[140px] xl:w-[83%] 2xl:w-[85%] 5xl:w-[85%] 5xl:ml-[200px] md:mb-[26px] 3xxl:w-[85%] md:w-[80%] 4xl:w-[83%]   items-center justify-between 3xxl:grid">
             <h3 className=" md:w-[240px] 4xl:w-[380px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[510px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px] ">
               DevOps Engineer

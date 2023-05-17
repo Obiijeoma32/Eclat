@@ -109,11 +109,11 @@ function Steps() {
           </div>
         </div>
       </div>
-      <div className=" md:hidden block  ml-[90px] mt-[5rem] w-[85%]">
-        <h1 className=" text-center  text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
-        <div className=" justify-evenly grid">
-          <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px]  h-[450px] ">
-            <div className="ml-[90px] mb-[30px] mt-7 ">
+      <div className=" md:hidden block 3xxl:ml-[30px]  ml-[90px] mt-[5rem] w-[85%]">
+        <h1 className=" text-center  3xxl:text-[20px] text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
+        <div className=" justify-evenly  grid">
+          <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] 3xxl:w-[270px]  h-[450px] ">
+            <div className="ml-[90px]  3xxl:ml-[50px] mb-[30px] mt-7 ">
               <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="75" cy="75" r="75" fill="#36CD77" fillOpacity="0.3" />
                 <rect x="33" y="45" width="85" height="60" rx="5" fill="#36CD77" />
@@ -134,12 +134,12 @@ function Steps() {
               </svg>
             </div>
             <div className="">
-              <h1 className="text-[18px] mb-[20px] text-center font-[600]  text-[#222222]">Showcase your expertise</h1>
-              <p className="font-[400] tracking-[0.7px] text-[#4f4f4f] text-center text-[14px]">Become a member of our proficient community by undertaking a brief assessment to exhibit your skills.</p>
+              <h1 className="text-[18px] mb-[20px] 3xxl:text-[16px] text-center font-[600]  text-[#222222]">Showcase your expertise</h1>
+              <p className="font-[400] 3xxl:ml-[25px] tracking-[0.7px]  3xxl:w-[80%] 3xxl:text-[10px] text-[#4f4f4f] text-center text-[14px]">Become a member of our proficient community by undertaking a brief assessment to exhibit your skills.</p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] h-[450px] ">
-            <div className="ml-[90px] mb-[30px] mt-7 ">
+          <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] 3xxl:w-[270px] h-[450px] ">
+            <div className="ml-[90px]  3xxl:ml-[50px] mb-[30px] mt-7 ">
               <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="75" cy="75" r="75" fill="#36CD77" fillOpacity="0.3" />
                 <rect x="33" y="45" width="85" height="60" rx="5" fill="#36CD77" />
@@ -172,14 +172,14 @@ function Steps() {
               </svg>
             </div>
             <div className="">
-              <h1 className="text-[18px] mb-[20px] text-center font-[600]  text-[#222222]">Tailored job matching</h1>
-              <p className="font-[400] tracking-[0.7px] text-[#4f4f4f] w-[280px] ml-5 text-center text-[14px]">
+              <h1 className="text-[18px] mb-[20px] 3xxl:text-[16px] text-center font-[600]  text-[#222222]">Tailored job matching</h1>
+              <p className="font-[400] tracking-[0.7px] 3xxl:w-[80%] 3xxl:text-[10px] text-[#4f4f4f] w-[280px] ml-5 text-center text-[14px]">
                 You have invested in developing your skills and knowledge. It is now our turn to help you secure your ideal job by refining your profile, providing career guidance, and connecting you with the most forward-thinking organizations .
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] shadow-lg w-[320px] h-[450px] ">
-            <div className="ml-[90px] mb-[30px] mt-7 ">
+          <div className=" bg-white rounded-[10px] shadow-lg w-[320px] 3xxl:w-[270px] h-[450px] ">
+            <div className="ml-[90px] 3xxl:ml-[50px] mb-[30px] mt-7 ">
               <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="75" cy="75" r="75" fill="#36CD77" fillOpacity="0.3" />
                 <rect x="33" y="45" width="85" height="60" rx="5" fill="#36CD77" />
@@ -201,8 +201,8 @@ function Steps() {
               </svg>
             </div>
             <div className="">
-              <h1 className="text-[18px] mb-[20px] text-center font-[600]  text-[#222222]">Realize your capabilities</h1>
-              <p className="font-[400] tracking-[0.7px] w-[280px] ml-6  text-[#4f4f4f] text-center text-[14px]">
+              <h1 className="text-[18px] 3xxl:text-[16px] mb-[20px] text-center font-[600]  text-[#222222]">Realize your capabilities</h1>
+              <p className="font-[400] tracking-[0.7px] 3xxl:w-[80%] 3xxl:text-[10px] w-[280px] ml-6  text-[#4f4f4f] text-center text-[14px]">
                 Upon securing your ideal position, Tech Eclat remains committed to fostering your development and aiding you in honing your skills to attain your objectives..
               </p>
             </div>

@@ -189,15 +189,15 @@ function Features() {
         </div>
       </div>
       <div className="md:hidden 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
-        <div className=" text-center 820xxl:ml-[75px]  ml-[70px]">
-          <h4 className=" text-[18px] opacity-80 text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" text-[36px] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
-          <p className=" text-[16px] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
+        <div className=" text-center 820xxl:ml-[75px] 3xxl:ml-[0px] ml-[70px]">
+          <h4 className=" 820xxl:text-[18px] opacity-80 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
+          <h2 className=" 820xxl:text-[36px] 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <p className=" text-[16px] 3xxl:text-[10px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
-        <div className="grid mt-[6rem] ml-[80px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="grid mt-[6rem] ml-[80px] 3xxl:ml-[0px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
+              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46876)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46876)" />
                 </g>
@@ -243,37 +243,37 @@ function Features() {
                 </defs>
               </svg>
               <div>
-                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
-                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
+                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                     We collaborate with you to gain a comprehensive understanding of your technical shortcomings, company culture, industry regulations, and strategic trajectory. You can promptly view a handpicked collection of technologist profiles
                     that satisfy your requirements.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+            <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                 We collaborate with you to gain a comprehensive understanding of your technical shortcomings, company culture, industry regulations, and strategic trajectory. You can promptly view a handpicked collection of technologist profiles that
                 satisfy your requirements.
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
+              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46889)">
                   <rect x="20" y="12" width="66" height="66" rx="24" fill="#36CD77" />
                 </g>
                 <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
                   d="M43.9787 28C41.7813 28 40 29.7813 40 31.9787V58.0213C40 60.2187 41.7813 62 43.9787 62H62.7872C64.9846 62 66.766 60.2187 66.766 58.0213V31.9787C66.766 29.7813 64.9846 28 62.7872 28H43.9787ZM46.8723 32.3404C45.474 32.3404 44.3404 33.474 44.3404 34.8723C44.3404 36.2707 45.474 37.4043 46.8723 37.4043C48.2707 37.4043 49.4043 36.2707 49.4043 34.8723C49.4043 33.474 48.2707 32.3404 46.8723 32.3404ZM44.3404 45C44.3404 43.6017 45.474 42.4681 46.8723 42.4681C48.2707 42.4681 49.4043 43.6017 49.4043 45C49.4043 46.3983 48.2707 47.5319 46.8723 47.5319C45.474 47.5319 44.3404 46.3983 44.3404 45ZM46.8723 52.5957C45.474 52.5957 44.3404 53.7293 44.3404 55.1277C44.3404 56.526 45.474 57.6596 46.8723 57.6596C48.2707 57.6596 49.4043 56.526 49.4043 55.1277C49.4043 53.7293 48.2707 52.5957 46.8723 52.5957ZM54.1064 33.7872C53.5071 33.7872 53.0213 34.2731 53.0213 34.8723C53.0213 35.4716 53.5071 35.9574 54.1064 35.9574H62.7872C63.3865 35.9574 63.8723 35.4716 63.8723 34.8723C63.8723 34.2731 63.3865 33.7872 62.7872 33.7872H54.1064ZM53.0213 45C53.0213 44.4007 53.5071 43.9149 54.1064 43.9149H62.7872C63.3865 43.9149 63.8723 44.4007 63.8723 45C63.8723 45.5993 63.3865 46.0851 62.7872 46.0851H54.1064C53.5071 46.0851 53.0213 45.5993 53.0213 45ZM54.1064 54.0426C53.5071 54.0426 53.0213 54.5284 53.0213 55.1277C53.0213 55.7269 53.5071 56.2128 54.1064 56.2128H62.7872C63.3865 56.2128 63.8723 55.7269 63.8723 55.1277C63.8723 54.5284 63.3865 54.0426 62.7872 54.0426H54.1064Z"
                   fill="white"
                 />
                 <defs>
                   <filter id="filter0_d_4273_46889" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46889" />
                     <feOffset dy="8" />
@@ -286,25 +286,26 @@ function Features() {
               </svg>
 
               <div>
-                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
-                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
+                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                     Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+            <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                 Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.
               </p>
             </div>
           </div>
         </div>
-        <div className="grid mt-[1rem] ml-[80px]  w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 3xxl:ml-[0px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
+              {" "}
+              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46912)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46912)" />
                 </g>
@@ -331,25 +332,24 @@ function Features() {
                   </linearGradient>
                 </defs>
               </svg>
-
               <div>
-                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skills</h1>
-                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skils</h1>
+                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                     Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+            <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                 Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px]    shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
+              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46899)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46899)" />
                 </g>
@@ -388,17 +388,17 @@ function Features() {
               </svg>
 
               <div>
-                <div className="w-[300px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
-                  <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                    We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
+                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
+                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.{" "}
                   </p>
                 </div>
               </div>
             </div>
-            <div className="w-[300px] 820xxl:hidden ml-[40px] text-center">
+            <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
+                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.{" "}
               </p>
             </div>
           </div>

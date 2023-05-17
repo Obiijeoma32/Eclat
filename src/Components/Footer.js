@@ -312,7 +312,7 @@ function Footer() {
         </div>
       </div>
       <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
-        <div className="w-[450px]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[20px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
+        <div className="w-[450px]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[60px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
           <div className="w-[400px] 4xxl:ml-[17%] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
             <h1 className=" ml-[15%] 3xxl:text-[14px] 3xxl:ml-[0px] font-[700] text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
             <div className=" mt-4">
@@ -325,7 +325,7 @@ function Footer() {
           </div>
         </div>
         <div className=" bg-[#27282B] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[120vh] 4xxl:h-[105vh] pt-[40px] h-[710px] mt-[8rem] ">
-          <div className="3xxl:w-[80%] 4xxl:ml-[15%] ">
+          <div className="3xxl:w-[80%] 3xxl:ml-[12%] 4xxl:ml-[15%] ">
             <div className=" 3xxl:w-[200px] items-center  ">
               <Link onClick={() => window.scrollTo(0, 0)} className="md:w-[70%] 3xxl:ml-[30px] " to="/dashboard">
                 <div className=" ml-[85px] 3xxl:w-[200px] 3xxl:ml-[3px]  ">
