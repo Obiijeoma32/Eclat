@@ -312,8 +312,8 @@ function Footer() {
         </div>
       </div>
       <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
-        <div className="w-[450px]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[40px] 3xxl:ml-[20px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
-          <div className="w-[400px] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
+        <div className="w-[450px]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[20px] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
+          <div className="w-[400px] 4xxl:ml-[17%] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
             <h1 className=" ml-[15%] 3xxl:text-[14px] 3xxl:ml-[0px] font-[700] text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
             <div className=" mt-4">
               <Link className="w-[95%] " to="/eclatjobs">
@@ -324,8 +324,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] 4xxl:w-[125%] 3xxl:w-[100%] 3xxl:h-[120vh] pt-[40px] h-[710px] mt-[8rem] ">
-          <div className="3xxl:w-[80%] ">
+        <div className=" bg-[#27282B] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[120vh] 4xxl:h-[105vh] pt-[40px] h-[710px] mt-[8rem] ">
+          <div className="3xxl:w-[80%] 4xxl:ml-[15%] ">
             <div className=" 3xxl:w-[200px] items-center  ">
               <Link onClick={() => window.scrollTo(0, 0)} className="md:w-[70%] 3xxl:ml-[30px] " to="/dashboard">
                 <div className=" ml-[85px] 3xxl:w-[200px] 3xxl:ml-[3px]  ">
@@ -566,7 +566,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex w-[450px] 3xxl:w-[250px] 3xxl:ml-[30px] text-center 3xxl:justify-between  justify-evenly mt-[50px] ml-[40px] ">
+            <div className="flex w-[450px]  3xxl:w-[250px] 3xxl:ml-[30px] text-center 3xxl:justify-between  justify-evenly mt-[50px] ml-[40px] ">
               <div>
                 <h2 className="text-[#fff] mb-3 font-[400] 3xxl:text-[16px] text-[18px] ">About</h2>
 
@@ -576,7 +576,7 @@ function Footer() {
                 <h4 className="text-[#8C8C8C] mb-1 font-[400] text-[16px] 3xxl:text-[10px] ">Jobs</h4>
                 <h4 className="text-[#8C8C8C] font-[400] text-[16px] 3xxl:text-[10px] ">In Press</h4>
               </div>
-              <div>
+              <div className=" ">
                 <h2 className="text-[#fff] mb-3 3xxl:text-[16px] font-[400] text-[18px] ">Support</h2>
                 <h4 className="text-[#8C8C8C] mb-1 font-[400] text-[16px] 3xxl:text-[10px] ">Contact us</h4>
                 <h4 className="text-[#8C8C8C] mb-1 font-[400] text-[16px] 3xxl:text-[10px] ">Online Chat</h4>
@@ -605,8 +605,14 @@ function Footer() {
                 <h4 className="text-[#8C8C8C] mb-1 font-[400] text-[16px] 3xxl:text-[10px] ">Returns</h4>
               </div>
             </div>
+            <div className="text-[#8C8C8C] font-[400] 820xxl:hidden 3xxl:text-[10px] text-[18px] ml-[50px] mt-[3rem] 3xxl:text-center 3xxl:w-[250px] 3xxl:ml-[20px] ">
+              © 2000-{year}, All Rights Reserved{" "}
+              <a className=" hover:underline hover:text-[#fff]" href="https://www.nubeero.com/">
+                Nubeero
+              </a>
+            </div>
           </div>
-          <div className="text-[#8C8C8C] font-[400] 3xxl:text-[10px] text-[18px] ml-[50px] mt-[3rem] 3xxl:text-center 3xxl:w-[250px] 3xxl:ml-[20px] ">
+          <div className="text-[#8C8C8C] font-[400] 3xxl:hidden 4xxl:hidden 3xxl:text-[10px] text-[18px] ml-[50px] mt-[3rem] 3xxl:text-center 3xxl:w-[250px] 3xxl:ml-[20px] ">
             © 2000-{year}, All Rights Reserved{" "}
             <a className=" hover:underline hover:text-[#fff]" href="https://www.nubeero.com/">
               Nubeero
