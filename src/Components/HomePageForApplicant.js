@@ -128,7 +128,7 @@ function HomePageForApplicant() {
             </svg>
           </div>
         </Link>
-        <div className=" ml-[80px] 820xxl:ml-[10px] 820xxl:pl-[5px] flex  pt-[101px]  ">
+        <div className=" ml-[80px] 4xl:ml-[80px]  820xxl:ml-[10px] 820xxl:pl-[5px] flex  pt-[101px]  ">
           <ApplicantProfile />
 
           <div className="flex 1halfxl:flex 1halfxl:ml-[14rem] ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">

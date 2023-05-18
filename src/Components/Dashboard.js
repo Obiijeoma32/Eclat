@@ -36,21 +36,21 @@ function Dashboard() {
           </div>
           <img className=" xl:w-[400px] 1xl:w-[350px] 1xl:h-[350px]  xl:h-[450px] 5xl:h-[500px] 5xl:w-[500px] " src={dashimg} alt="Eclat" />
         </div>
-        <div className=" xl:hidden 3xxl:grid 3xxl:ml-[15%]  820xxl:w-[80%] 820xxl:ml-[110px]  820xxl:mt-[18%] lg:hidden 4xxl:grid 3xxl:mt-[90px] 3xxl:h-[570px]    3xxl:w-[85%] ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
+        <div className=" xl:hidden 3xxl:grid 3xxl:ml-[15%] 5xxl:w-[85%] 5xxl:h-[700px] 5xxl:ml-[17%] 4xxl:ml-[20%] 820xxl:h-[900px]  820xxl:w-[80%] 820xxl:ml-[110px]  820xxl:mt-[18%] lg:hidden 4xxl:grid 3xxl:mt-[90px] 3xxl:h-[570px]    3xxl:w-[85%] ml-[1rem] w-[60%]  mt-[6rem] h-[900px] items-center justify-between ">
           <div className=" 3xxl:mt-[3rem]  mt-[1rem] ">
             <div className="grid  justify-between 3xxl:ml-[0px] ml-[20px]">
-              <h1 className=" text-left   3xxl:w-[80%] 3xxl:text-center 3xxl:text-[16px]   w-[380px] 820xxl:w-[600px] 820xxl:text-center 820xxl:h-[130px] text-[38px] font-[600] text-[#000] opacity-80 ">
+              <h1 className=" text-left 4xxl:w-[90%] 4xxl:ml-[-30px] 5xxl:text-[20px]  3xxl:w-[80%] 3xxl:text-center 3xxl:text-[16px]   w-[380px] 820xxl:w-[600px] 820xxl:text-center 820xxl:h-[130px] 820xxl:text-[38px] text-[38px] font-[600] text-[#000] opacity-80 ">
                 Uncovering exceptional talent across the globe.
               </h1>
-              <img className=" 3xxl:w-[200px] 3xxl:ml-[30px]  3xxl:h-[220px]  w-[370px] 820xxl:w-[450px] 820xxl:h-[500px] 820xxl:ml-[60px]  mt-1  h-[420px]" src={dashimg} alt="Eclat" />
+              <img className=" 3xxl:w-[200px] 3xxl:ml-[30px] 5xxl:w-[300px] 5xxl:h-[340px]  3xxl:h-[220px]  w-[370px] 820xxl:w-[450px] 820xxl:h-[500px] 820xxl:ml-[60px]  mt-1  h-[420px]" src={dashimg} alt="Eclat" />
             </div>
-            <p className="tracking-[1px] 3xxl:ml-[0px] 3xxl:w-[240px] 3xxl:text-[10px] 3xxl:text-center 820xxl:w-[500px] 820xxl:text-center 820xxl:ml-[40px] mt-[40px] ml-[20px] w-[380px]  font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            <p className="tracking-[1px] 3xxl:ml-[0px] 3xxl:w-[240px] 3xxl:text-[10px] 3xxl:text-center 5xxl:text-[12px] 5xxl:w-[75%] 820xxl:w-[500px] 820xxl:text-center 820xxl:ml-[40px] mt-[40px] ml-[20px] w-[380px]  font-[400] text-[#000] opacity-80 text-left 820xxl:text-[16px] text-[16px]">
               Join Tech Eclat to assemble a top-tier team of developers, engineers, product designers, and exceptional remote technology experts..
             </p>
-            <div className="flex w-[90%] 3xxl:w-[250px] 3xxl:ml-[0px] 820xxl:w-[500px] 820xxl:ml-[50px] 820xxl:mt-[40px] ml-[25px] justify-between mt-[30px] ">
+            <div className="flex w-[90%] 3xxl:w-[250px] 3xxl:ml-[0px] 5xxl:w-[75%] 820xxl:w-[500px] 820xxl:ml-[50px] 820xxl:mt-[40px] ml-[25px] justify-between mt-[30px] ">
               <Link
                 onClick={() => window.scrollTo(0, 0)}
-                className="w-[170px] 3xxl:w-[100px] 3xxl:text-[10px] 820xxl:w-[230px] 820xxl:h-[50px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]"
+                className="w-[170px] 5xxl:w-[130px] 5xxl:text-[14px] 3xxl:w-[100px] 3xxl:text-[10px] 820xxl:w-[230px] 820xxl:h-[50px] rounded-[5px] h-[45px] 820xxl:text-[16px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]"
                 to="/eclatjobs"
               >
                 Find Talent
@@ -61,7 +61,7 @@ function Dashboard() {
 
               <Link
                 onClick={() => window.scrollTo(0, 0)}
-                className="w-[180px] 3xxl:w-[100px] 3xxl:text-[10px] 820xxl:w-[230px] 820xxl:h-[50px] h-[45px] rounded-[5px] text-[16px] bg-[#fff] flex items-center justify-evenly font-[600] text-[#38761D]"
+                className="w-[180px] 5xxl:w-[130px] 5xxl:text-[14px] 3xxl:w-[100px] 3xxl:text-[10px] 820xxl:w-[230px] 820xxl:text-[16px] 820xxl:h-[50px] h-[45px] rounded-[5px] text-[16px] bg-[#fff] flex items-center justify-evenly font-[600] text-[#38761D]"
                 to="/jobs"
               >
                 Find Jobs

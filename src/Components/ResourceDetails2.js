@@ -42,12 +42,12 @@ function ResourceDetails2() {
       <Heading />
       <div className=" h-[200vh] flex 5xl:mt-[-5%] 3xxl:mt-[10%] 820xxl:mt-[0px] 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[12%] 4xl:ml-[24rem] 820xxl:ml-[16rem] 5xl:ml-[25rem]  3xxl:ml-[1rem] 1xl:ml-[22rem] ml-[25rem]">
-          <h1 className=" 3xxl:w-[300px] 820xxl:w-[471px] text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
-          <p className=" 3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
+        <div className=" mt-[12%] 4xl:ml-[24rem] 3xxl:ml-[1rem] 5xl:ml-[25rem] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
+          <h1 className=" 3xxl:w-[350px] 820xxl:w-[471px] text-[#38761D] 820xxl:text-[30px] 3xxl:text-[20px] font-[600] opacity-80 ">Kindly fill in the details</h1>
+          <p className="3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] 3xxl:text-[12px] 820xxl:text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
 
           <form className="mt-7" action="">
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               What is your current employment status
             </label>
 
@@ -59,7 +59,7 @@ function ResourceDetails2() {
               className=" mb-[20px] 3xxl:w-[300px] 820xxl:w-[471px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
               options={employmentStatus}
             />
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="company">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="company">
               What is the name of your company ?
             </label>
 
@@ -71,7 +71,7 @@ function ResourceDetails2() {
             />
             <br />
 
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="industry">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="industry">
               What industry is your company in ?
             </label>
             <br />
@@ -81,7 +81,7 @@ function ResourceDetails2() {
               type="text"
             />
             <br />
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="industry">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="industry">
               What is your job title ?
             </label>
             <br />
@@ -92,7 +92,7 @@ function ResourceDetails2() {
             />
 
             <br />
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="period of employment">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="period of employment">
               Period of employment ?
             </label>
             <br />
@@ -117,7 +117,7 @@ function ResourceDetails2() {
               </label>
             </div>
             <br />
-            <label className="3xxl:w-[150px] text-[16px] text-[#1E2757]" htmlFor="role">
+            <label className="3xxl:w-[150px] 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="role">
               Give a brief description about your job role ?
             </label>
             <br />

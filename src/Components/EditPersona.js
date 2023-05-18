@@ -131,8 +131,8 @@ function EditPersona() {
         <div className="  flex ml-[80px] pt-[101px]">
           <ApplicantProfile />
 
-          <div className="flex ml-[12rem] 5xl:w-[1500px] 5xl:justify-evenly 4xl:w-[1700px] 4xl:justify-between">
-            <div className="w-[600px] mr-[50px] 5xl:w-[950px] 4xl:w-[1000px]">
+          <div className="flex ml-[12rem] 5xl:ml-[15rem] 5xl:w-[1900px] 5xl:justify-evenly 4xl:w-[1500px] 4xl:justify-between">
+            <div className="w-[600px] mr-[50px] 5xl:w-[1650px] 4xl:w-[1000px]">
               <div className="flex items-center justify-between">
                 <img className=" rounded-[50%] w-[68px] h-[68px] " src={seun} alt="persona" />
                 <Link onClick={() => window.scrollTo(0, 0)} to="">
@@ -144,14 +144,14 @@ function EditPersona() {
                   Full Name
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] 4xl:w-[1000px]" type="text" placeholder="Oluwaseun Orofin" />
+                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]" type="text" placeholder="Oluwaseun Orofin" />
                 <br />
                 <label className="text-[14px] text-[#98A2B3]" htmlFor="about">
                   About You
                 </label>
                 <br />
                 <input
-                  className="  mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[72px] border-[1px] border-[#D0D5DD] placeholder:w-[500px] placeholder:h-[50px] 5xl:w-[950px] 4xl:w-[1000px]"
+                  className="  mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[72px] border-[1px] border-[#D0D5DD] placeholder:w-[500px] placeholder:h-[50px] 5xl:w-[1650px] 4xl:w-[1000px]"
                   type="text"
                   placeholder="Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. "
                 />
@@ -160,16 +160,16 @@ function EditPersona() {
                   Phone Number
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] 4xl:w-[1000px] " type="tel" placeholder="081234567890" />
+                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px] " type="tel" placeholder="081234567890" />
                 <br />
                 <label className="text-[14px] text-[#98A2B3]" htmlFor="email">
                   Email Address
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] 4xl:w-[1000px]" type="email" placeholder="seun@gmail.com" />
+                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]" type="email" placeholder="seun@gmail.com" />
               </form>
 
-              <div className=" w-[601px] mt-[26px] pl-[10px] h-[51px]  border-b-[#F3F3F3]  border-b-[1.5px] 4xl:w-[1000px]">
+              <div className=" w-[601px] mt-[26px] pl-[10px] h-[51px]  border-b-[#F3F3F3]  border-b-[1.5px] 4xl:w-[1000px] 5xl:w-[1650px]">
                 <div className=" flex justify-between text-[16px]  w-[400px]">
                   <div>
                     <h3 onClick={handleIsOpen} className={isOpen ? " h-[40px] w-[80px] cursor-pointer  text-[16px] text-[#38761D]" : " w-[80px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"}>

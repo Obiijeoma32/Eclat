@@ -28,17 +28,19 @@ function Global() {
           </svg>
         </div>{" "}
       </div>
-      <div className="md:hidden 1halfxl:hidden 3xxl:ml-[50px] 3xxl:w-[80%] 820xxl:block grid mt-[4rem] w-[380px] ml-[80px]  ">
+      <div className="md:hidden 1halfxl:hidden 5xxl:w-[85%] 5xxl:ml-[10%] 3xxl:ml-[15%] 3xxl:w-[85%] 820xxl:block  grid mt-[4rem] w-[380px] ml-[80px] ">
         <div>
-          <h1 className=" text-left 3xxl:w-[80%] 3xxl:text-[20px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">Our global technologists undergo rigorous technical evaluations to ensure their competence.</h1>
-          <ul className="tracking-[1px] 820xxl:hidden mt-3 3xxl:text-[10px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
-            <li className="flex items-center 3xxl:w-[230px]  820xxl:w-[650px] 820xxl:h-[60px] mb-1 w-[320px] justify-between">&#x2022; Rapid and streamlined recruitment processes to identify the ideal developer.</li>
-            <li className="flex items-center 3xxl:w-[230px] mb-1 w-[320px] 820xxl:w-[650px] 820xxl:h-[60px] justify-between">&#x2022; Hassle-free recruitment of global talent minus the human resources (HR) obstacles.</li>
-            <li className="flex items-center 3xxl:w-[230px] mb-1  820xxl:w-[650px] 820xxl:h-[60px] w-[320px] justify-between">&#x2022; We exclusively offer high-caliber technologists with official technical certifications.</li>
+          <h1 className=" text-left 3xxl:w-[80%] 3xxl:text-[20px] 5xxl:w-[85%] 5xxl:text-[30px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">
+            Our global technologists undergo rigorous technical evaluations to ensure their competence.
+          </h1>
+          <ul className="tracking-[1px] 820xxl:hidden mt-3 5xxl:text-[14px] 3xxl:text-[10px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
+            <li className="flex items-center 3xxl:w-[230px] 5xxl:w-[450px]  820xxl:w-[650px] 820xxl:h-[60px] mb-1 w-[320px] justify-between">&#x2022; Rapid and streamlined recruitment processes to identify the ideal developer.</li>
+            <li className="flex items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1 w-[320px] 820xxl:w-[650px] 820xxl:h-[60px] justify-between">&#x2022; Hassle-free recruitment of global talent minus the human resources (HR) obstacles.</li>
+            <li className="flex items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1  820xxl:w-[650px] 820xxl:h-[60px] w-[320px] justify-between">&#x2022; We exclusively offer high-caliber technologists with official technical certifications.</li>
           </ul>
         </div>
         <div>
-          <svg className=" 3xxl:w-[250px] 3xxl:h-[229px] 820xxl:w-[650px] 820xxl:h-[629px] " width="350" height="329" viewBox="0 0 626 429" fill="none" xmlns="httpwww.w3.org/2000/svg">
+          <svg className=" 3xxl:w-[250px] 3xxl:h-[229px] 5xxl:w-[400px] 5xxl:h-[350px] 820xxl:w-[650px] 820xxl:h-[629px] " width="350" height="329" viewBox="0 0 626 429" fill="none" xmlns="httpwww.w3.org/2000/svg">
             <path
               fillRule="evenodd"
               clipRule="evenodd"

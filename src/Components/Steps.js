@@ -109,8 +109,8 @@ function Steps() {
           </div>
         </div>
       </div>
-      <div className=" md:hidden block 3xxl:ml-[30px]  ml-[90px] mt-[5rem] w-[85%]">
-        <h1 className=" text-center  3xxl:text-[20px] text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
+      <div className=" md:hidden block 3xxl:ml-[30px]  ml-[90px] mt-[5rem]  w-[85%]">
+        <h1 className=" text-center  3xxl:text-[20px] text-[48px] 5xxl:ml-[30px]  5xxl:w-[95%] 5xxl:text-[30px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
         <div className=" justify-evenly  grid">
           <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] 3xxl:w-[270px]  h-[450px] ">
             <div className="ml-[90px]  3xxl:ml-[50px] mb-[30px] mt-7 ">

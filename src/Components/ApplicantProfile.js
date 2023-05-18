@@ -61,7 +61,7 @@ function ApplicantProfile({ children }) {
             key={index}
             className={({ isActive }) => (isActive ? " items-center text-[18px]  text-left font-[400] flex justify-between w-[90px] text-[#38761D]" : " items-center text-[18px]   text-left font-[400] flex justify-between w-[90px] text-[#38761d] ")}
           >
-            <div className="  w-[90px] justify-between flex">
+            <div className="w-[90px]  justify-between flex">
               <div className=" w-[40px]  ">{item.icon}</div>
 
               <h2 className=" ml-[30px] ">{item.name}</h2>

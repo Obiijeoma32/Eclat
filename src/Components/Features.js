@@ -188,16 +188,19 @@ function Features() {
           </div>
         </div>
       </div>
-      <div className="md:hidden 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
+      <div className="md:hidden 5xxl:w-[85%] 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
         <div className=" text-center 820xxl:ml-[75px] 3xxl:ml-[40px] ml-[70px]">
-          <h4 className=" 820xxl:text-[18px]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" 820xxl:text-[36px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
-          <p className=" text-[16px] 3xxl:text-[10px]  3xxl:ml-[35px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">The wise man therefore always holds in these matters to this principle of selection.</p>
+          <h4 className=" 820xxl:text-[18px] 5xxl:text-[14px] 5xxl:ml-[15%]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
+          <h2 className=" 820xxl:text-[36px] 5xxl:text-[32px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <p className=" text-[16px] 3xxl:text-[10px] 5xxl:mt-[10px] 5xxl:text-[14px] 5xxl:ml-[15%] 3xxl:ml-[35px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">
+            The wise man therefore always holds in these matters to this principle of selection.
+          </p>
         </div>
-        <div className="grid mt-[6rem] ml-[80px] 3xxl:ml-[50px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <div className="grid mt-[6rem] ml-[80px] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
+              <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46876)">
                   <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46876)" />
                 </g>
@@ -243,9 +246,9 @@ function Features() {
                 </defs>
               </svg>
               <div>
-                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
-                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                <div className="w-[300px] 5xxl:w-[220px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 5xxl:text-[30px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Sourcing</h1>
+                  <p className="font-[300] 3xxl:text-[10px] 5xxl:text-[12px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                     We collaborate with you to gain a comprehensive understanding of your technical shortcomings, company culture, industry regulations, and strategic trajectory. You can promptly view a handpicked collection of technologist profiles
                     that satisfy your requirements.
                   </p>
@@ -259,36 +262,37 @@ function Features() {
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_4273_46889)">
-                  <rect x="20" y="12" width="66" height="66" rx="24" fill="#36CD77" />
-                </g>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M43.9787 28C41.7813 28 40 29.7813 40 31.9787V58.0213C40 60.2187 41.7813 62 43.9787 62H62.7872C64.9846 62 66.766 60.2187 66.766 58.0213V31.9787C66.766 29.7813 64.9846 28 62.7872 28H43.9787ZM46.8723 32.3404C45.474 32.3404 44.3404 33.474 44.3404 34.8723C44.3404 36.2707 45.474 37.4043 46.8723 37.4043C48.2707 37.4043 49.4043 36.2707 49.4043 34.8723C49.4043 33.474 48.2707 32.3404 46.8723 32.3404ZM44.3404 45C44.3404 43.6017 45.474 42.4681 46.8723 42.4681C48.2707 42.4681 49.4043 43.6017 49.4043 45C49.4043 46.3983 48.2707 47.5319 46.8723 47.5319C45.474 47.5319 44.3404 46.3983 44.3404 45ZM46.8723 52.5957C45.474 52.5957 44.3404 53.7293 44.3404 55.1277C44.3404 56.526 45.474 57.6596 46.8723 57.6596C48.2707 57.6596 49.4043 56.526 49.4043 55.1277C49.4043 53.7293 48.2707 52.5957 46.8723 52.5957ZM54.1064 33.7872C53.5071 33.7872 53.0213 34.2731 53.0213 34.8723C53.0213 35.4716 53.5071 35.9574 54.1064 35.9574H62.7872C63.3865 35.9574 63.8723 35.4716 63.8723 34.8723C63.8723 34.2731 63.3865 33.7872 62.7872 33.7872H54.1064ZM53.0213 45C53.0213 44.4007 53.5071 43.9149 54.1064 43.9149H62.7872C63.3865 43.9149 63.8723 44.4007 63.8723 45C63.8723 45.5993 63.3865 46.0851 62.7872 46.0851H54.1064C53.5071 46.0851 53.0213 45.5993 53.0213 45ZM54.1064 54.0426C53.5071 54.0426 53.0213 54.5284 53.0213 55.1277C53.0213 55.7269 53.5071 56.2128 54.1064 56.2128H62.7872C63.3865 56.2128 63.8723 55.7269 63.8723 55.1277C63.8723 54.5284 63.3865 54.0426 62.7872 54.0426H54.1064Z"
-                  fill="white"
-                />
-                <defs>
-                  <filter id="filter0_d_4273_46889" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46889" />
-                    <feOffset dy="8" />
-                    <feGaussianBlur stdDeviation="11" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.971137 0 0 0 0 0.341921 0 0 0 0 0.36709 0 0 0 0.3 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46889" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46889" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
-
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
-                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
-                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_4273_46889)">
+                    <rect x="20" y="12" width="66" height="66" rx="24" fill="#36CD77" />
+                  </g>
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M43.9787 28C41.7813 28 40 29.7813 40 31.9787V58.0213C40 60.2187 41.7813 62 43.9787 62H62.7872C64.9846 62 66.766 60.2187 66.766 58.0213V31.9787C66.766 29.7813 64.9846 28 62.7872 28H43.9787ZM46.8723 32.3404C45.474 32.3404 44.3404 33.474 44.3404 34.8723C44.3404 36.2707 45.474 37.4043 46.8723 37.4043C48.2707 37.4043 49.4043 36.2707 49.4043 34.8723C49.4043 33.474 48.2707 32.3404 46.8723 32.3404ZM44.3404 45C44.3404 43.6017 45.474 42.4681 46.8723 42.4681C48.2707 42.4681 49.4043 43.6017 49.4043 45C49.4043 46.3983 48.2707 47.5319 46.8723 47.5319C45.474 47.5319 44.3404 46.3983 44.3404 45ZM46.8723 52.5957C45.474 52.5957 44.3404 53.7293 44.3404 55.1277C44.3404 56.526 45.474 57.6596 46.8723 57.6596C48.2707 57.6596 49.4043 56.526 49.4043 55.1277C49.4043 53.7293 48.2707 52.5957 46.8723 52.5957ZM54.1064 33.7872C53.5071 33.7872 53.0213 34.2731 53.0213 34.8723C53.0213 35.4716 53.5071 35.9574 54.1064 35.9574H62.7872C63.3865 35.9574 63.8723 35.4716 63.8723 34.8723C63.8723 34.2731 63.3865 33.7872 62.7872 33.7872H54.1064ZM53.0213 45C53.0213 44.4007 53.5071 43.9149 54.1064 43.9149H62.7872C63.3865 43.9149 63.8723 44.4007 63.8723 45C63.8723 45.5993 63.3865 46.0851 62.7872 46.0851H54.1064C53.5071 46.0851 53.0213 45.5993 53.0213 45ZM54.1064 54.0426C53.5071 54.0426 53.0213 54.5284 53.0213 55.1277C53.0213 55.7269 53.5071 56.2128 54.1064 56.2128H62.7872C63.3865 56.2128 63.8723 55.7269 63.8723 55.1277C63.8723 54.5284 63.3865 54.0426 62.7872 54.0426H54.1064Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <filter id="filter0_d_4273_46889" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46889" />
+                      <feOffset dy="8" />
+                      <feGaussianBlur stdDeviation="11" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0.971137 0 0 0 0 0.341921 0 0 0 0 0.36709 0 0 0 0.3 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46889" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46889" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div>
+                <div className="w-[300px] 5xxl:w-[220px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 5xxl:text-[30px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Vetting</h1>
+                  <p className="font-[300] 3xxl:text-[10px] 5xxl:text-[12px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
                     Our exclusive evaluations are crafted to identify the most suitable talent for each role, regardless of their geographic location. Aligning with your team's objectives, connect with reliable and pre-screened technologists.
                   </p>
                 </div>
@@ -301,104 +305,106 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 3xxl:ml-[50px] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              {" "}
-              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_4273_46912)">
-                  <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46912)" />
-                </g>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M39.0338 26C37.3609 26 36 27.3611 36 29.034V31.3765H42.0678V29.034C42.0678 27.3611 40.7066 26 39.0338 26ZM65.0846 53.5742V29.9992C65.0846 27.7906 63.2942 26 61.0856 26H42.2348C42.986 26.7922 43.4503 27.8588 43.4503 29.034V57.0335C43.4503 58.6654 44.7017 60.0714 46.3315 60.1518C48.0735 60.2376 49.5181 58.8451 49.5181 57.1215V53.576H65.0848C65.0848 53.5753 65.0846 53.5749 65.0846 53.5742ZM49.1411 48.5048H59.8104V50.3482H49.1411V48.5048ZM49.1411 43.9731H59.8104V45.8165H49.1411V43.9731ZM49.1411 39.4413H59.8104V41.2847H49.1411V39.4413ZM49.1411 34.9098H59.8104V36.7532H49.1411V34.9098ZM49.1411 30.3781H59.8104V32.2215H49.1411V30.3781ZM50.9006 54.9585V57.1215C50.9006 58.2967 50.4363 59.3633 49.6851 60.1555H66.9662C68.6391 60.1555 70 58.7947 70 57.1215V54.9585H50.9006Z"
-                  fill="white"
-                />
-                <defs>
-                  <filter id="filter0_d_4273_46912" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46912" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="11" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.97947 0 0 0 0 0.730307 0 0 0 0 0.328531 0 0 0 0.3 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46912" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46912" result="shape" />
-                  </filter>
-                  <linearGradient id="paint0_linear_4273_46912" x1="33.5" y1="10" x2="65" y2="76" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#36CD77" />
-                    <stop offset="1" stop-color="#36CD77" />
-                  </linearGradient>
-                </defs>
-              </svg>
+        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
-                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skils</h1>
-                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                    Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
+                <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_4273_46912)">
+                    <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46912)" />
+                  </g>
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M39.0338 26C37.3609 26 36 27.3611 36 29.034V31.3765H42.0678V29.034C42.0678 27.3611 40.7066 26 39.0338 26ZM65.0846 53.5742V29.9992C65.0846 27.7906 63.2942 26 61.0856 26H42.2348C42.986 26.7922 43.4503 27.8588 43.4503 29.034V57.0335C43.4503 58.6654 44.7017 60.0714 46.3315 60.1518C48.0735 60.2376 49.5181 58.8451 49.5181 57.1215V53.576H65.0848C65.0848 53.5753 65.0846 53.5749 65.0846 53.5742ZM49.1411 48.5048H59.8104V50.3482H49.1411V48.5048ZM49.1411 43.9731H59.8104V45.8165H49.1411V43.9731ZM49.1411 39.4413H59.8104V41.2847H49.1411V39.4413ZM49.1411 34.9098H59.8104V36.7532H49.1411V34.9098ZM49.1411 30.3781H59.8104V32.2215H49.1411V30.3781ZM50.9006 54.9585V57.1215C50.9006 58.2967 50.4363 59.3633 49.6851 60.1555H66.9662C68.6391 60.1555 70 58.7947 70 57.1215V54.9585H50.9006Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <filter id="filter0_d_4273_46912" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46912" />
+                      <feOffset dy="10" />
+                      <feGaussianBlur stdDeviation="11" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0.97947 0 0 0 0 0.730307 0 0 0 0 0.328531 0 0 0 0.3 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46912" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46912" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_4273_46912" x1="33.5" y1="10" x2="65" y2="76" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#36CD77" />
+                      <stop offset="1" stop-color="#36CD77" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div>
+                <div className="w-[300px] 5xxl:w-[220px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 5xxl:text-[30px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Pair Skills</h1>
+                  <p className="font-[300] 3xxl:text-[10px] 5xxl:text-[12px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.{" "}
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.
+                Establish links within a few hours, with verified technologists who can seamlessly integrate with your current teams, tools, and processes. Our matching timeframes are consistently twice as swift compared to industry benchmarks.{" "}
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
-            <div className=" flex w-[300px] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
-              <svg className=" 3xxl: w-[106px] 3xxl:h-[106px] 3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_4273_46899)">
-                  <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46899)" />
-                </g>
-                <path
-                  d="M44.2891 33.8617L46.4393 36.0119C46.5736 35.2503 46.9768 34.5336 47.5592 33.996C48.9926 32.6522 51.322 32.6074 52.7555 33.9513C52.8451 34.0408 52.9347 34.1304 53.0242 34.22C53.6066 34.892 53.965 35.7431 53.965 36.639C53.965 36.8182 53.965 36.9974 53.9202 37.1318C53.8306 37.9829 53.4722 38.7444 52.8451 39.3715C52.3075 39.9091 51.6356 40.2675 50.874 40.4018L53.0242 42.552L55.6224 39.9539C55.6672 39.9091 55.6672 39.9091 55.712 39.9091C55.712 39.9091 55.712 39.9091 55.7568 39.9091C55.8016 39.9091 55.8016 39.9091 55.8464 39.9091C55.8912 39.9091 55.936 39.9091 55.936 39.9091C56.0256 39.9539 56.1152 40.0435 56.1152 40.1779C56.1152 41.029 56.4735 41.7905 57.0559 42.3729C57.683 43 58.4893 43.3136 59.3404 43.3136C59.3404 43.3136 59.3404 43.3136 59.3852 43.3136C59.654 43.3136 59.878 43.2688 60.1468 43.224C60.7291 43.0896 61.2667 42.776 61.6698 42.3281C62.3866 41.5217 62.6553 40.4466 62.4314 39.4163C62.297 38.8788 62.0282 38.386 61.6698 37.9829C61.4459 37.7589 61.1771 37.5349 60.9083 37.4005C60.6395 37.2661 60.3708 37.1765 60.102 37.087C59.9676 37.0422 59.8332 37.0422 59.6988 36.9974C59.6092 36.9974 59.4748 36.9974 59.3852 36.9974C59.2509 36.9974 59.1613 36.9078 59.1165 36.8182C59.0717 36.7286 59.1165 36.5942 59.1613 36.5046L61.7594 33.9065L54.5025 26.6047C53.6962 25.7984 52.3523 25.7984 51.546 26.6047L44.2891 33.8617Z"
-                  fill="white"
-                />
-                <path
-                  d="M69.4177 41.5216L62.1608 34.2646L60.0106 36.4148C60.7721 36.5492 61.4888 36.9524 62.0264 37.4899C63.3703 38.9234 63.415 41.2528 62.0712 42.6863C61.3544 43.4478 60.4137 43.8957 59.3834 43.8957C58.3531 43.9405 57.3676 43.5374 56.6509 42.7758C56.1133 42.2383 55.755 41.5664 55.6206 40.8048L53.4256 42.9998L56.0237 45.598C56.1133 45.6876 56.1133 45.822 56.0685 45.9116C56.0237 46.0011 55.9342 46.0907 55.7998 46.0907C54.9486 46.0907 54.1871 46.4491 53.6048 47.0314C52.9776 47.6586 52.6641 48.4649 52.6641 49.3608C52.6641 50.2119 53.0224 51.0183 53.6944 51.6454C53.8735 51.8246 54.0975 52.0038 54.3663 52.0934C55.531 52.7205 57.054 52.5413 58.0844 51.6006C58.7115 51.0183 59.0699 50.2119 59.0699 49.3608C59.0699 49.2264 59.1595 49.1369 59.249 49.0921C59.3386 49.0473 59.473 49.0921 59.5626 49.1369L62.1608 51.735L69.4177 44.4781C69.8208 44.0749 70.0448 43.5374 70.0448 42.9998C70.0448 42.4175 69.8208 41.9247 69.4177 41.5216Z"
-                  fill="white"
-                />
-                <path
-                  d="M59.6074 49.9882C59.473 50.7498 59.0699 51.4665 58.4875 52.004C57.0541 53.3479 54.7247 53.3927 53.2912 52.0488C52.5297 51.3321 52.0817 50.3914 52.0817 49.3611C52.0817 48.5996 52.3057 47.838 52.7089 47.2109C52.8432 46.9869 53.0224 46.8077 53.2016 46.6286C53.7392 46.091 54.4111 45.7326 55.1726 45.5982L53.0224 43.4033L50.4243 46.0014C50.3347 46.1358 50.2003 46.1358 50.1107 46.091C50.0211 46.0462 49.9315 45.9566 49.9315 45.8222C49.9315 44.9711 49.5732 44.2096 48.9908 43.6272C48.3637 43.0001 47.5573 42.6865 46.6614 42.6865C46.5718 42.6865 46.4375 42.6865 46.3479 42.6865C45.5863 42.7761 44.9144 43.1345 44.3768 43.672C43.5257 44.5679 43.3465 45.9118 43.7497 47.0317C43.7497 47.0765 43.7945 47.1213 43.7945 47.1661C43.7945 47.2109 43.8393 47.2557 43.8393 47.3005C43.9737 47.5693 44.1529 47.838 44.3768 48.062C44.9592 48.6892 45.7655 49.0475 46.6166 49.0475C46.751 49.0475 46.8406 49.1371 46.8854 49.2267C46.9302 49.3163 46.8854 49.4507 46.8406 49.5403L44.2425 52.1384L51.4994 59.3954C52.3057 60.2017 53.6496 60.2017 54.4559 59.3954L61.7128 52.1384L59.6074 49.9882Z"
-                  fill="white"
-                />
-                <path
-                  d="M36.6271 44.4779L43.8841 51.7348L46.0343 49.5846C45.2727 49.4502 44.556 49.0471 44.0184 48.4647C42.6746 47.0313 42.6298 44.7019 43.9736 43.2684C44.6904 42.5069 45.6311 42.0589 46.6614 42.0589C47.6917 42.0589 48.6772 42.4173 49.3939 43.1788C49.9315 43.7164 50.2899 44.3883 50.4242 45.1498L52.5744 42.9996L49.9763 40.4015C49.8867 40.3119 49.8867 40.1775 49.9315 40.0879C49.9763 39.9983 50.0659 39.9087 50.2003 39.9087C51.0514 39.9087 51.8129 39.5504 52.3953 38.968C52.4848 38.8784 52.5296 38.7888 52.6192 38.744C53.112 38.1617 53.336 37.445 53.336 36.6834C53.336 35.8323 52.9776 35.026 52.3057 34.3989C51.0962 33.279 49.1252 33.279 47.9605 34.4437C47.3333 35.026 46.975 35.8323 46.975 36.6834C46.975 36.8178 46.8854 36.9074 46.7958 36.9522C46.7062 36.997 46.5718 36.9522 46.4822 36.9074L43.8841 34.3093L36.6271 41.5214C36.224 41.9246 36 42.4173 36 42.9996C36 43.582 36.224 44.0747 36.6271 44.4779Z"
-                  fill="white"
-                />
-                <defs>
-                  <filter id="filter0_d_4273_46899" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46899" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="11" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.427083 0 0 0 0 0.671455 0 0 0 0 1 0 0 0 0.36 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46899" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46899" result="shape" />
-                  </filter>
-                  <linearGradient id="paint0_linear_4273_46899" x1="33.5" y1="10" x2="65" y2="76" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#36CD77" />
-                    <stop offset="1" stop-color="#36CD77" />
-                  </linearGradient>
-                </defs>
-              </svg>
-
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+            <div className=" 5xxl:items-start flex w-[300px] 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
-                <div className="w-[300px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
-                  <h1 className="text-[34px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
-                  <p className="font-[300] 3xxl:text-[10px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                    We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.{" "}
+                <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_4273_46899)">
+                    <rect x="20" y="10" width="66" height="66" rx="24" fill="url(#paint0_linear_4273_46899)" />
+                  </g>
+                  <path
+                    d="M44.2891 33.8617L46.4393 36.0119C46.5736 35.2503 46.9768 34.5336 47.5592 33.996C48.9926 32.6522 51.322 32.6074 52.7555 33.9513C52.8451 34.0408 52.9347 34.1304 53.0242 34.22C53.6066 34.892 53.965 35.7431 53.965 36.639C53.965 36.8182 53.965 36.9974 53.9202 37.1318C53.8306 37.9829 53.4722 38.7444 52.8451 39.3715C52.3075 39.9091 51.6356 40.2675 50.874 40.4018L53.0242 42.552L55.6224 39.9539C55.6672 39.9091 55.6672 39.9091 55.712 39.9091C55.712 39.9091 55.712 39.9091 55.7568 39.9091C55.8016 39.9091 55.8016 39.9091 55.8464 39.9091C55.8912 39.9091 55.936 39.9091 55.936 39.9091C56.0256 39.9539 56.1152 40.0435 56.1152 40.1779C56.1152 41.029 56.4735 41.7905 57.0559 42.3729C57.683 43 58.4893 43.3136 59.3404 43.3136C59.3404 43.3136 59.3404 43.3136 59.3852 43.3136C59.654 43.3136 59.878 43.2688 60.1468 43.224C60.7291 43.0896 61.2667 42.776 61.6698 42.3281C62.3866 41.5217 62.6553 40.4466 62.4314 39.4163C62.297 38.8788 62.0282 38.386 61.6698 37.9829C61.4459 37.7589 61.1771 37.5349 60.9083 37.4005C60.6395 37.2661 60.3708 37.1765 60.102 37.087C59.9676 37.0422 59.8332 37.0422 59.6988 36.9974C59.6092 36.9974 59.4748 36.9974 59.3852 36.9974C59.2509 36.9974 59.1613 36.9078 59.1165 36.8182C59.0717 36.7286 59.1165 36.5942 59.1613 36.5046L61.7594 33.9065L54.5025 26.6047C53.6962 25.7984 52.3523 25.7984 51.546 26.6047L44.2891 33.8617Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M69.4177 41.5216L62.1608 34.2646L60.0106 36.4148C60.7721 36.5492 61.4888 36.9524 62.0264 37.4899C63.3703 38.9234 63.415 41.2528 62.0712 42.6863C61.3544 43.4478 60.4137 43.8957 59.3834 43.8957C58.3531 43.9405 57.3676 43.5374 56.6509 42.7758C56.1133 42.2383 55.755 41.5664 55.6206 40.8048L53.4256 42.9998L56.0237 45.598C56.1133 45.6876 56.1133 45.822 56.0685 45.9116C56.0237 46.0011 55.9342 46.0907 55.7998 46.0907C54.9486 46.0907 54.1871 46.4491 53.6048 47.0314C52.9776 47.6586 52.6641 48.4649 52.6641 49.3608C52.6641 50.2119 53.0224 51.0183 53.6944 51.6454C53.8735 51.8246 54.0975 52.0038 54.3663 52.0934C55.531 52.7205 57.054 52.5413 58.0844 51.6006C58.7115 51.0183 59.0699 50.2119 59.0699 49.3608C59.0699 49.2264 59.1595 49.1369 59.249 49.0921C59.3386 49.0473 59.473 49.0921 59.5626 49.1369L62.1608 51.735L69.4177 44.4781C69.8208 44.0749 70.0448 43.5374 70.0448 42.9998C70.0448 42.4175 69.8208 41.9247 69.4177 41.5216Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M59.6074 49.9882C59.473 50.7498 59.0699 51.4665 58.4875 52.004C57.0541 53.3479 54.7247 53.3927 53.2912 52.0488C52.5297 51.3321 52.0817 50.3914 52.0817 49.3611C52.0817 48.5996 52.3057 47.838 52.7089 47.2109C52.8432 46.9869 53.0224 46.8077 53.2016 46.6286C53.7392 46.091 54.4111 45.7326 55.1726 45.5982L53.0224 43.4033L50.4243 46.0014C50.3347 46.1358 50.2003 46.1358 50.1107 46.091C50.0211 46.0462 49.9315 45.9566 49.9315 45.8222C49.9315 44.9711 49.5732 44.2096 48.9908 43.6272C48.3637 43.0001 47.5573 42.6865 46.6614 42.6865C46.5718 42.6865 46.4375 42.6865 46.3479 42.6865C45.5863 42.7761 44.9144 43.1345 44.3768 43.672C43.5257 44.5679 43.3465 45.9118 43.7497 47.0317C43.7497 47.0765 43.7945 47.1213 43.7945 47.1661C43.7945 47.2109 43.8393 47.2557 43.8393 47.3005C43.9737 47.5693 44.1529 47.838 44.3768 48.062C44.9592 48.6892 45.7655 49.0475 46.6166 49.0475C46.751 49.0475 46.8406 49.1371 46.8854 49.2267C46.9302 49.3163 46.8854 49.4507 46.8406 49.5403L44.2425 52.1384L51.4994 59.3954C52.3057 60.2017 53.6496 60.2017 54.4559 59.3954L61.7128 52.1384L59.6074 49.9882Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M36.6271 44.4779L43.8841 51.7348L46.0343 49.5846C45.2727 49.4502 44.556 49.0471 44.0184 48.4647C42.6746 47.0313 42.6298 44.7019 43.9736 43.2684C44.6904 42.5069 45.6311 42.0589 46.6614 42.0589C47.6917 42.0589 48.6772 42.4173 49.3939 43.1788C49.9315 43.7164 50.2899 44.3883 50.4242 45.1498L52.5744 42.9996L49.9763 40.4015C49.8867 40.3119 49.8867 40.1775 49.9315 40.0879C49.9763 39.9983 50.0659 39.9087 50.2003 39.9087C51.0514 39.9087 51.8129 39.5504 52.3953 38.968C52.4848 38.8784 52.5296 38.7888 52.6192 38.744C53.112 38.1617 53.336 37.445 53.336 36.6834C53.336 35.8323 52.9776 35.026 52.3057 34.3989C51.0962 33.279 49.1252 33.279 47.9605 34.4437C47.3333 35.026 46.975 35.8323 46.975 36.6834C46.975 36.8178 46.8854 36.9074 46.7958 36.9522C46.7062 36.997 46.5718 36.9522 46.4822 36.9074L43.8841 34.3093L36.6271 41.5214C36.224 41.9246 36 42.4173 36 42.9996C36 43.582 36.224 44.0747 36.6271 44.4779Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <filter id="filter0_d_4273_46899" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4273_46899" />
+                      <feOffset dy="10" />
+                      <feGaussianBlur stdDeviation="11" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0.427083 0 0 0 0 0.671455 0 0 0 0 1 0 0 0 0.36 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4273_46899" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4273_46899" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_4273_46899" x1="33.5" y1="10" x2="65" y2="76" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#36CD77" />
+                      <stop offset="1" stop-color="#36CD77" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div>
+                <div className="w-[300px] 5xxl:w-[220px] 3xxl:w-[200px] 820xxl:w-[400px] 820xxl:block ml-[40px] text-center">
+                  <h1 className="text-[34px] 5xxl:text-[30px] 3xxl:text-[18px] mb-[20px] text-left font-[600]  text-[#222222]">Deliver</h1>
+                  <p className="font-[300] 3xxl:text-[10px] 5xxl:text-[12px]  tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
+                    We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-[300px] 3xxl:hidden 820xxl:hidden ml-[40px] text-center">
               <p className="font-[300] tracking-[0.7px] text-[#4f4f4f]  text-left text-[12px]">
-                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.{" "}
+                We prioritize sustainable expansion and are present at every juncture of the process. From swift onboarding and effortless integration to worldwide payroll options and regulatory aid.
               </p>
             </div>
           </div>

@@ -10,11 +10,11 @@ function ResourceDetails3() {
       <div className=" h-[200vh] 3xxl:mt-[10%] 5xl:mt-[-5%] 820xxl:mt-[0] flex 5xl:ml-[5%]">
         <SideBar />
         <div className="5xl:ml-[25rem] 4xl:ml-[24rem] mt-[12%] 3xxl:ml-[1rem] 820xxl:ml-[16rem] ml-[25rem] 1xl:ml-[22rem]">
-          <h1 className=" 3xxl:w-[300px] 820xxl:w-[600px] text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
-          <p className=" 3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
+          <h1 className=" 3xxl:w-[300px] 820xxl:w-[600px] text-[#38761D] 3xxl:text-[20px] 820xxl:text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
+          <p className=" 3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] 3xxl:text-[12px] 820xxl:text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
 
           <form className="mt-7" action="">
-            <label className=" 3xxl:w-[200px] text-[16px] text-[#1E2757]" htmlFor="company">
+            <label className=" 3xxl:w-[200px] 3xxl:text-[10px] 820xxl:3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="company">
               What is the name of your College/University ?
             </label>
 
@@ -26,7 +26,7 @@ function ResourceDetails3() {
             />
             <br />
 
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="industry">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="industry">
               What is your area of study ?
             </label>
             <br />
@@ -36,7 +36,7 @@ function ResourceDetails3() {
               type="text"
             />
             <br />
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="industry">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="industry">
               What is your degree ?
             </label>
             <br />
@@ -49,7 +49,7 @@ function ResourceDetails3() {
             <br />
             <div className=" flex 3xxl:w-[320px] 4xl:w-[900px] 820xxl:w-[471px] 5xl:w-[900px] justify-between w-[471px]">
               <div>
-                <label className=" 3xxl:w-[100px]  text-[16px] text-[#1E2757]" htmlFor="period of employment">
+                <label className=" 3xxl:w-[100px]  3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="period of employment">
                   Year of starting ?
                 </label>
                 <br />
@@ -61,7 +61,7 @@ function ResourceDetails3() {
               </div>
               <br />
               <div>
-                <label className=" text-[16px] 3xxl:w-[100px] text-[#1E2757]" htmlFor="period of employment">
+                <label className=" 3xxl:text-[10px] 820xxl:text-[16px] 3xxl:w-[100px] text-[#1E2757]" htmlFor="period of employment">
                   Year of graduation ?
                 </label>
                 <br />

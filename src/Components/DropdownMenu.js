@@ -15,9 +15,9 @@ export default function DropdownMenu() {
   return (
     <div className=" w-[65px]  h-[25px]">
       <Link onClick={handleButtonClick} to="" className="mt-[45px]  text-[16px] ">
-        <div className=" flex w-[70px]  items-center justify-between opacity-80 font-[600] text-[#38761D]">
-          <h3>Login</h3>{" "}
-          <svg className="" width="20" height="6" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className=" flex w-[70px] 5xl:w-[90px]  items-center justify-between opacity-80 font-[600] text-[#38761D]">
+          <h3 className="5xl:text-[24px]">Login</h3>{" "}
+          <svg className="5xl:text-[25px]" width="20" height="6" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.173 1.65898L16.8797 0.0898438L9.99961 4.79727L3.11953 0.0898438L0.826172 1.65898L9.99961 7.93555L19.173 1.65898Z" fill="currentColor" />
           </svg>
         </div>

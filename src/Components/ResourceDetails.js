@@ -85,8 +85,8 @@ function ResourceDetails() {
       <div className=" h-[200vh] 5xl:mt-[-5%] 820xxl:mt-[0] 3xxl:mt-[10%] flex 5xl:ml-[5%]">
         <SideBar />
         <div className=" mt-[12%] 4xl:ml-[24rem] 3xxl:ml-[1rem] 5xl:ml-[25rem] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
-          <h1 className=" 3xxl:w-[350px] 820xxl:w-[471px] text-[#38761D] text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
-          <p className="3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
+          <h1 className=" 3xxl:w-[350px] 820xxl:w-[471px] text-[#38761D] 820xxl:text-[30px] 3xxl:text-[20px] font-[600] opacity-80 ">Kindly fill in the details</h1>
+          <p className="3xxl:w-[300px] 820xxl:w-[500px] text-[#7D90B8] 3xxl:text-[12px] 820xxl:text-[18px] font-[300] mt-[14px] 5xl:w-[1220px] 4xl:w-[920px] ">Please fill in the details below so we can get in touch with you</p>
           <div className=" mt-[40.5px] 820xxl:w-[550px] 3xxl:w-[300px] w-[550px] items-center text-center flex justify-center">
             <div className=" ">
               <svg className=" ml-[40px]" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,38 +106,38 @@ function ResourceDetails() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className=" text-[#7D90B8] text-[14px] font-[300] mt-[14px] ">Add your profile picture</p>
+              <p className=" text-[#7D90B8] 820xxl:text-[14px] 3xxl:text-[12px] font-[300] mt-[14px] ">Add your profile picture</p>
             </div>
           </div>
 
           <form className="mt-7" action="">
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               What is the main service you offer ?
             </label>
-            <Select required placeholder="E.g  Front-End Developer" styles={customStyles} className="3xxl:w-[300px] mb-[20px] w-[471px] h-[50px] 820xxl:w-[471px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={options} />
+            <Select required placeholder="E.g  Front-End Developer" styles={customStyles} className="3xxl:w-[300px]   mb-[20px] w-[471px] h-[50px] 820xxl:w-[471px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={options} />
 
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               Select your skills
             </label>
 
             <br />
             <Select required placeholder="Select skill" styles={customStyles} className=" mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] 820xxl:w-[471px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={skills} />
 
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className="3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               What is your expertise level ?
             </label>
 
             <br />
             <Select required placeholder="Select expertise level" styles={customStyles} className=" mb-[20px] 820xxl:w-[471px] 3xxl:w-[300px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={years} />
 
-            <label className=" text-[16px] 3xxl:w-[250px] text-[#1E2757]" htmlFor="offer">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] 3xxl:w-[200px] text-[#1E2757]" htmlFor="offer">
               How many years of experience do you have in this field ?
             </label>
 
             <br />
             <Select placeholder="Select years of experience" styles={customStyles} className=" 820xxl:w-[471px] mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={jobRole} />
 
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className="3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               Where are you located ?
             </label>
 
@@ -151,13 +151,13 @@ function ResourceDetails() {
               // onChange={handleLocationChange}
             />
             <br />
-            <label className=" text-[16px] text-[#1E2757]" htmlFor="offer">
+            <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               Give a brief description about yourself
             </label>
 
             <br />
             <input
-              className="text-[14px] 820xxl:w-[471px] 3xxl:w-[300px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[80px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+              className=" 3xxl:text-[10px] 820xxl:text-[14px] 820xxl:w-[471px] 3xxl:w-[300px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[80px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
               placeholder="Describe your top skills, strengths, and experiences."
               type="text"
             />
