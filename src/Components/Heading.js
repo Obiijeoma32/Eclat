@@ -150,22 +150,22 @@ function Heading() {
           </div>
           <div className="xl:flex w-[84%] 5xl:w-[90%]    items-center justify-evenly hidden">
             <div className=" w-[80%] flex justify-between">
-              <Link onClick={handleButtonClick} className=" hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D] active:text-[#B6D7A8] " to="/techexpert">
-                For Technology Experts
+              <Link onClick={handleButtonClick} to="/techexpert">
+                <div className=" hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D] active:text-[#B6D7A8] ">For Technology Experts</div>
               </Link>
-              <Link onClick={handleButtonClick} className="hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D]" to="/business">
-                Business
-              </Link>
-
-              <Link onClick={handleButtonClick} className="hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D]" to="/enterprise">
-                Enterprise
+              <Link onClick={handleButtonClick} to="/business">
+                <div className="hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D]">Business</div>
               </Link>
 
-              <Link onClick={handleButtonClick} className="hover:underline text-[16px] 5xl:text-[24px]  font-[600] text-[#38761D]" to="/jobs">
-                <h3 className="text-[#38761D]">Find Jobs</h3>
+              <Link onClick={handleButtonClick} to="/enterprise">
+                <div className="hover:underline text-[16px] 5xl:text-[24px] opacity-80 font-[600] text-[#38761D]">Enterprise</div>
               </Link>
-              <Link onClick={handleButtonClick} className=" text-[16px] mt-[5px]  opacity-80 font-[600] talent  bg-[#38761d] bg-opacity-90 text-[#fff]" to="/eclatjobs">
-                Find Talent
+
+              <Link onClick={handleButtonClick} to="/jobs">
+                <div className="hover:underline text-[16px] 5xl:text-[24px]  font-[600] text-[#38761D]">Find Jobs</div>
+              </Link>
+              <Link onClick={handleButtonClick} className="mb-[px] " to="/eclatjobs">
+                <div className=" text-[16px]   opacity-80 font-[600] talent  bg-[#38761d] bg-opacity-90 text-[#fff]">Find Talent</div>
               </Link>
             </div>
             <DropdownMenu />

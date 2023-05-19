@@ -324,7 +324,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[103vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
+        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[103vh] 5xxl:h-[133vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
           <div className="3xxl:w-[80%] 5xxl:w-[85%] 3xxl:ml-[12%] 4xxl:ml-[15%] ">
             <div className=" 3xxl:w-[200px] 5xxl:w-[80%] items-center  ">
               <Link onClick={() => window.scrollTo(0, 0)} className="md:w-[70%] 3xxl:ml-[30px] " to="/dashboard">

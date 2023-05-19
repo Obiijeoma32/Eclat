@@ -340,45 +340,45 @@ function ChooseUs() {
             </div>
           </div>
         </div>
-        <div className="md:ml-[30px] 3xxl:ml-[15%] 5xxl:ml-[25%] 4xxl:ml-[17%] 3xxl:grid 1halfxl:ml-[15px] md:mr-[30px] 1halfxl:w-[85%] 820xxl:w-[80%] 820xxl:ml-[170px]  md:mt-[8rem]   3xxl:w-[280px] 3xxl:mt-[3rem] ">
-          <div className="md:flex md:ml-[7.5rem] 1halfxl:mb-[40px] 1halfxl:flex  820xxl:grid 1halfxl:ml-[90px]   820xxl:ml-[10px] 6xl:ml-[165px] 3xl:ml-[140px] xl:w-[83%]  2xl:w-[85%] 5xl:w-[85%] 5xl:ml-[200px] md:mb-[26px] 3xxl:w-[85%] md:w-[80%] 4xl:w-[65%] 4xl:ml-[220px]   items-center justify-between 3xxl:grid">
-            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px] ">
+        <div className="md:ml-[30px] 3xxl:ml-[15%] 5xxl:ml-[25%] 4xxl:ml-[17%] 3xxl:grid 1halfxl:ml-[15px] md:mr-[30px] 1halfxl:w-[90%] 820xxl:w-[80%] 820xxl:ml-[170px]  md:mt-[8rem]   3xxl:w-[280px] 3xxl:mt-[3rem] ">
+          <div className="md:flex md:ml-[7.5rem] 1halfxl:mb-[40px] 1halfxl:flex  820xxl:grid 1halfxl:ml-[90px]   820xxl:ml-[10px] 6xl:ml-[165px] 3xl:ml-[140px] xl:w-[83%]  2xl:w-[85%] 1halfxl:w-[75%] 5xl:w-[85%] 5xl:ml-[200px] md:mb-[26px]  3xxl:w-[85%] md:w-[80%] 4xl:w-[65%] 4xl:ml-[220px]   items-center justify-between 3xxl:grid">
+            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 1halfxl:w-[300px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px] ">
               DevOps Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 1halfxl:w-[300px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Frontend Software Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 1halfxl:w-[300px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Backend Software Engineer
             </h3>
-            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
+            <h3 className=" md:w-[240px] 4xl:w-[350px]  820xxl:mt-[20px] 820xxl:w-[500px] xl:w-[250px] 1xl:w-[200px] 3xl:w-[315px] 2xl:w-[290px] 3xxl:mb-[10px] 3xxl:w-[250px] 3xxl:text-[9px] border-[1px] bg-[#f4f4f6] pt-[10px] text-[13px] 1halfxl:w-[300px] 5xl:w-[520px] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[320px]">
               Data Architects
             </h3>
           </div>
-          <div className="md:flex 6xl:ml-[80px]  1halfxl:flex 1halfxl:ml-[40px] 1halfxl:w-[90%] 820xxl:mt-[-30px] 820xxl:ml-[10px]  820xxl:grid 4xl:w-[78%] 4xl:ml-[60px] xl:w-[92%] 2xl:w-[92%] md:ml-[4rem] md:mb-[26px] 5xl:w-[95%]  3xxl:w-[85%] md:w-[90%] job-type  items-center justify-between 3xxl:grid">
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[300px] 6xl:w-[360px] ">
+          <div className="md:flex 6xl:ml-[80px]  1halfxl:flex 1halfxl:ml-[20px] 1halfxl:w-[90%] 820xxl:mt-[-30px] 820xxl:ml-[10px]  820xxl:grid 4xl:w-[78%] 4xl:ml-[60px] xl:w-[92%] 2xl:w-[92%] md:ml-[4rem] md:mb-[26px] 5xl:w-[95%]  3xxl:w-[85%] md:w-[90%] job-type  items-center justify-between 3xxl:grid">
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[250px] 6xl:w-[360px] ">
               Data Engineers/Analysts
             </h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[300px] 6xl:w-[360px]">
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[250px] 6xl:w-[360px]">
               Software Testers
             </h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[300px] 6xl:w-[360px]">
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[250px] 6xl:w-[360px]">
               Cloud Architects
             </h3>
-            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[300px] 6xl:w-[360px] ">
+            <h3 className=" md:w-[270px] 3xxl:mb-[10px] 5xl:w-[590px] xl:w-[300px] 3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[310px] 4xl:w-[550px]  1xl:w-[224px]   3xxl:w-[250px] 3xxl:text-[9px] 1halfxl:w-[250px] 6xl:w-[360px] ">
               Cloud Engineers
             </h3>
           </div>
-          <div className="md:flex 3xxl:grid 820xxl:w-[90%] 4xl:ml-[-5px]  w-[100%] job3-type 5xl:w-[100%] 1halfxl:flex 1halfxl:ml-[2px] 4xl:w-[85%] 820xxl:mt-[-10px] 820xxl:grid items-center justify-between">
-            <h3 className=" 4xl:whitespace-nowrap 1halfxl:pt-[10px]  md:w-[380px] 5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 820xxl:pt-[10px] 1xl:w-[320px] 2xl:pt-[6px] 1xl:pb-[3px] 3xl:w-[400px] 1halfxl:w-[300px] 3xl:pt-[6px] md:pt-[2px] 6xl:w-[400px] 3xxl:w-[250px]   3xxl:text-[9px] 3xxl:pt-[10px] ">
+          <div className="md:flex 1halfxl:w-[95%] 3xxl:grid 820xxl:w-[90%] 4xl:ml-[-5px]  w-[100%] job3-type 5xl:w-[100%] 1halfxl:flex 1halfxl:ml-[2px] 4xl:w-[85%] 820xxl:mt-[-10px] 820xxl:grid items-center justify-between">
+            <h3 className=" 4xl:whitespace-nowrap 1halfxl:pt-[10px]  md:w-[380px] 5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 820xxl:pt-[10px] 1xl:w-[350px] 2xl:pt-[6px] 1xl:pb-[3px] 3xl:w-[400px] 1halfxl:w-[320px] 3xl:pt-[6px] md:pt-[2px] 6xl:w-[400px] 3xxl:w-[250px]   3xxl:text-[9px] 3xxl:pt-[10px] ">
               User Interface (UI)/User Experience (UX) Designer{" "}
             </h3>
 
-            <h3 className=" md:w-[380px] 3xxl:mb-[10px]  5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[320px]  3xl:w-[400px] 1halfxl:w-[300px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] ">Data Engineers</h3>
-            <h3 className=" md:w-[380px] 3xxl:mb-[10px] 1halfxl:pt-[10px] 5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[320px] 1xl:pt-[-3px] 3xl:w-[400px] 1halfxl:w-[300px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] pt-[8px] ">
+            <h3 className=" md:w-[380px] 3xxl:mb-[10px]  5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[350px]  3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] ">Data Engineers</h3>
+            <h3 className=" md:w-[380px] 3xxl:mb-[10px] 1halfxl:pt-[10px] 5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[350px] 1xl:pt-[-3px] 3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] pt-[8px] ">
               Security Architects/Cyber security Analysts
             </h3>
-            <h3 className=" md:w-[380px] 3xxl:mb-[10px]  5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[320px]  3xl:w-[400px] 1halfxl:w-[300px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] ">Full Stack Developers</h3>
+            <h3 className=" md:w-[380px] 3xxl:mb-[10px]  5xl:w-[620px] 2xl:w-[380px] 820xxl:w-[500px] 820xxl:mt-[20px] 1xl:w-[350px]  3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 3xxl:text-[9px] 6xl:w-[400px] ">Full Stack Developers</h3>
           </div>
         </div>
       </div>
