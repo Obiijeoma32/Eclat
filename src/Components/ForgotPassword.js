@@ -4,9 +4,9 @@ import HeaderForSignup from "./HeaderForSignup";
 function ForgotPassword() {
   return (
     <>
-      <div className=" bg-[#fff] w-[100%] h-[100vh]">
+      <div className=" bg-[#fff] 820xxl:h-[150vh] w-[100%] 6xxl:h-[130vh] h-[100vh]">
         <HeaderForSignup />
-        <div className="pt-[10%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[160px] 820xxl:pt-[150px] pb-[20px] 4xl:ml-[35%] 1xl:pt-[15%] 3xl:ml-[33%] 3xl:pt-[10%] 5xl:ml-[40%] 6xl:ml-[33%]  ml-[30%]">
+        <div className="pt-[10%] 10inch:ml-[25%] 6xxl:ml-[10%] 7xxl:ml-[15%] 1xl:ml-[28%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[20%] 820xxl:pt-[150px] pb-[20px] 4xl:ml-[35%] 1xl:pt-[15%] 3xl:ml-[33%] 3xl:pt-[10%] 5xl:ml-[40%] 6xl:ml-[33%]  ml-[30%]">
           <div className="w-[512px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[30px] text-center text-[#1E2757] ">Forgot Password</h4>

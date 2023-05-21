@@ -3,9 +3,10 @@ import React from "react";
 function Steps() {
   return (
     <>
-      <div className=" md:block hidden ml-[6rem]   820xxl:w-[80%] 2xl:w-[85%] 2xl:ml-[120px] mt-[7rem] 1xl:w-[95%] 1xl:ml-[40px] w-[85%] 5xl:w-[90%] 5xl:ml-[5%]">
+      {/* big screens */}
+      <div className=" md:block hidden ml-[6rem] 10inch:ml-[13%] 3xl:ml-[3%] 10inch:w-[80%]  820xxl:w-[79%] 2xl:w-[85%] 2xl:ml-[120px] mt-[7rem] 1xl:w-[95%] 1xl:ml-[40px] w-[85%] 5xl:w-[90%] 5xl:ml-[5%]">
         <h1 className=" text-center  text-[48px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
-        <div className=" 1halfxl:flex 1halfxl:ml-[50px] 5xl:w-[95%] 1halfxl:w-[90%] 4xl:w-[1600px] 1halfxl:h-[500px] flex justify-between 820xxl:ml-[160px] 820xxl:h-[1500px] 820xxl:grid items-center">
+        <div className=" 1xl:flex 1xl:h-[500px] 3xl:w-[100%]  10inch:ml-[25%]  1xl:w-[100%] 1xl:justify-between 1xl:ml-[-15px]  1halfxl:flex 1halfxl:ml-[50px] 5xl:w-[95%] 1halfxl:w-[90%] 4xl:w-[1600px] 1halfxl:h-[500px] flex justify-between 820xxl:ml-[160px] 820xxl:h-[1500px] 820xxl:grid items-center">
           <div className=" bg-white 5xl:flex 5xl:justify-center  rounded-[10px] shadow-lg md:w-[320px] 5xl:w-[500px]   h-[450px] ">
             <div>
               <div className="md:ml-[90px] 5xl:ml-[120px]  mb-[30px] mt-7 ">
@@ -109,9 +110,10 @@ function Steps() {
           </div>
         </div>
       </div>
-      <div className=" md:hidden block 3xxl:ml-[30px]  ml-[90px] mt-[5rem]  w-[85%]">
+      {/* small screens */}
+      <div className=" md:hidden block 3xxl:ml-[30px]    ml-[90px] mt-[5rem]  w-[85%]">
         <h1 className=" text-center  3xxl:text-[20px] text-[48px] 5xxl:ml-[30px]  5xxl:w-[95%] 5xxl:text-[30px] font-[600] text-[#222222] mb-[4rem]  ">Get started in 3 easy steps :</h1>
-        <div className=" justify-evenly  grid">
+        <div className=" justify-evenly 7xxl:ml-[6%] grid">
           <div className=" bg-white rounded-[10px] mb-[40px] shadow-lg w-[320px] 3xxl:w-[270px]  h-[450px] ">
             <div className="ml-[90px]  3xxl:ml-[50px] mb-[30px] mt-7 ">
               <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">

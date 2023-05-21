@@ -93,7 +93,7 @@ function SideBar({ children }) {
           </NavLink>
         ))}
       </div>
-      <div className=" 3xxl:block hidden 820xxl:hidden w-[40px] pl-[10px] mt-[15%]">
+      <div className=" 3xxl:block  hidden 820xxl:hidden w-[40px] pl-[10px] mt-[15%]">
         <div className="fixed w-[40px]" onClick={handleSideBar}>
           <svg width="30" height="60" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -124,7 +124,7 @@ function SideBar({ children }) {
           </svg>
         </div>
         {side && (
-          <div className=" w-[414px] fixed z-40  top-0 left-0 h-[150vh] bg-[#000] bg-opacity-40">
+          <div className=" w-[100%]  fixed z-40  top-0 left-0 h-[150vh] bg-[#000] bg-opacity-20">
             <div className=" w-[300px] pt-[100px] pl-[20px] h-[150vh] bg-[#fafafa]">
               {secondMenu.map((item, index) => (
                 <NavLink

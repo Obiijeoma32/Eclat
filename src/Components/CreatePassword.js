@@ -6,7 +6,7 @@ function CreatePassword() {
     <>
       <div className=" bg-[#fff] w-[100%] h-[150vh]">
         <HeaderForSignup />
-        <div className="pt-[10%] 1halfxl:ml-[32%] 1halfxl:pt-[10%] 820xxl:ml-[150px] 820xxl:pt-[15%] pb-[20px] 6xl:ml-[33%] 1xl:pt-[15%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] ml-[30%]">
+        <div className="pt-[10%] 6xxl:ml-[10%] 10inch:ml-[25%] 7xxl:ml-[15%] 6xxl:pt-[15%] 1halfxl:ml-[32%] 1halfxl:pt-[10%] 820xxl:ml-[150px] 820xxl:pt-[15%] pb-[20px] 6xl:ml-[33%] 1xl:pt-[15%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] ml-[30%]">
           <div className="w-[512px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[30px] text-center text-[#1E2757] ">Create Password</h4>

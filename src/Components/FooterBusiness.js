@@ -10,7 +10,7 @@ function FooterBusiness() {
     <>
       <div className="md:block hidden mt-[9rem]">
         <div className="footer-container-content">
-          <div className="6xl:ml-[23%] 1halfxl:ml-[18%]  820xxl:w-[600px] 820xxl:ml-[110px] 5xl:w-[1200px] 2xl:w-[950px] 1xl:w-[800px] 1xl:ml-[140px] 2xl:ml-[17%] 3xl:ml-[23%] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[25%] 5xl:ml-[28%] ">
+          <div className="6xl:ml-[23%] 1halfxl:ml-[18%] 10inch:ml-[20%] 820xxl:w-[600px] 820xxl:ml-[110px] 5xl:w-[1200px] 2xl:w-[950px] 1xl:w-[800px] 1xl:ml-[140px] 2xl:ml-[17%] 3xl:ml-[23%] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[25%] 5xl:ml-[28%] ">
             <div className="w-[500px] 820xxl:ml-[10%]  ml-[25%] 5xl:ml-[31%] 2xl:ml-[25%] 1xl:ml-[20%] pt-[5%]">
               <h1 className="  font-[700] text-[48px] 820xxl:text-[40px] 820xxl:mt-[40px] text-[#fff] ">Get started today on TechEclat now. </h1>
               <div className="ml-[150px] mt-4">
@@ -311,7 +311,7 @@ function FooterBusiness() {
         </div>
       </div>
       <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
-        <div className="w-[450px] 5xxl:w-[400px] 5xxl:h-[250px] 5xxl:ml-[13%]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[18%] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
+        <div className="w-[450px] 5xxl:w-[400px] 7xxl:ml-[25%] 6xxl:ml-[17%] 5xxl:h-[250px] 5xxl:ml-[13%]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[18%] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
           <div className="w-[400px] 5xxl:pt-[15%] 5xxl:w-[70%] 4xxl:ml-[17%] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
             <h1 className=" 820xxl:ml-[15%] 5xxl:text-[22px] 3xxl:text-[14px] 3xxl:ml-[0px] font-[700] 820xxl:text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
             <div className=" mt-4">
@@ -323,11 +323,11 @@ function FooterBusiness() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[103vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
+        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[103vh] 5xxl:h-[133vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
           <div className="3xxl:w-[80%] 5xxl:w-[85%] 3xxl:ml-[12%] 4xxl:ml-[15%] ">
             <div className=" 3xxl:w-[200px] 5xxl:w-[80%] items-center  ">
               <Link onClick={() => window.scrollTo(0, 0)} className="md:w-[70%] 3xxl:ml-[30px] " to="/dashboard">
-                <div className=" ml-[85px] 3xxl:w-[200px] 3xxl:ml-[3px]  ">
+                <div className=" ml-[85px] 3xxl:w-[200px] 6xxl:ml-[15%]  3xxl:ml-[3px]  ">
                   <svg className=" 5xxl:w-[300px] 5xxl:h-[101px] 3xxl:w-[250px]" width="300" height="101" viewBox="0 0 300 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_206_2968)">
                       <path

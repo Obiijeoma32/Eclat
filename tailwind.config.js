@@ -7,6 +7,8 @@ module.exports = {
         "3xxl": "300px",
         "4xxl": "400px",
         "5xxl": "500px",
+        "6xxl": "600px",
+        "7xxl": "700px",
         "820xxl": "820px",
         "10inch": "960px",
         "1xl": "1050px",

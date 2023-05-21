@@ -12,7 +12,7 @@ function HeaderForSignup() {
   };
   return (
     <>
-      <div className="flex  headerforsignup h-[70px] w-[100%] pl-[30px] pr-[60px] pt-[15px] items-center justify-between">
+      <div className="flex  headerforsignup h-[70px]  w-[100%] pl-[30px] pr-[60px] pt-[15px] items-center justify-between">
         <Link onClick={handlePageReloadClick} to="/dashboard">
           <svg className=" 3xxl:w-[150px] 820xxl:w-[190px] 820xxl:h-[50px] 4xl:w-[200px] 5xl:w-[220px] 5xl:h-[60px] 4xl:h-[60px] mb-2" width="190" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M158 22.6821C157.281 22.724 156.604 22.825 156.056 23.6148C155.86 23.8985 155.413 23.9194 155 24C155.467 23.4533 156.08 23.0465 156.545 22.4603C157.128 21.7249 157.533 21.9236 158 22.6821Z" fill="#38761D" />

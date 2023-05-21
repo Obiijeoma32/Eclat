@@ -83,7 +83,7 @@ function Test() {
     <>
       <div className="bg-[#fff] w-[100%] h-[150vh] ">
         <AdminSideBar />
-        <div className=" ml-[18rem] pt-[30px] ">
+        <div className="3xxl:ml-[18%] 3xxl:overflow-x-auto ml-[18rem] pt-[30px] ">
           <h1 className=" text-[#38761D] text-[30px] font-[300px] ">Test</h1>
           <div className="flex w-[955px] justify-end 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px]">
             <div onClick={handleCreateTest} className="w-[153px] cursor-pointer flex justify-evenly items-center h-[55px] bg-[#38761D] text-[#fff] rounded-[5px] ">

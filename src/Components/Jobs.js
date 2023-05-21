@@ -37,9 +37,9 @@ function Jobs() {
 
   return (
     <>
-      <div className=" bg-[#fff] md:w-[100%] 3xxl:w-[505px] h-[150vh]">
+      <div className=" bg-[#fff] 6xxl:w-[100%] 6xxl:h-full md:w-[100%] 3xxl:w-[505px] h-[150vh]">
         <HeaderForSignup />
-        <div className="md:pt-[7%] 1halfxl:ml-[28%] 820xxl:ml-[100px] 820xxl:pt-[200px] 3xxl:pt-[11rem] pb-[20px] 1xl:pt-[15%] md:ml-[30%] 3xl:ml-[33%] xl:pt-[10%] 3xl:pt-[10%] 2xl:pt-[10%] 3xxl:ml-[10%] 6xl:ml-[33%]   4xl:ml-[35%] 5xl:ml-[38%] ">
+        <div className="md:pt-[7%] 7xxl:ml-[25%] 10inch:ml-[20%] 1xl:ml-[25%] 6xxl:ml-[20%] 1halfxl:ml-[28%] 820xxl:ml-[16%] 820xxl:pt-[200px] 3xxl:pt-[11rem] pb-[20px] 1xl:pt-[15%] md:ml-[30%] 3xl:ml-[33%] xl:pt-[10%] 3xl:pt-[10%] 2xl:pt-[10%] 3xxl:ml-[10%] 6xl:ml-[33%]   4xl:ml-[35%] 5xl:ml-[38%] ">
           <div className=" bg-white rounded-[5px] 3xxl:w-[380px]   shadow-lg md:w-[562px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" text-[14px] text-center text-[#0A0A0A] opacity-40">

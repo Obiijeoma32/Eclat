@@ -5,7 +5,7 @@ function Notification2() {
     <>
       <div className="bg-[#fff] w-[100%] h-[160vh] ">
         <AdminSideBar />
-        <div className=" ml-[18rem] pt-[30px] ">
+        <div className="3xxl:ml-[18%] 3xxl:overflow-x-auto ml-[18rem] pt-[30px] ">
           <h1 className=" text-[#38761D] text-[30px] font-[300px] ">Notification</h1>
           <div className=" ml-[10px] border-[#E3E7EB] border-[1px] opacity-90 bg-[#38761D] h-[312px] mt-[40px] rounded-[5px] w-[920px] 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px] ">
             <h3 className="  pb-[10px] pl-[18px] h-[50px] pt-[10px] text-[18px] bg-[#fff] text-[#38761D] font-[400]  w-[920px] 5xl:w-[2000px] 6xl:w-[1299px] 4xl:w-[1499px]">Today</h3>

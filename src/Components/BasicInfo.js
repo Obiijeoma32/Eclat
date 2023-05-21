@@ -69,12 +69,12 @@ function BasicInfo() {
   return (
     <>
       <Heading />
-      <div className=" 3xxl:mt-[8%] 5xl:mt-[-4%] flex 820xxl:mt-[2%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%]">
+      <div className=" 7xxl:mt-[0px] 3xxl:mt-[8%] 6xxl:w-[90%] 5xl:mt-[-4%] flex 820xxl:mt-[2%] 1halfxl:ml-[0px] 1halfxl:mt-[-1%] 820xxl:ml-[5%] 5xl:ml-[5%]">
         <SideBar />
-        <div className=" mt-[11%] 5xl:mt-[11%] 3xxl:mt-[15%] 820xxl:ml-[30%] 3xxl:ml-[1rem]  ml-[25rem] 1xl:ml-[22rem]  ">
+        <div className=" 6xxl:w-[80%] mt-[11%] 4xl:mt-[11%] 5xl:mt-[11%] 3xxl:mt-[15%] 820xxl:ml-[30%] 3xxl:ml-[1rem]  ml-[25rem] 1xl:ml-[22rem]  ">
           <h1 className=" 3xxl:w-[80%] text-[#38761D]  820xxl:w-[400px] 3xxl:text-[20px] 820xxl:text-[30px] font-[600] opacity-80 ">Confirm the resource</h1>
           <p className=" 3xxl:hidden p text-[#B6D7A8] 1halfxl:block 820xxl:hidden text-[18px] font-[300] mt-[14px] 4xl:hidden">Please fill in the details below so we can get in touch with you</p>
-          <p className="3xxl:w-[88%] 3xxl:block 820xxl:block 4xl:block 5xl:w-[1220px]  4xl:w-[920px] 1halfxl:hidden text-[#B6D7A8] hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] 3xxl:text-[12px] 820xxl:text-[18px] font-[300] mt-[14px] ">
+          <p className="3xxl:w-[88%] 10inch:w-[85%] 3xxl:block 820xxl:block 4xl:block 5xl:w-[1220px]  4xl:w-[920px] 1halfxl:hidden text-[#B6D7A8] hidden border-b-[1px] border-b-[#38761D] w-[400px] pb-[20px] 3xxl:text-[12px] 820xxl:text-[18px] font-[300] mt-[14px] ">
             Please fill in the details below so we can get in touch with you
           </p>
           <form className="mt-7" action="">
@@ -85,7 +85,7 @@ function BasicInfo() {
             <Select
               placeholder="Select the role you would like to hire"
               styles={customStyles}
-              className="w-[640px] 3xxl:w-[300px] 1halfxl:w-[640px]   mt-2 text-[#38761D]  outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              className="w-[640px] 3xxl:w-[300px] 10inch:w-[85%] 6xxl:w-[89%]  1halfxl:w-[640px]   mt-2 text-[#38761D]  outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
               options={jobRole}
             />
             <br />
@@ -94,14 +94,24 @@ function BasicInfo() {
               What skill are you looking out for ?
             </label>
             <br />
-            <Select placeholder="Select the skills required" styles={customStyles} className=":w-[640px] 3xxl:w-[300px]  1halfxl:w-[640px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={options} />
+            <Select
+              placeholder="Select the skills required"
+              styles={customStyles}
+              className=":w-[640px] 3xxl:w-[300px] 10inch:w-[85%] 6xxl:w-[89%]   1halfxl:w-[640px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              options={options}
+            />
             <br />
 
             <label className=" text-[#38761D] 3xxl:text-[10px] 820xxl:text-[14px] font-[400] opacity-80 " htmlFor="text">
               What job type ?
             </label>
             <br />
-            <Select placeholder="Select the job type" styles={customStyles} className="w-[640px] 1halfxl:w-[640px] 3xxl:w-[300px]  mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]" options={jobType} />
+            <Select
+              placeholder="Select the job type"
+              styles={customStyles}
+              className="w-[640px] 1halfxl:w-[640px] 3xxl:w-[300px] 10inch:w-[85%] 6xxl:w-[89%]   mt-2 text-[#38761D]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              options={jobType}
+            />
             <br />
 
             <label className=" text-[#38761D] 3xxl:text-[10px] 820xxl:text-[14px] font-[400] opacity-80 " htmlFor="text">
@@ -111,12 +121,12 @@ function BasicInfo() {
             <Select
               placeholder="Select the experience level you need"
               styles={customStyles}
-              className="w-[640px]  1halfxl:w-[640px]  mt-2 text-[#38761D] 3xxl:w-[300px]    outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
+              className="w-[640px]  1halfxl:w-[640px]  mt-2 text-[#38761D] 3xxl:w-[300px] 10inch:w-[85%] 6xxl:w-[89%]     outline-none  5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]"
               options={years}
             />
           </form>
 
-          <div className=" flex justify-end w-[640px] 3xxl:w-[300px] mb-6 1halfxl:w-[640px] mt-[3rem] 5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]">
+          <div className=" flex justify-end w-[640px] 3xxl:w-[300px] 10inch:w-[85%] 6xxl:w-[89%]  mb-6 1halfxl:w-[640px] mt-[3rem] 5xl:w-[1220px]  820xxl:w-[400px] 4xl:w-[920px]">
             <Link className="" to="">
               <h1 className=" w-[157px]  h-[45px] bg-[#38761D] pt-3 opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">SUBMIT</h1>
             </Link>

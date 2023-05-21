@@ -8,9 +8,9 @@ function LoginUser() {
 
   return (
     <>
-      <div className=" bg-[#fff] w-[100%] h-[150vh]">
+      <div className=" bg-[#fff] w-[100%] 6xxl:h-[190vh] h-[150vh]">
         <HeaderForSignup />
-        <div className="md:pt-[7%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[129px] 820xxl:pt-[150px] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] 1xl:pt-[15%] pb-[20px] md:ml-[30%] 6xl:ml-[33%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] 5xl:ml-[38%]">
+        <div className="md:pt-[7%] 10inch:ml-[25%] 7xxl:ml-[22%] 1xl:ml-[25%] 6xxl:ml-[16%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[20%] 820xxl:pt-[150px] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] 1xl:pt-[15%] pb-[20px] md:ml-[30%] 6xl:ml-[33%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] 5xl:ml-[38%]">
           <div className="md:w-[512px] 3xxl:w-[390px]  h-[636px] ">
             <div className=" pt-5 ">
               <h4 className=" 3xxl:ml-[40px] text-[30px] text-center text-[#1E2757] ">Join the Network</h4>
@@ -134,24 +134,24 @@ function LoginUser() {
             </svg>
           </div>
 
-          <div className="bg-[#fff] 820xxl:h-[900px] 820xxl:w-[600px] overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
-            <div className="pt-[50px] pl-[40px]">
+          <div className="bg-[#fff] 7xxl:w-[70%] 6xxl:w-[70%] 5xxl:w-[70%] 4xxl:w-[70%] 820xxl:h-[900px] 820xxl:w-[600px] overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
+            <div className="pt-[50px]  pl-[40px]">
               <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 ">Terms and Conditions</h3>
-              <div className=" 820xxl:w-[500px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className=" 820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   “Third Party” means any party other than TechEclat, its holding and subsidiary companies or agents. Notwithstanding the foregoing, you may disclose Confidential information to TechEclat’s holding and subsidiary companies, or agents,
                   professional partners and advisers on a need-to-know basis only.
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%]  mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   All information and data provided to you by TechEclat shall be used exclusively for the purposes arising from this engagement. You shall prevent the use of TechEclat’s information, data, computers, equipment and other properties by
                   third parties. Also, you shall notify TechEclat without undue delay of any misuse of TechEclat’s information, data, computers, equipment and other properties.{" "}
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   You shall not copy, reproduce, modify, alter, disassemble, reverse engineer or decompile any Confidential Information unless expressly permitted in writing by TechEclat. Also, you shall not print or copy, in whole or in part, any
@@ -159,7 +159,7 @@ function LoginUser() {
                   program or any transaction relating thereto.{" "}
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   You shall protect Confidential Information in your possession using the same standard of care that TechEclat applies to safeguard its own proprietary, secret or confidential information and you shall ensure that Confidential
@@ -167,7 +167,7 @@ function LoginUser() {
                   representative.
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   Where you are compelled by applicable regulatory and/or fiscal authorities and any other valid order carrying the force of law to disclose any confidential or proprietary information, you shall promptly notify TechEclat of such
@@ -179,7 +179,7 @@ function LoginUser() {
         </div>
       )}
       {privacy && (
-        <div className="w-[100%]   h-[150vh] fixed bg-[rgb(0,0,0,0.4)] top-0 left-0 z-0 ">
+        <div className="w-[100%]    h-[150vh] fixed bg-[rgb(0,0,0,0.4)] top-0 left-0 z-0 ">
           <div className="mt-[85px] flex cursor-pointer mr-2 justify-end">
             <svg
               onClick={() => {
@@ -195,10 +195,10 @@ function LoginUser() {
             </svg>
           </div>
 
-          <div className="bg-[#fff] 820xxl:h-[900px] 820xxl:w-[600px]  overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
+          <div className="bg-[#fff] 7xxl:w-[70%] 6xxl:w-[70%] 5xxl:w-[70%] 4xxl:w-[70%] 820xxl:h-[900px] 820xxl:w-[600px]  overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
             <div className="pt-[50px] pl-[40px]">
               <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 "> Privacy Agreement</h3>
-              <div className="820xxl:w-[500px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
                   TechEclat Clients. We also may receive PII from TechEclat Clients to perform services for them. Any PII used for such purposes will be limited to access by only those who require it given their job function at TechEclat, and except
@@ -206,56 +206,56 @@ function LoginUser() {
                   purpose) other than the specific purpose of performing the services as specified in the applicable Master Services Agreement with the Client.{" "}
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[30px] text-[#38761D] font-[400] tracking-[2px] ml-[10px]  mb-[4px] w-[800px]  text-[16px] ">
+              <div className="820xxl:w-[500px] mt-[30px] text-[#38761D] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[400] tracking-[2px] ml-[10px]  mb-[4px] w-[800px]  text-[16px] ">
                 <p>We use the Personal Information we collect: </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[550px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[550px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] ">&#x2022;</span>
                 <p>To provide, maintain, improve, and enhance our Services. </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] ">&#x2022;</span>
                 <p>To communicate with you, provide you with updates and other information relating to our Services, provide information that you request, respond to comments and questions, and otherwise provide customer service and support.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>
                   For marketing purposes, such as developing and providing promotional and advertising materials that may be useful, relevant, valuable, or otherwise of interest to you, to market events, promotions, competitions, webinars, reports,
                   our services, news, or relevant industry updates.{" "}
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>To personalize your experience on our Services such as presenting tailored content. </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>To conduct research to understand and analyze how you use our Services and develop new products, services, and features.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[280px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[280px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>To process job applications.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>To process your submissions, including to become our talent, client or partner, join the TechEclat Learning Community, to download e-books, or attend webinars or events.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>To find and prevent fraud and respond to trust and safety issues that may arise.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>For compliance purposes, including enforcing our legal rights, or as may be required by applicable laws and regulations or requested by any judicial process or governmental agency.</p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>
                   To enforce and comply with the law, including to conduct an investigation, to protect the property and rights of TechEclat or a third party, to protect the safety of the public or any person, or to prevent or stop activity we may
                   consider to be, or to pose a risk of being, illegal, fraudulent, unethical or legally actionable activity.{" "}
                 </p>
               </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
                 <p>For other purposes for which we provide specific notice at the time the Personal Information is collected.</p>
               </div>

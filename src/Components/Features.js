@@ -2,11 +2,12 @@
 function Features() {
   return (
     <>
-      <div className="md:block 1halfxl:block 2xl:block 3xl:block 4xl:block 5xl:block  820xxl:hidden hidden w-[98%] ml-1 mt-[12rem] ">
-        <div className=" md:text-center 1halfxl:w-[90%] 820xxl:w-[80%] 5xl:ml-[4rem]  ml-[3rem]">
+      {/* large screens */}
+      <div className="md:block 1xl:block 1halfxl:block 2xl:block 3xl:block 4xl:block 5xl:block  820xxl:hidden hidden w-[98%] ml-1 mt-[12rem] ">
+        <div className=" 1xl:ml-[9%] md:text-center 1xl:w-[85%] 1halfxl:w-[90%] 820xxl:w-[80%] 5xl:ml-[4rem]  ml-[3rem]">
           <h4 className=" text-[18px] opacity-80 text-[#38761DCC] font-[300] ">Our Community</h4>
           <h2 className=" text-[36px] opacity-80  text-[rgb(0,0,0)] font-[600] ">Some Of Our Main Feature</h2>
-          <p className=" 1xl:w-[400px]  1halfxl:ml-[370px]  1xl:ml-[30px]   6xl:ml-[39%] 2xl:w-[400px] 2xl:ml-[32rem]  text-[16px] md:w-[350px] md:ml-[26rem] text-[#656464] 3xl:w-[400px] 3xl:ml-[37.5%] font-[300] 5xl:ml-[41%] 5xl:w-[450px] 4xl:w-[350px] 4xl:ml-[40%]">
+          <p className=" 1xl:w-[500px] 1xl:ml-[22%]  1halfxl:ml-[370px]     6xl:ml-[39%] 2xl:w-[400px] 2xl:ml-[32rem]  text-[16px] md:w-[350px] md:ml-[26rem] text-[#656464] 3xl:w-[400px] 3xl:ml-[37.5%] font-[300] 5xl:ml-[41%] 5xl:w-[450px] 4xl:w-[350px] 4xl:ml-[40%]">
             The wise man therefore always holds in these matters to this principle of selection.
           </p>
         </div>
@@ -188,17 +189,18 @@ function Features() {
           </div>
         </div>
       </div>
-      <div className="md:hidden 5xxl:w-[85%] 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
-        <div className=" text-center 820xxl:ml-[75px] 3xxl:ml-[40px] ml-[70px]">
+      {/* small screens */}
+      <div className="md:hidden 10inch:ml-[8%] 1xl:hidden  5xxl:w-[85%] 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
+        <div className=" text-center 7xxl:ml-[11%] 820xxl:ml-[2%] 3xxl:ml-[40px] ml-[70px]">
           <h4 className=" 820xxl:text-[18px] 5xxl:text-[14px] 5xxl:ml-[15%]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" 820xxl:text-[36px] 5xxl:text-[32px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <h2 className=" 820xxl:text-[36px] 6xxl:w-[80%] 6xxl:ml-[13%] 5xxl:text-[32px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
           <p className=" text-[16px] 3xxl:text-[10px] 5xxl:mt-[10px] 5xxl:text-[14px] 5xxl:ml-[15%] 3xxl:ml-[35px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">
             The wise man therefore always holds in these matters to this principle of selection.
           </p>
         </div>
 
-        <div className="grid mt-[6rem] ml-[80px] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+        <div className="grid mt-[6rem] 820xxl:ml-[13%] 820xxl:h-[120vh] 7xxl:ml-[21%] ml-[80px] 6xxl:ml-[16%] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 820xxl:h-[270px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4273_46876)">
@@ -262,7 +264,7 @@ function Features() {
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 820xxl:h-[270px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
                 <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,8 +307,8 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="grid mt-[6rem] 3xxl:mt-[1rem] ml-[80px] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
-          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+        <div className="grid mt-[6rem] 820xxl:ml-[13%] 820xxl:h-[120vh] 7xxl:ml-[21%] 3xxl:mt-[1rem] 6xxl:ml-[16%] ml-[80px] 5xxl:ml-[8%] 5xxl:w-[90%] 3xxl:ml-[20%] 3xxl:w-[270px] 3xxl:h-[900px] w-[350px] h-[700px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 820xxl:h-[270px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" flex w-[300px] 5xxl:items-start 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
                 <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +354,7 @@ function Features() {
               </p>
             </div>
           </div>
-          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
+          <div className=" bg-white rounded-[10px] 5xxl:w-[450px] 5xxl:h-[350px] 820xxl:w-[650px] 820xxl:h-[270px] 3xxl:w-[250px] 3xxl:h-[400px]  shadow-lg w-[350px] h-[303px] ">
             <div className=" 5xxl:items-start flex w-[300px] 5xxl:flex 5xxl:w-[90%] 3xxl:grid 3xxl:w-[200px] 3xxl:mt-[40px] 820xxl:w-[550px] 820xxl:items-start 820xxl:h-[200px] 820xxl:mt-[40px] 820xxl:ml-[40px] 820xxl:justify-between justify-evenly items-center ">
               <div>
                 <svg className=" 3xxl:w-[106px] 3xxl:h-[106px]   3xxl:ml-[30px] " width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">

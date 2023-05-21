@@ -14,14 +14,14 @@ function TechExpert() {
     <>
       <div>
         <Heading />
-        <div className="md:flex 820xxl:mt-[9rem] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:mt-[130px] 5xl:ml-[5%]">
+        <div className="md:flex 820xxl:mt-[9rem]   1xl:flex 1xl:h-[550px] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:mt-[130px] 5xl:ml-[5%]">
           <div className=" w-[85%]   1xl:w-[50%] ">
             <h1 className=" text-left 820xxl:w-[650px] 820xxl:h-[200px] 4xl:w-[1100px] 1xl:w-[500px]  md:w-[650px] 5xl:w-[1100px] text-[36px] font-[600] text-[#000] opacity-80 ">
               Discover fulfilling employment opportunities with reputable organizations.
             </h1>
-            <img className="md:w-[500px] hidden 1halfxl:hidden  820xxl:w-[650px] 820xxl:h-[500px] 820xxl:block 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
+            <img className="md:w-[500px] hidden 1xl:hidden 1halfxl:hidden  820xxl:w-[650px] 820xxl:h-[500px] 820xxl:block 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
 
-            <p className="tracking-[1px] mt-3 2xl:mt-[-60px] 820xxl:w-[650px] 4xl:w-[900px] 1xl:w-[450px] md:w-[500px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
+            <p className="tracking-[1px] 3xl:mt-[2rem] mt-3 2xl:mt-[-60px] 820xxl:w-[650px] 4xl:w-[900px] 1xl:w-[450px] md:w-[500px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
               Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
             </p>
             <div className=" mt-[30px] ">
@@ -37,9 +37,9 @@ function TechExpert() {
               <p className="text-[#000000]  w-[300px] font-[600] text-[14px]">12,000+ people already joined Techeclat Get started today!</p>
             </div>
           </div>
-          <img className="md:w-[500px] 1halfxl:w-[550px] 1halfxl:h-[500px] 1halfxl:block 820xxl:hidden 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
+          <img className="md:w-[500px] 1xl:block  1halfxl:w-[550px] 1halfxl:h-[500px] 1halfxl:block 820xxl:hidden 1xl:w-[420px] 1xl:h-[400px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
         </div>
-        <div className=" md:hidden grid  ml-[1rem] 5xxl:w-[90%] 5xxl:h-[900px] 5xxl:ml-[5%] w-[60%] 3xxl:mt-[1rem] 3xxl:h-[780px] 3xxl:ml-[8%] 3xxl:w-[90%]   mt-[6rem] h-[900px] items-center justify-between ">
+        <div className=" md:hidden grid   ml-[1rem] 5xxl:w-[90%] 5xxl:h-[900px] 5xxl:ml-[5%] w-[60%] 3xxl:mt-[1rem] 3xxl:h-[780px] 3xxl:ml-[8%] 3xxl:w-[90%]   mt-[6rem] h-[900px] items-center justify-between ">
           <div className="  mt-[1rem] ">
             <div className="grid justify-between ml-[30px]">
               <h1 className=" text-left  5xxl:w-[100%] 5xxl:text-[22px] w-[400px] 3xxl:text-[16px] 3xxl:w-[80%] text-[28px] font-[600] text-[#000] opacity-80 ">Discover fulfilling employment opportunities with reputable organizations.</h1>
@@ -64,7 +64,7 @@ function TechExpert() {
           {/* <img className="w-[500px]  h-[400px]" src={talentimg} alt="Eclat" /> */}
         </div>
         <Partners />
-        <div className="md:block  820xxl:w-[85%] 1halfxl:block  820xxl:ml-[11%]  820xxl:grid hidden w-[80%] ml-[8rem] items-center mt-[7rem] 5xl:ml-[5%]">
+        <div className="md:block  820xxl:w-[85%] 10inch:ml-[13%] 1xl:ml-[10%] 1xl:w-[85%] 1halfxl:block  820xxl:ml-[11%]  820xxl:grid hidden w-[80%] ml-[8rem] items-center mt-[7rem] 5xl:ml-[5%]">
           <div>
             <svg width="77" height="120" viewBox="0 0 77 135" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -73,9 +73,9 @@ function TechExpert() {
               />
             </svg>
           </div>
-          <div className=" mt-2 820xxl:grid 1halfxl:ml-[-60px] 1halfxl:flex  justify-between items-center flex">
-            <div className="w-[700px] ">
-              <h1 className=" 820xxl:w-[650px] 1halfxl:w-[600px] text-left 4xl:w-[900px] 5xl:w-[1100px]  md:w-[550px] text-[48px] font-[600] text-[#222222]  ">Elevate your professional journey with our company.</h1>
+          <div className=" mt-2 820xxl:grid 1halfxl:ml-[-60px] 1xl:ml-[12%] 1halfxl:flex  justify-between items-center flex">
+            <div className="w-[700px]  ">
+              <h1 className=" 820xxl:w-[650px] 1xl:w-[100%] 1halfxl:w-[600px] text-left 4xl:w-[900px] 5xl:w-[1100px]  md:w-[550px] text-[48px] font-[600] text-[#222222]  ">Elevate your professional journey with our company.</h1>
               <p className="tracking-[1px] mt-3 4xl:w-[800px]  1halfxl:w-[600px] 820xxl:w-[650px] md:w-[450px] 5xl:w-[1000px] font-[400] text-[#4f4f4f] text-left text-[16px]">
                 Collaborate with a globally dispersed team and corporation. Explore rewarding employment options with compelling organizations for extended periods. Acquire supplementary expertise through exclusive educational programs. Expand your
                 skillset by networking.
@@ -83,65 +83,35 @@ function TechExpert() {
             </div>
             <img className=" md:w-[400px] 5xl:w-[600px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 5xl:h-[500px] md:mt-[5rem] md:h-[300px]" src={team} alt="chatbox" />
           </div>{" "}
-          <div className="mt-5 justify-between 1halfxl:flex 1halfxl:w-[90%] 1halfxl:ml-[-70px] 1halfxl:justify-between 820xxl:grid 5xl:ml-[10%] flex">
+          <div className="mt-5 3xl:ml-[4%] justify-between 1halfxl:flex 1halfxl:w-[90%] 1halfxl:ml-[-70px] 1halfxl:justify-between 820xxl:grid 5xl:ml-[10%] flex">
             <img className=" md:w-[500px] 1halfxl:block block 820xxl:hidden mt-[5rem] md:h-[400px] 5xl:w-[600px] 5xl:h-[500px] " src={shakir} alt="Business manager" />
-            <div className=" 1halfxl:ml-[50px] mt-[8rem]">
-              <h1 className=" text-left  820xxl:w-[650px] md:w-[450px] 4xl:w-[600px] text-[48px] font-[600] 5xl:w-[800px] text-[#222222]  ">You decide what best suits you</h1>
-              <img className=" md:w-[500px] 1halfxl:hidden hidden 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:block mt-[5rem] md:h-[400px] 5xl:w-[600px] 5xl:h-[500px] " src={shakir} alt="Business manager" />
+            <div className=" 1halfxl:ml-[50px] 1xl:ml-[40px] mt-[8rem]">
+              <h1 className=" text-left  820xxl:w-[650px] 1xl:w-[100%] md:w-[450px] 4xl:w-[600px] text-[48px] font-[600] 5xl:w-[800px] text-[#222222]  ">You decide what best suits you</h1>
+              <img className=" md:w-[500px] 1halfxl:hidden hidden 1xl:w-[700px] 1xl:ml-[30px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:block mt-[5rem] md:h-[400px] 5xl:w-[600px] 5xl:h-[500px] " src={shakir} alt="Business manager" />
 
-              <ul className="tracking-[1px]  820xxl:mt-[50px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
-                <li className="flex items-center mb-1 820xxl:w-[650px] 820xxl:h-[55px] md:w-[450px] 5xl:w-[800px] justify-between">
-                  {" "}
-                  <span className="w-[40px] mb-6">•</span> Uncover compensation packages that align with your expertise and qualifications.
-                </li>
-                <li className="flex items-center mb-1 820xxl:w-[550px] 820xxl:h-[55px] md:w-[450px] 5xl:w-[620px] justify-between">
-                  {" "}
-                  <span className="w-[34px] mb-6">•</span> Partner exclusively with companies that we have confidence in.
-                </li>
-                <li className="flex items-center mb-1 820xxl:w-[650px] 820xxl:h-[55px] md:w-[450px] 5xl:w-[650px] justify-between">
-                  {" "}
-                  <span className="w-[40px] mb-6">•</span> Obtain timely payments in either your local currency, USD, or cryptocurrency.
-                </li>
+              <ul className="tracking-[1px] 1xl:ml-[30px]  820xxl:mt-[50px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
+                <li className="flex items-center mb-1 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[800px] justify-between"> &#x2022; Uncover compensation packages that align with your expertise and qualifications.</li>
+                <li className="flex items-center mb-1 820xxl:w-[550px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[620px] justify-between"> &#x2022; Partner exclusively with companies that we have confidence in.</li>
+                <li className="flex items-center mb-1 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[650px] justify-between"> &#x2022; Obtain timely payments in either your local currency, USD, or cryptocurrency.</li>
               </ul>
             </div>
           </div>
-          <div className=" mt-2 justify-between 5xl:ml-[10%] 820xxl:grid 1halfxl:w-[85%] 1halfxl:flex 1halfxl:ml-[-70px] items-center flex">
+          <div className=" mt-2 3xl:ml-[4%] justify-between 5xl:ml-[10%] 1xl:ml-[60px] 820xxl:grid 1halfxl:w-[85%] 1halfxl:flex 1halfxl:ml-[-70px] items-center flex">
             <div className="mt-[7rem] w-[700px]">
-              <h1 className=" text-left  md:w-[500px] 4xl:w-[700px] 5xl:w-[800px] 820xxl:w-[650px] text-[48px] font-[600] text-[#222222]  ">We bring Flexibility to work</h1>
+              <h1 className=" text-left  md:w-[500px] 1xl:w-[100%]  4xl:w-[700px] 5xl:w-[800px] 820xxl:w-[650px] text-[48px] font-[600] text-[#222222]  ">We bring Flexibility to work</h1>
               <ul className="tracking-[1px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
-                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[270px] justify-between">
-                  <svg width="5" height="5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="currentColor" />
-                  </svg>
-                  Reliable ally Career growth
-                </li>
-                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[190px] justify-between">
-                  <svg width="5" height="5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="currentColor" />
-                  </svg>
-                  High success rate
-                </li>
-                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[375px] justify-between">
-                  <svg width="5" height="5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="currentColor" />
-                  </svg>
-                  Talent matched to ideal opportunities
-                </li>
-                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[352px] justify-between">
-                  <svg width="5" height="5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="currentColor" />
-                  </svg>
-                  Expert career advice and guidance
-                </li>
-                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[265px] justify-between">
-                  <svg width="5" height="5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="currentColor" />
-                  </svg>
-                  Specialized team building
-                </li>
+                <li className="flex items-center 820xxl:h-[40px] mb-1 w-[270px] justify-between">&#x2022; Reliable ally Career growth</li>
+                <li className=" items-center 820xxl:h-[40px] mb-1 w-[190px] justify-between">&#x2022; High success rate</li>
+                <li className=" items-center 820xxl:h-[40px] mb-1 w-[375px] justify-between">&#x2022; Talent matched to ideal opportunities</li>
+                <li className=" items-center 820xxl:h-[40px] mb-1 w-[352px] justify-between">&#x2022; Expert career advice and guidance</li>
+                <li className=" items-center 820xxl:h-[40px] mb-1 w-[265px] justify-between">&#x2022; Specialized team building</li>
               </ul>
             </div>
-            <img className=" md:w-[500px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]" src={table} alt="chatbox" />
+            <img
+              className=" md:w-[500px] 1xl:rounded-[50%] 1xl:ml-[30px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]"
+              src={table}
+              alt="chatbox"
+            />
           </div>{" "}
         </div>
         <div className="md:hidden block w-[80%] 5xxl:w-[85%] 3xxl:w-[85%] 3xxl:ml-[10%] 1halfxl:hidden items-center mt-[4rem]">
@@ -152,22 +122,22 @@ function TechExpert() {
                 fill="#0067DE"
               />
             </svg>
-            <h1 className=" text-center 3xxl:w-[80%] 5xxl:w-[90%] 5xxl:text-[22px] 3xxl:text-[16px]  w-[480px] text-[28px] font-[600] text-[#222222]  ">Elevate your professional journey with our company.</h1>
-            <img className=" w-[400px] ml-[90px] 5xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[300px] mt-[35px] 3xxl:w-[250px] 3xxl:h-[200px] 3xxl:ml-[0px] h-[300px]" src={team} alt="chatbox" />
+            <h1 className=" text-center 7xxl:text-[28px] 3xxl:w-[80%] 5xxl:w-[90%] 5xxl:text-[22px] 3xxl:text-[16px]  w-[480px] text-[28px] font-[600] text-[#222222]  ">Elevate your professional journey with our company.</h1>
+            <img className=" w-[400px] ml-[90px] 7xxl:ml-[13%] 5xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[300px] mt-[35px] 3xxl:w-[250px] 3xxl:h-[200px] 3xxl:ml-[0px] h-[300px]" src={team} alt="chatbox" />
             <p className="tracking-[1px] mt-[40px] ml-[8px] 3xxl:w-[80%] 5xxl:w-[85%] 5xxl:text-[12px] 3xxl:text-[10px] w-[470px] font-[400] text-[#4f4f4f] text-center text-[14px]">
               Collaborate with a globally dispersed team and corporation. Explore rewarding employment options with compelling organizations for extended periods. Acquire supplementary expertise through exclusive educational programs. Expand your
               skillset by networking.
             </p>
-            <img className=" w-[400px] mt-[3rem] ml-[90px] 5xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[300px] 3xxl:w-[250px] 3xxl:h-[200px] 3xxl:ml-[0px] h-[300px]" src={shakir} alt="Business manager" />
+            <img className=" w-[400px] mt-[3rem] 7xxl:ml-[13%]  ml-[90px] 5xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[300px] 3xxl:w-[250px] 3xxl:h-[200px] 3xxl:ml-[0px] h-[300px]" src={shakir} alt="Business manager" />
             <h1 className=" text-center 3xxl:w-[80%] 5xxl:ml-[0px] 5xxl:w-[75%] 5xxl:text-[20px] 3xxl:text-[16px]  w-[450px] mt-[2rem] text-[48px] font-[600] text-[#222222]  ">You decide what best suits you</h1>
-            <ul className="tracking-[1px] ml-[30px]  mt-3 3xxl:ml-[0px] 5xxl:text-[12px] 3xxl:text-[10px] font-[400] text-[#4f4f4f] text-left text-[16px]">
+            <ul className="tracking-[1px] ml-[30px] 7xxl:ml-[12%]   mt-3 3xxl:ml-[0px] 5xxl:text-[12px] 3xxl:text-[10px] font-[400] text-[#4f4f4f] text-left text-[16px]">
               <li className="flex items-center mb-1 w-[450px]  3xxl:w-[250px] justify-between"> &#x2022; Uncover compensation packages that align with your expertise and qualifications.</li>
               <li className="flex items-center mb-1 w-[450px] 5xxl:w-[80%] 3xxl:w-[250px] justify-between"> &#x2022; Partner exclusively with companies that we have confidence in.</li>
               <li className="flex items-center mb-1 w-[450px] 5xxl:w-[80%] 3xxl:w-[250px] justify-between"> &#x2022; Obtain timely payments in either your local currency, USD, or cryptocurrency.</li>
             </ul>
-            <img className=" w-[400px] 3xxl:w-[250px] 3xxl:h-[200px] 3xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[350px] rounded-[50%] ml-[90px] mt-[3rem] h-[300px]" src={table} alt="chatbox" />
+            <img className=" w-[400px] 3xxl:w-[250px] 7xxl:ml-[13%]  3xxl:h-[200px] 3xxl:ml-[0px] 5xxl:w-[400px] 5xxl:h-[350px] rounded-[50%] ml-[90px] mt-[3rem] h-[300px]" src={table} alt="chatbox" />
             <h1 className=" text-center mt-[20px]  3xxl:w-[80%] 3xxl:text-[16px] 5xxl:ml-[0px] 5xxl:w-[75%] 5xxl:text-[20px] ml-[10px] w-[450px] text-[48px] font-[600] text-[#222222]  ">We bring Flexibility to work</h1>
-            <ul className="tracking-[1px] mt-3 ml-[25px] 3xxl:text-[10px] 5xxl:text-[12px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
+            <ul className="tracking-[1px] mt-3 ml-[25px] 7xxl:ml-[13%]  3xxl:text-[10px] 5xxl:text-[12px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
               <li className="flex items-center mb-1 w-[270px] 3xxl:w-[250px] 5xxl:w-[80%] justify-between">&#x2022; Reliable ally Career growth</li>
               <li className="flex items-center mb-1 w-[190px] 3xxl:w-[250px] 5xxl:w-[80%] justify-between">&#x2022; High success rate</li>
               <li className="flex items-center mb-1 w-[375px] 3xxl:w-[250px] 5xxl:w-[80%] justify-between">&#x2022; Talent matched to ideal opportunities</li>

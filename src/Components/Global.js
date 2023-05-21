@@ -1,9 +1,12 @@
 function Global() {
   return (
     <>
-      <div className=" md:flex 1halfxl:flex 820xxl:hidden 2xl:w-[90%] 2xl:justify-evenly hidden 1xl:items-center  1xl:w-[75%] mt-[11rem] 1halfxl:w-[85%] 1halfxl:justify-evenly 1xl:justify-evenly w-[92%] ml-[4rem] 1xl:ml-[130px] justify-evenly ">
-        <div className="1xl:w-[550px] 2xl:w-[550px]">
-          <h1 className=" text-left 5xl:w-[700px]  w-[650px] 2xl:w-[500px] 1xl:w-[400px] 1halfxl:w-[550px]  text-[44px] font-[600] text-[#222222]  ">Our global technologists undergo rigorous technical evaluations to ensure their competence.</h1>
+      {/* large screens except ipad air */}
+      <div className=" md:flex 1xl:flex 1halfxl:flex 820xxl:hidden 2xl:w-[90%] 2xl:justify-evenly hidden 1xl:items-center  1xl:w-[75%] mt-[11rem] 1halfxl:w-[85%] 1halfxl:justify-evenly 1xl:justify-evenly w-[92%] ml-[4rem] 1xl:ml-[130px] justify-evenly ">
+        <div className="1xl:w-[60%] 2xl:w-[550px]">
+          <h1 className=" 1xl:-[100%]  text-left 5xl:w-[700px]  w-[650px] 2xl:w-[500px] 1xl:w-[400px] 1halfxl:w-[550px]  text-[44px] font-[600] text-[#222222]  ">
+            Our global technologists undergo rigorous technical evaluations to ensure their competence.
+          </h1>
           <ul className="tracking-[1px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
             <li className="flex items-center 1halfxl:w-[500px] 2xl:w-[450px] mb-1 1xl:w-[400px] w-[500px] justify-between">
               <span className="w-[40px] mb-6">•</span> Rapid and streamlined recruitment processes to identify the ideal developer.
@@ -28,15 +31,18 @@ function Global() {
           </svg>
         </div>{" "}
       </div>
-      <div className="md:hidden 1halfxl:hidden 5xxl:w-[85%] 5xxl:ml-[10%] 3xxl:ml-[15%] 3xxl:w-[85%] 820xxl:block  grid mt-[4rem] w-[380px] ml-[80px] ">
+      {/* small screens */}
+      <div className="md:hidden 6xxl:ml-[16%] 7xxl:ml-[18%] 1xl:hidden 1halfxl:hidden 5xxl:w-[85%] 5xxl:ml-[10%] 3xxl:ml-[15%] 3xxl:w-[85%] 6xxl:w-[80%] 820xxl:block 820xxl:ml-[10%] 10inch:ml-[19%]  grid mt-[4rem] w-[380px] ml-[80px] ">
         <div>
           <h1 className=" text-left 3xxl:w-[80%] 3xxl:text-[20px] 5xxl:w-[85%] 5xxl:text-[30px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">
             Our global technologists undergo rigorous technical evaluations to ensure their competence.
           </h1>
           <ul className="tracking-[1px] 820xxl:hidden mt-3 5xxl:text-[14px] 3xxl:text-[10px]  font-[400] text-[#4f4f4f] text-left text-[16px]">
-            <li className="flex items-center 3xxl:w-[230px] 5xxl:w-[450px]  820xxl:w-[650px] 820xxl:h-[60px] mb-1 w-[320px] justify-between">&#x2022; Rapid and streamlined recruitment processes to identify the ideal developer.</li>
-            <li className="flex items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1 w-[320px] 820xxl:w-[650px] 820xxl:h-[60px] justify-between">&#x2022; Hassle-free recruitment of global talent minus the human resources (HR) obstacles.</li>
-            <li className="flex items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1  820xxl:w-[650px] 820xxl:h-[60px] w-[320px] justify-between">&#x2022; We exclusively offer high-caliber technologists with official technical certifications.</li>
+            <li className="flex 6xxl:w-[70%] items-center 3xxl:w-[230px] 5xxl:w-[450px]  820xxl:w-[650px] 820xxl:h-[60px] mb-1 w-[320px] justify-between">&#x2022; Rapid and streamlined recruitment processes to identify the ideal developer.</li>
+            <li className="flex 6xxl:w-[70%] items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1 w-[320px] 820xxl:w-[650px] 820xxl:h-[60px] justify-between">&#x2022; Hassle-free recruitment of global talent minus the human resources (HR) obstacles.</li>
+            <li className="flex 6xxl:w-[70%] items-center 5xxl:w-[450px]  3xxl:w-[230px] mb-1  820xxl:w-[650px] 820xxl:h-[60px] w-[320px] justify-between">
+              &#x2022; We exclusively offer high-caliber technologists with official technical certifications.
+            </li>
           </ul>
         </div>
         <div>

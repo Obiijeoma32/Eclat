@@ -6,7 +6,7 @@ function TalentRequest() {
     <>
       <div className="bg-[#fff] w-[100%] h-[150vh] ">
         <AdminSideBar />
-        <div className=" ml-[18rem] pt-[30px] ">
+        <div className="3xxl:ml-[18%] 3xxl:overflow-x-auto ml-[18rem] pt-[30px] ">
           <h1 className=" text-[#38761D] text-[30px] font-[300px] ">Talent Request</h1>
 
           <div className="w-[950px] ml-1 mt-[19px] h-[620px]  rounded-[5px] border-[#E3E7EB] border-[1px] 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px]">
