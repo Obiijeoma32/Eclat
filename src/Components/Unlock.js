@@ -81,9 +81,9 @@ function Unlock() {
             tailored to your specific business requirements. Leverage Eclat's talent to build your world-class team swiftly and effectively.
           </p>
         </div>
-        <div className="mt-[20px] 10inch:ml-[13%] 820xxl:ml-[30px] 7xxl:ml-[10%] 5xxl:ml-[5%] grid 3xxl:ml-[20px]">
+        <div className="mt-[20px] 6xl:w-[85%] 10inch:ml-[13%] 820xxl:ml-[30px] 7xxl:ml-[10%] 5xxl:ml-[5%] grid 3xxl:ml-[20px]">
           <img className=" w-[400px] 5xxl:w-[350px] 5xxl:h-[250px] 3xxl:w-[250px] 3xxl:h-[200px]  mt-[1rem] 820xxl:w-[600px] 820xxl:h-[500px]  h-[300px]" src={face} alt="Business manager" />
-          <div className=" 3xxl:w-[250px] 5xxl:w-[90%]">
+          <div className=" 3xxl:w-[250px]  5xxl:w-[90%]">
             <h1 className=" text-left 3xxl:text-center 5xxl:w-[90%] 5xxl:text-[20px]  3xxl:text-[16px] 3xxl:w-[250px] 820xxl:w-[650px] 820xxl:mt-[40px] w-[450px] 820xxl:text-[40px] font-[600] text-[#222222]  ">
               Here’s why top talent worldwide chooses Tech Eclat
             </h1>

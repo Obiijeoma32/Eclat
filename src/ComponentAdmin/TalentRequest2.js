@@ -261,7 +261,7 @@ function TalentRequest2() {
         </div>
       </div>
       {request && (
-        <div className="w-[100%]  h-[150vh] fixed bg-[rgb(0,0,0,0.4)] top-0 left-0 z-0 ">
+        <div className="w-[100%]  h-[150vh] fixed bg-[rgb(0,0,0,0.3)] top-0 left-0 z-0 ">
           <div className="mt-2 flex cursor-pointer mr-2 justify-end">
             <svg
               onClick={() => {

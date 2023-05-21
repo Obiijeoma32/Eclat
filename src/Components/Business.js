@@ -9,8 +9,8 @@ function Business() {
     <>
       <Heading />
       <div className="md:block hidden 10inch:ml-[11%] 4xl:ml-[5%] 820xxl:block mt-[9rem] 5xl:h-[500px] 5xl:w-[80%] w-[85%]  ">
-        <div className="w-[70%] 1halfxl:h-[400px] 820xxl:w-[80%] 820xxl:ml-[35px] 1xl:w-[80%] 1halfxl:w-[75%]  1xl:ml-[20%]   mt-[20%] ml-[24%]">
-          <div className="flex justify-between 1halfxl:w-[95%] 1halfxl:ml-[10px] 820xxl:w-[750px]   items-center text-center ">
+        <div className="w-[70%] 1halfxl:h-[400px]  820xxl:w-[80%] 820xxl:ml-[35px] 1xl:w-[80%] 1halfxl:w-[75%]  1xl:ml-[10%]   mt-[20%] ml-[24%]">
+          <div className="flex justify-between 1halfxl:w-[100%] 1halfxl:ml-[10px] 820xxl:w-[750px]   items-center text-center ">
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_206_2755)">
@@ -41,7 +41,7 @@ function Business() {
                 </defs>
               </svg>
             </div>
-            <h1 className="  font-[500] text-[50px] text-[#001F0E]">We offer flexible options</h1>
+            <h1 className="   font-[500] text-[50px] text-[#001F0E]">We offer flexible options</h1>
             <div>
               <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_206_2755)">

@@ -9,6 +9,7 @@ function Heading() {
   function handleHamBurgerMenu() {
     setHamBurgerMenu(!hamBurgerMenu);
   }
+
   const handleButtonClick = () => {
     window.scrollTo(0, 0);
   };
@@ -122,7 +123,7 @@ function Heading() {
               <path d="M2.5 27.5H42.5M2.5 15H42.5M2.5 2.5H42.5" stroke="#38761D" strokeWidth="3.75" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             {hamBurgerMenu && (
-              <div className=" 4xxl:left-[50%] 7xxl:left-[70%] 1xl:left-[23%] 6xxl:left-[65%] 5xxl:left-[60%]  fixed 820xxl:left-[73%] 10inch:left-[76%] 3xxl:left-[43%]  1xl:ml-[55%]  ">
+              <div className=" 4xxl:left-[50%] 13inch:left-[27%] 1halfxl:left-[25%] 7xxl:left-[70%] 1xl:left-[24%] 6xxl:left-[65%] 5xxl:left-[60%]  fixed 820xxl:left-[73%] 10inch:left-[76%] 3xxl:left-[43%]  1xl:ml-[55%]  ">
                 <div className=" shadow-lg   mt-[30px] opacity-90 rounded-[5px] h-[300px] w-[220px]   z-[99] bg-[#fafafa] p-[20px]   grid">
                   <Link onClick={handleButtonClick} className=" text-[14px]  opacity-80 font-[600]  text-[#38761D]  " to="/techexpert">
                     For Technology Experts

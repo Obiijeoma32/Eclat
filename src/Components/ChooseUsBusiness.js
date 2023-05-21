@@ -2,7 +2,7 @@ function ChooseUsBusiness() {
   return (
     <>
       <div className=" ">
-        <div className="md:ml-[23rem] 3xxl:w-[80%] 10inch:w-[85%] 10inch:ml-[15%] 5xxl:w-[85%] 6xxl:ml-[12%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
+        <div className="md:ml-[23rem] 1halfxl:ml-[26%] 3xxl:w-[80%] 10inch:w-[85%] 10inch:ml-[15%] 5xxl:w-[85%] 6xxl:ml-[12%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
           <div className="md:flex     3xxl:grid md:ml-[3.6rem] 5xxl:w-[85%]   5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[240px]  md:w-[600px] justify-between ">
             <div className=" md:hidden 3xxl:w-[250px] 3xxl:flex 3xxl:justify-end items-center   hidden">
               <svg className=" 3xxl:w-[70px] 3xxl:h-[70px] 5xxl:w-[100px] 5xxl:h-[90px] " width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">

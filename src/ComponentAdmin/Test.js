@@ -334,7 +334,7 @@ function Test() {
         </div>
       </div>
       {createTest && (
-        <div className="w-[100%]  h-[150vh] fixed bg-[rgb(0,0,0,0.4)] top-0 left-0 z-0 ">
+        <div className="w-[100%]  h-[150vh] fixed bg-[rgb(0,0,0,0.3)] top-0 left-0 z-0 ">
           <div className="mt-2 flex cursor-pointer mr-2 justify-end">
             <svg onClick={handleCloseCreateTest} width="25" height="25" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M38.55 3.55L35 0L19.275 15.75L3.55 0L0 3.55L15.75 19.275L0 35L3.55 38.55L19.275 22.8L35 38.55L38.55 35L22.8 19.275L38.55 3.55Z" fill="#fff" />
