@@ -115,9 +115,7 @@ body {
 .pdgefor {
   background-image: url("./Components/forPersona.jpeg");
 }
-/* .table th td {
-  width: 120px;
-} */
+
 @media only screen and (min-width: 1080) {
   .footer-container {
     width: 700px;
