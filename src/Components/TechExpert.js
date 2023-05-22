@@ -117,7 +117,7 @@ function TechExpert() {
               </ul>
             </div>
             <img
-              className=" md:w-[500px] 1xl:rounded-[50%] 1xl:ml-[30px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]"
+              className=" md:w-[500px] 1xl:rounded-[50%] 1halfxl:ml-[50px]  1xl:ml-[30px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]"
               src={table}
               alt="chatbox"
             />
