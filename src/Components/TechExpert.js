@@ -83,26 +83,29 @@ function TechExpert() {
             </div>
             <img className=" md:w-[400px] 5xl:w-[600px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 5xl:h-[500px] md:mt-[5rem] md:h-[300px]" src={team} alt="chatbox" />
           </div>{" "}
-          <div className="mt-5 13inch:w-[100%]  3xl:ml-[0%] justify-between 1halfxl:flex 1halfxl:w-[90%] 1halfxl:ml-[-70px] 1halfxl:justify-between 820xxl:grid 5xl:ml-[10%] flex">
+          <div className="mt-5 13inch:w-[100%]  3xl:ml-[0%] justify-between 1halfxl:flex 1halfxl:w-[95%] 1halfxl:ml-[5px] 1halfxl:justify-between 820xxl:grid 5xl:ml-[10%] flex">
             <img className=" md:w-[500px] 1halfxl:block block 820xxl:hidden mt-[5rem] md:h-[400px] 5xl:w-[600px] 5xl:h-[500px] " src={shakir} alt="Business manager" />
-            <div className=" 13inch:w-[60%] 1halfxl:ml-[50px] 1xl:ml-[40px] mt-[8rem]">
+            <div className=" 13inch:w-[60%] 1halfxl:ml-[50px] 1halfxl:w-[80%] 1xl:ml-[40px] mt-[8rem]">
               <h1 className=" text-left  820xxl:w-[650px] 1xl:w-[100%] md:w-[450px] 4xl:w-[600px] text-[48px] font-[600] 5xl:w-[800px] text-[#222222]  ">You decide what best suits you</h1>
               <img className=" md:w-[500px] 1halfxl:hidden hidden 1xl:w-[700px] 1xl:ml-[30px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:block mt-[5rem] md:h-[400px] 5xl:w-[600px] 5xl:h-[500px] " src={shakir} alt="Business manager" />
 
               <ul className="tracking-[1px] 1xl:ml-[30px]  820xxl:mt-[50px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
-                <li className="flex items-center 13inch:w-[100%] mb-1 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[800px] justify-between">
+                <li className="flex items-center 13inch:w-[100%] mb-1 1halfxl:w-[100%] 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[800px] justify-between">
                   {" "}
                   &#x2022; Uncover compensation packages that align with your expertise and qualifications.
                 </li>
-                <li className="flex items-center 13inch:w-[100%] mb-1 820xxl:w-[550px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[620px] justify-between"> &#x2022; Partner exclusively with companies that we have confidence in.</li>
-                <li className="flex items-center 13inch:w-[100%] mb-1 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[650px] justify-between">
+                <li className="flex items-center 13inch:w-[100%] mb-1 1halfxl:w-[100%] 820xxl:w-[550px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[620px] justify-between">
+                  {" "}
+                  &#x2022; Partner exclusively with companies that we have confidence in.
+                </li>
+                <li className="flex items-center 13inch:w-[100%] mb-1 1halfxl:w-[100%] 820xxl:w-[650px] 820xxl:h-[55px] 1xl:w-[700px] md:w-[450px] 5xl:w-[650px] justify-between">
                   {" "}
                   &#x2022; Obtain timely payments in either your local currency, USD, or cryptocurrency.
                 </li>
               </ul>
             </div>
           </div>
-          <div className=" mt-2 3xl:ml-[0%] 13inch:w-[100%] justify-between 5xl:ml-[10%] 1xl:ml-[60px] 820xxl:grid 1halfxl:w-[85%] 1halfxl:flex 1halfxl:ml-[-70px] items-center flex">
+          <div className=" mt-2 3xl:ml-[0%] 13inch:w-[100%] justify-between 5xl:ml-[10%] 1xl:ml-[60px] 820xxl:grid 1halfxl:w-[85%] 1halfxl:flex 1halfxl:ml-[5px] items-center flex">
             <div className="mt-[7rem] w-[700px]">
               <h1 className=" text-left  md:w-[500px] 1xl:w-[100%]  4xl:w-[700px] 5xl:w-[800px] 820xxl:w-[650px] text-[48px] font-[600] text-[#222222]  ">We bring Flexibility to work</h1>
               <ul className="tracking-[1px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">

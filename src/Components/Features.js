@@ -190,10 +190,10 @@ function Features() {
         </div>
       </div>
       {/* small screens */}
-      <div className="md:hidden 10inch:ml-[8%] 1xl:hidden  5xxl:w-[85%] 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
+      <div className="md:hidden 10inch:ml-[8%] 1xl:hidden 4xxl:ml-[10%]  5xxl:w-[85%] 1halfxl:hidden 2xl:hidden 3xl:hidden 4xl:hidden 5xl:hidden 820xxl:block block w-[80%] ml-1 mt-[7rem] ">
         <div className=" text-center 7xxl:ml-[11%] 820xxl:ml-[2%] 3xxl:ml-[40px] ml-[70px]">
-          <h4 className=" 820xxl:text-[18px] 5xxl:text-[14px] 5xxl:ml-[15%]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
-          <h2 className=" 820xxl:text-[36px] 6xxl:w-[80%] 6xxl:ml-[13%] 5xxl:text-[32px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
+          <h4 className=" 820xxl:text-[18px]  5xxl:text-[14px] 5xxl:ml-[15%]  3xxl:ml-[30px] opacity-80 3xxl:w-[80%] 3xxl:text-[9px] text-[#38761DCC] 820xxl:w-[650px] font-[300] w-[370px]  ">Our Community</h4>
+          <h2 className=" 820xxl:text-[36px] 4xxl:ml-[9%] 6xxl:w-[80%] 6xxl:ml-[13%] 5xxl:text-[32px] 3xxl:whitespace-nowrap 3xxl:text-[20px] 3xxl:w-[80%] opacity-80  text-[#000] font-[600] 820xxl:w-[650px] w-[370px]">Some Of Our Main Feature</h2>
           <p className=" text-[16px] 3xxl:text-[10px]  5xxl:mt-[10px] 5xxl:text-[14px] 5xxl:ml-[15%] 3xxl:ml-[35px] 3xxl:w-[80%] w-[370px] mt-[20px] 820xxl:w-[650px] text-[#656464] font-[300] ">
             The wise man therefore always holds in these matters to this principle of selection.
           </p>

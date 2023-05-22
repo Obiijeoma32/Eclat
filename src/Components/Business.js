@@ -8,7 +8,7 @@ function Business() {
   return (
     <>
       <Heading />
-      <div className="md:block hidden 10inch:ml-[11%] 4xl:ml-[5%] 820xxl:block mt-[9rem] 5xl:h-[500px] 5xl:w-[80%] w-[85%]  ">
+      <div className="md:block hidden 10inch:ml-[11%] 4xl:ml-[5%]  820xxl:block mt-[9rem] 5xl:h-[500px] 5xl:w-[80%] w-[85%]  ">
         <div className="w-[70%] 1halfxl:h-[400px]  820xxl:w-[80%] 820xxl:ml-[35px] 1xl:w-[80%] 1halfxl:w-[75%]  1xl:ml-[10%]   mt-[20%] ml-[24%]">
           <div className="flex justify-between 1halfxl:w-[100%] 1halfxl:ml-[10px] 820xxl:w-[750px]   items-center text-center ">
             <div>
@@ -79,8 +79,8 @@ function Business() {
         </div>
       </div>
       {/* for small screens except ipad air size */}
-      <div className="md:hidden 820xxl:hidden block mt-[9rem]  ">
-        <div className="w-[70%] 3xxl:w-[85%] 6xxl:w-[80%] 7xxl:mt-[20%] 6xxl:ml-[10%]  3xxl:ml-[3%]  mt-[40%] ">
+      <div className="md:hidden 820xxl:hidden 4xxl:mt-[5rem] block mt-[9rem]   ">
+        <div className="w-[70%] 4xxl:mt-[0px] 4xxl:ml-[6%] 3xxl:w-[85%] 6xxl:w-[80%] 6xxl:mt-[0px] 7xxl:mt-[20%] 6xxl:ml-[10%]  3xxl:ml-[3%]  mt-[40%] ">
           <div className="flex justify-between ml-[20px] items-center text-center ">
             <div>
               <svg className=" 3xxl:w-[30px]" width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">

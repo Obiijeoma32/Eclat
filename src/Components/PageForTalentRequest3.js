@@ -58,7 +58,7 @@ function PageForTalentRequest3() {
   // Geocode.setLanguage("en");
   return (
     <>
-      <div className="w-[100%] xl:w-[100%] bg-[#fff] h-[220vh]">
+      <div className="w-[100%]  xl:w-[100%] bg-[#fff] h-[220vh]">
         <Link onClick={() => window.scrollTo(0, 0)} to="/dashboard">
           <div className="fixed z-[99] top-0 opacity-90 bg-[#fff] h-[50px] w-[100%] pl-[45px] pt-[12px] mb-2">
             <svg className=" " width="180" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@ function PageForTalentRequest3() {
           </div>
         </Link>
 
-        <div className="  flex ml-[80px] pt-[101px]">
+        <div className="  flex ml-[40px] pt-[101px]">
           <TalentRequestSideBar />
 
           <div className="flex ml-[12rem] 5xl:w-[1500px] 5xl:justify-evenly 4xl:w-[1700px] 4xl:justify-between">

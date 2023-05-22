@@ -312,7 +312,7 @@ function FooterEnterprise() {
       </div>
       {/* small screens */}
       <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
-        <div className="w-[450px] 5xxl:w-[400px] 7xxl:ml-[25%] 6xxl:ml-[17%] 5xxl:h-[250px] 5xxl:ml-[13%]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[10%] 4xxl:w-[320px] 3xxl:ml-[18%] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
+        <div className="w-[450px] 5xxl:w-[400px] 7xxl:ml-[25%] 6xxl:ml-[17%] 5xxl:h-[250px] 5xxl:ml-[13%]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[15%] 4xxl:w-[320px] 3xxl:ml-[18%] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
           <div className="w-[400px] 5xxl:pt-[15%] 5xxl:w-[70%] 4xxl:ml-[17%] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
             <h1 className=" 820xxl:ml-[15%] 5xxl:text-[22px] 3xxl:text-[14px] 3xxl:ml-[0px] font-[700] 820xxl:text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
             <div className=" mt-4">
@@ -324,7 +324,7 @@ function FooterEnterprise() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[103vh] 5xxl:h-[133vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
+        <div className=" bg-[#27282B] 5xxl:w-[100%] 4xxl:w-[100%] 3xxl:w-[100%] 3xxl:h-[103vh] 4xxl:h-[243vh] 5xxl:h-[133vh] 6xxl:h-[203vh] 820xxl:h-[85vh] pt-[40px] h-[710px] mt-[8rem] ">
           <div className="3xxl:w-[80%] 5xxl:w-[85%] 3xxl:ml-[12%] 4xxl:ml-[15%] ">
             <div className=" 3xxl:w-[200px] 5xxl:w-[80%] items-center  ">
               <Link onClick={() => window.scrollTo(0, 0)} className="md:w-[70%] 3xxl:ml-[30px] " to="/dashboard">

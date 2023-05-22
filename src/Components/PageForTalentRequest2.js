@@ -107,7 +107,7 @@ function PageForTalentRequest2() {
           </div>
         </Link>
 
-        <div className="  flex ml-[80px] pt-[101px]">
+        <div className="  flex ml-[40px] pt-[101px]">
           <TalentRequestSideBar />
 
           <div className="flex ml-[12rem] 5xl:w-[1500px] 5xl:justify-evenly 4xl:w-[1700px] 4xl:justify-between">

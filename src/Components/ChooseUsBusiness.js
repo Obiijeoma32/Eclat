@@ -2,18 +2,18 @@ function ChooseUsBusiness() {
   return (
     <>
       <div className=" ">
-        <div className="md:ml-[23rem] 1halfxl:ml-[26%] 3xxl:w-[80%] 10inch:w-[85%] 10inch:ml-[15%] 5xxl:w-[85%] 6xxl:ml-[12%]  4xxl:ml-[10%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
-          <div className="md:flex     3xxl:grid md:ml-[3.6rem] 5xxl:w-[85%]   5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[240px]  md:w-[600px] justify-between ">
-            <div className=" md:hidden 3xxl:w-[250px] 3xxl:flex 3xxl:justify-end items-center   hidden">
-              <svg className=" 3xxl:w-[70px] 3xxl:h-[70px] 5xxl:w-[100px] 5xxl:h-[90px] " width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="md:ml-[23rem] 1halfxl:ml-[26%] 4xxl:w-[85%]  3xxl:w-[80%] 10inch:w-[85%] 10inch:ml-[15%] 5xxl:w-[85%] 6xxl:ml-[12%]  4xxl:ml-[15%] 820xxl:ml-[98px] 3xxl:mr-[30px] 3xxl:ml-[20px] xl:ml-[25%] 1xl:w-[700px] 1xl:ml-[260px] 2xl:ml-[28%] 3xxl:mt-[5rem] 3xl:ml-[32%] 6xl:ml-[32%]  md:mt-[10rem]  4xl:ml-[33%] 5xl:ml-[30%]">
+          <div className="md:flex  4xxl:w-[85%]    3xxl:grid md:ml-[3.6rem] 5xxl:w-[85%]   5xl:w-[1000px] items-center    3xxl:ml-[40px] 3xxl:w-[240px]  md:w-[600px] justify-between ">
+            <div className=" md:hidden 3xxl:w-[250px] 3xxl:flex 4xxl:w-[95%] 3xxl:justify-end items-center   hidden">
+              <svg className=" 3xxl:w-[70px] 3xxl:h-[70px] 4xxl:w-[130px] 4xxl:h-[93px] 5xxl:w-[100px] 5xxl:h-[90px] " width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M126.531 11.9834C127.341 11.2322 128.607 11.2798 129.358 12.0896C130.109 12.8994 130.062 14.1648 129.252 14.916L126.531 11.9834ZM39.6279 50.0108L41.2778 48.8804L39.6279 50.0108ZM53.8408 32.8056L55.7212 33.4866L53.8408 32.8056ZM-0.000208939 81.2559L19.9023 69.5417L20.0959 92.6349L-0.000208939 81.2559ZM129.252 14.916C117.638 25.6892 99.2262 40.4942 81.7366 49.8387C73.0101 54.5011 64.3437 57.8974 56.776 58.6509C49.1346 59.4117 42.3197 57.478 37.978 51.1412L41.2778 48.8804C44.5288 53.6253 49.6565 55.34 56.3797 54.6706C63.1767 53.9939 71.297 50.8813 79.8516 46.3107C96.9239 37.1892 115.052 22.632 126.531 11.9834L129.252 14.916ZM37.978 51.1412C32.7691 43.5387 32.8549 34.2535 35.2247 25.9545C37.596 17.6502 42.3415 9.98184 47.0139 5.26246C49.3184 2.93478 51.7995 1.12564 54.1436 0.481492C55.3484 0.150394 56.6556 0.0910703 57.8899 0.588677C59.1541 1.09839 60.0779 2.08599 60.6776 3.34447C61.8093 5.71952 61.928 9.33108 61.1791 14.0776C60.4148 18.9222 58.6843 25.3054 55.7212 33.4866L51.9603 32.1245C54.8765 24.0727 56.5182 17.953 57.228 13.4543C57.9532 8.85746 57.6479 6.28513 57.0666 5.06509C56.8097 4.52602 56.5548 4.36328 56.3941 4.29851C56.2035 4.22163 55.8397 4.16369 55.2035 4.3385C53.8656 4.70617 51.9848 5.92698 49.8564 8.0767C45.6632 12.3121 41.2596 19.3883 39.071 27.0528C36.8808 34.7227 36.9958 42.6307 41.2778 48.8804L37.978 51.1412ZM55.7212 33.4866C43.0503 68.4712 31.4146 80.1018 18.4454 83.0551L17.5573 79.155C28.3426 76.6989 39.3408 66.9672 51.9603 32.1245L55.7212 33.4866Z"
                   fill="#E072A4"
                 />
               </svg>
             </div>{" "}
-            <h1 className="3xxl:text-center 3xxl:text-[16px]  3xxl:w-[250px] text-center 5xl:w-[850px] 5xxl:w-[85%] 5xxl:text-[34px]  md:w-[450px] 820xxl:text-[48px] font-[600] text-[#222222] h1 ">Here’s why you should choose us:</h1>
-            <div className=" md:block 3xxl:hidden block">
+            <h1 className="3xxl:text-center 3xxl:text-[16px] 4xxl:w-[]  3xxl:w-[250px] text-center 5xl:w-[850px] 5xxl:w-[85%] 5xxl:text-[34px]  md:w-[450px] 820xxl:text-[48px] font-[600] text-[#222222]  ">Here’s why you should choose us:</h1>
+            <div className=" md:block 4xxl:hidden 3xxl:hidden block">
               <svg className="" width="130" height="93" viewBox="0 0 130 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M126.531 11.9834C127.341 11.2322 128.607 11.2798 129.358 12.0896C130.109 12.8994 130.062 14.1648 129.252 14.916L126.531 11.9834ZM39.6279 50.0108L41.2778 48.8804L39.6279 50.0108ZM53.8408 32.8056L55.7212 33.4866L53.8408 32.8056ZM-0.000208939 81.2559L19.9023 69.5417L20.0959 92.6349L-0.000208939 81.2559ZM129.252 14.916C117.638 25.6892 99.2262 40.4942 81.7366 49.8387C73.0101 54.5011 64.3437 57.8974 56.776 58.6509C49.1346 59.4117 42.3197 57.478 37.978 51.1412L41.2778 48.8804C44.5288 53.6253 49.6565 55.34 56.3797 54.6706C63.1767 53.9939 71.297 50.8813 79.8516 46.3107C96.9239 37.1892 115.052 22.632 126.531 11.9834L129.252 14.916ZM37.978 51.1412C32.7691 43.5387 32.8549 34.2535 35.2247 25.9545C37.596 17.6502 42.3415 9.98184 47.0139 5.26246C49.3184 2.93478 51.7995 1.12564 54.1436 0.481492C55.3484 0.150394 56.6556 0.0910703 57.8899 0.588677C59.1541 1.09839 60.0779 2.08599 60.6776 3.34447C61.8093 5.71952 61.928 9.33108 61.1791 14.0776C60.4148 18.9222 58.6843 25.3054 55.7212 33.4866L51.9603 32.1245C54.8765 24.0727 56.5182 17.953 57.228 13.4543C57.9532 8.85746 57.6479 6.28513 57.0666 5.06509C56.8097 4.52602 56.5548 4.36328 56.3941 4.29851C56.2035 4.22163 55.8397 4.16369 55.2035 4.3385C53.8656 4.70617 51.9848 5.92698 49.8564 8.0767C45.6632 12.3121 41.2596 19.3883 39.071 27.0528C36.8808 34.7227 36.9958 42.6307 41.2778 48.8804L37.978 51.1412ZM55.7212 33.4866C43.0503 68.4712 31.4146 80.1018 18.4454 83.0551L17.5573 79.155C28.3426 76.6989 39.3408 66.9672 51.9603 32.1245L55.7212 33.4866Z"
@@ -22,12 +22,12 @@ function ChooseUsBusiness() {
               </svg>
             </div>
           </div>
-          <p className=" 5xxl:w-[75%] 5xxl:text-[14px]  3xxl:text-center 3xxl:text-[10px]  3xxl:w-[250px] xl:w-[600px] 820xxl:w-[600px] 820xxl:ml-[-20px] xl:ml-[-10px] 3xxl:ml-[40px] 2xl:w-[700px] 2xl:ml-[-40px] 3xl:ml-[-30px] 3xl:w-[700px] 4xl:ml-[-40px] 4xl:w-[700px] 5xl:w-[800px]  tracking-[1px] 5xl:mt-[20px] 5xl:ml-[80px] md:mt-3 md:w-[550px] font-[400] text-[#4f4f4f] text-center 820xxl:text-[16px]">
+          <p className=" 5xxl:w-[75%] 5xxl:text-[14px] 4xxl:w-[80%] 4xxl:ml-[0px]  3xxl:text-center 3xxl:text-[10px]  3xxl:w-[250px] xl:w-[600px] 820xxl:w-[600px] 820xxl:ml-[-20px] xl:ml-[-10px] 3xxl:ml-[40px] 2xl:w-[700px] 2xl:ml-[-40px] 3xl:ml-[-30px] 3xl:w-[700px] 4xl:ml-[-40px] 4xl:w-[700px] 5xl:w-[800px]  tracking-[1px] 5xl:mt-[20px] 5xl:ml-[80px] md:mt-3 md:w-[550px] font-[400] text-[#4f4f4f] text-center 820xxl:text-[16px]">
             We specialize in connecting a highly skilled and diverse global tech talent community in emerging markets with leading companies worldwide, resulting in a powerful and far-reaching impact. We create sustainable workspaces, where
             collective impact transcends individual contributions!
           </p>
         </div>
-        <div className=" 3xxl:flex 5xxl:w-[95%] 5xxl:ml-[10px] 3xxl:ml-[10%] 4xxl:ml-[5%] 4xxl:w-[390px] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
+        <div className=" 3xxl:flex 5xxl:w-[95%] 5xxl:ml-[10px] 3xxl:ml-[10%] 4xxl:ml-[0%] 4xxl:w-[95%] 820xxl:hidden 3xxl:justify-evenly 3xxl:h-[200px] items-center 3xxl:w-[285px] hidden ">
           <div className=" 3xxl:w-[50px] grid justify-center items-center   ">
             <svg width="50" className="3xxl:w-[30px] 3xxl:ml-[8px] 3xxl:h-[30px] 5xxl:w-[40px] 5xxl:h-[40px]" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
