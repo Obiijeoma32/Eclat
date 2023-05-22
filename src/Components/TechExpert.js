@@ -105,7 +105,7 @@ function TechExpert() {
               </ul>
             </div>
           </div>
-          <div className=" mt-2 3xl:ml-[0%] 13inch:w-[100%] justify-between 5xl:ml-[10%] 1xl:ml-[60px] 820xxl:grid 1halfxl:w-[85%] 1halfxl:flex 1halfxl:ml-[5px] items-center flex">
+          <div className=" mt-2 3xl:ml-[0%] 13inch:w-[100%] justify-between 5xl:ml-[10%] 1xl:ml-[60px] 820xxl:grid 1halfxl:w-[90%] 1halfxl:flex 1halfxl:ml-[5px] items-center flex">
             <div className="mt-[7rem] w-[700px]">
               <h1 className=" text-left  md:w-[500px] 1xl:w-[100%]  4xl:w-[700px] 5xl:w-[800px] 820xxl:w-[650px] text-[48px] font-[600] text-[#222222]  ">We bring Flexibility to work</h1>
               <ul className="tracking-[1px] mt-3  font-[400] text-[#4f4f4f] text-left text-[16px]">
@@ -117,7 +117,7 @@ function TechExpert() {
               </ul>
             </div>
             <img
-              className=" md:w-[500px] 1xl:rounded-[50%] 1halfxl:ml-[50px]  1xl:ml-[30px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]"
+              className=" md:w-[500px] 1xl:rounded-[50%]   1xl:ml-[30px] 1halfxl:w-[500px] 1halfxl:h-[400px] 820xxl:w-[650px] 820xxl:h-[550px] 820xxl:rounded-[0px] md:mt-[5rem] 5xl:w-[700px] rounded-[50%] 5xl:h-[600px] md:h-[400px]"
               src={table}
               alt="chatbox"
             />
