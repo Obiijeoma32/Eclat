@@ -96,15 +96,16 @@ function ResourceDetails2() {
               Period of employment ?
             </label>
             <br />
-            <div className=" flex 5xl:w-[900px] 4xl:w-[900px]  justify-between 820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] w-[471px]">
+            <div className="  5xl:w-[900px] 4xl:w-[900px]   820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] w-[471px]">
               <input
-                className="text-[14px] 5xl:w-[430px] 6xxl:w-[220px] 4xl:w-[430px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                className="text-[14px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                 placeholder="Starting year"
                 type="number"
               />
+              <br />
 
               <input
-                className="text-[14px] 4xl:w-[430px] 5xl:w-[430px] 6xxl:w-[220px] 820xxl:w-[228px] pr-[14px] 3xxl:w-[140px]  border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                className="text-[14px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                 placeholder="End year"
                 type="number"
               />

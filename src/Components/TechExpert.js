@@ -14,12 +14,12 @@ function TechExpert() {
     <>
       <div>
         <Heading />
-        <div className="md:flex 820xxl:mt-[9rem]   1xl:flex 1xl:h-[550px] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:mt-[130px] 5xl:ml-[5%]">
+        <div className=" 820xxl:mt-[9rem] 7xxl:hidden  1xl:flex 1xl:h-[550px] 1halfxl:w-[90%] 1halfxl:h-[600px] 1halfxl:flex 1halfxl:mt-[80px]  820xxl:grid 820xxl:h-[1000px] 1xl:w-[90%] hidden ml-[5rem] w-[85%]  mt-[6rem] h-[600px] items-center justify-between 5xl:mt-[130px] 5xl:ml-[5%]">
           <div className=" w-[85%]   1xl:w-[50%] ">
             <h1 className=" text-left 820xxl:w-[650px] 820xxl:h-[200px] 4xl:w-[1100px] 1xl:w-[500px]  md:w-[650px] 5xl:w-[1100px] text-[36px] font-[600] text-[#000] opacity-80 ">
               Discover fulfilling employment opportunities with reputable organizations.
             </h1>
-            <img className="md:w-[500px] hidden 1xl:hidden 1halfxl:hidden  820xxl:w-[650px] 820xxl:h-[500px] 820xxl:block 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
+            <img className="md:w-[500px] 7xxl:block hidden 1xl:hidden 1halfxl:hidden  820xxl:w-[650px] 820xxl:h-[500px] 820xxl:block 1xl:w-[400px] 1xl:h-[300px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
 
             <p className="tracking-[1px] 3xl:mt-[2rem] mt-3 2xl:mt-[20px] 820xxl:w-[650px] 4xl:w-[900px] 1xl:w-[450px] md:w-[500px] 5xl:w-[1000px] font-[400] text-[#000] opacity-80 text-left text-[16px]">
               Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
@@ -37,9 +37,9 @@ function TechExpert() {
               <p className="text-[#000000]  w-[300px] font-[600] text-[14px]">12,000+ people already joined Techeclat Get started today!</p>
             </div>
           </div>
-          <img className="md:w-[500px] 1xl:block  1halfxl:w-[550px] 1halfxl:h-[500px] 1halfxl:block 820xxl:hidden 1xl:w-[420px] 1xl:h-[400px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
+          <img className=" 7xxl:hidden 1xl:block  1halfxl:w-[550px] 1halfxl:h-[500px] 1halfxl:block 820xxl:hidden 1xl:w-[420px] 1xl:h-[400px] 5xl:w-[600px] 5xl:h-[500px] md:h-[400px]" src={talentimg} alt="Eclat" />
         </div>
-        <div className=" md:hidden grid   ml-[1rem] 5xxl:w-[90%] 5xxl:h-[900px] 5xxl:ml-[5%] w-[60%] 3xxl:mt-[1rem] 3xxl:h-[780px] 3xxl:ml-[8%] 3xxl:w-[90%]   mt-[6rem] h-[900px] items-center justify-between ">
+        <div className=" 820xxl:hidden 7xxl:grid grid   ml-[1rem] 5xxl:w-[90%] 5xxl:h-[900px] 5xxl:ml-[5%] w-[60%] 3xxl:mt-[1rem] 3xxl:h-[780px] 3xxl:ml-[8%] 3xxl:w-[90%]   mt-[6rem] h-[900px] items-center justify-between ">
           <div className="  mt-[1rem] ">
             <div className="grid justify-between ml-[30px]">
               <h1 className=" text-left  5xxl:w-[100%] 5xxl:text-[22px] w-[400px] 3xxl:text-[16px] 3xxl:w-[80%] text-[28px] font-[600] text-[#000] opacity-80 ">Discover fulfilling employment opportunities with reputable organizations.</h1>
@@ -64,7 +64,7 @@ function TechExpert() {
           {/* <img className="w-[500px]  h-[400px]" src={talentimg} alt="Eclat" /> */}
         </div>
         <Partners />
-        <div className="md:block  820xxl:w-[85%] 10inch:ml-[13%] 1xl:ml-[10%] 1xl:w-[85%] 1halfxl:block  820xxl:ml-[11%]  820xxl:grid hidden w-[80%] ml-[8rem] items-center mt-[7rem] 5xl:ml-[5%]">
+        <div className=" 7xxl:hidden  820xxl:w-[85%] 10inch:ml-[13%] 1xl:ml-[10%] 1xl:w-[85%] 1halfxl:block  820xxl:ml-[11%]  820xxl:grid hidden w-[80%] ml-[8rem] items-center mt-[7rem] 5xl:ml-[5%]">
           <div>
             <svg width="77" height="120" viewBox="0 0 77 135" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -123,7 +123,7 @@ function TechExpert() {
             />
           </div>{" "}
         </div>
-        <div className="md:hidden block w-[80%] 5xxl:w-[85%] 3xxl:w-[85%] 3xxl:ml-[10%] 1halfxl:hidden items-center mt-[4rem]">
+        <div className=" 7xxl:block block w-[80%] 5xxl:w-[85%] 3xxl:w-[85%] 3xxl:ml-[10%] 1halfxl:hidden items-center mt-[4rem]">
           <div className="ml-[1rem]">
             <svg className=" 3xxl:w-[50px] 3xxl:h-[70px] 5xxl:w-[70px] 5xxl:h-[90px] " width="70" height="90" viewBox="0 0 77 135" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

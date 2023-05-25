@@ -2,7 +2,7 @@ function Global() {
   return (
     <>
       {/* large screens except ipad air */}
-      <div className=" md:flex 1xl:flex 1halfxl:flex 820xxl:hidden 2xl:w-[90%] 2xl:justify-evenly hidden 1xl:items-center  1xl:w-[75%] mt-[11rem] 1halfxl:w-[85%] 1halfxl:justify-evenly 1xl:justify-evenly w-[92%] ml-[4rem] 1xl:ml-[130px] justify-evenly ">
+      <div className=" 7xxl:hidden 1xl:flex 1halfxl:flex 820xxl:hidden 2xl:w-[90%] 2xl:justify-evenly hidden 1xl:items-center  1xl:w-[75%] mt-[11rem] 1halfxl:w-[85%] 1halfxl:justify-evenly 1xl:justify-evenly w-[92%] ml-[4rem] 1xl:ml-[130px] justify-evenly ">
         <div className="1xl:w-[60%] 2xl:w-[550px]">
           <h1 className=" 1xl:-[100%]  text-left 5xl:w-[700px]  w-[650px] 2xl:w-[500px] 1xl:w-[400px] 1halfxl:w-[550px]  text-[44px] font-[600] text-[#222222]  ">
             Our global technologists undergo rigorous technical evaluations to ensure their competence.
@@ -32,7 +32,7 @@ function Global() {
         </div>{" "}
       </div>
       {/* small screens */}
-      <div className="md:hidden 6xxl:ml-[16%] 4xxl:w-[80%] 7xxl:ml-[18%] 1xl:hidden 1halfxl:hidden 5xxl:w-[85%] 5xxl:ml-[10%] 3xxl:ml-[15%] 3xxl:w-[85%] 6xxl:w-[80%] 820xxl:block 820xxl:ml-[10%] 10inch:ml-[19%]  grid mt-[4rem] w-[380px] ml-[80px] ">
+      <div className=" 7xxl:block 6xxl:ml-[16%] 4xxl:w-[80%] 7xxl:ml-[18%] 1xl:hidden 1halfxl:hidden 5xxl:w-[85%] 5xxl:ml-[10%] 3xxl:ml-[15%] 3xxl:w-[85%] 6xxl:w-[80%] 820xxl:block 820xxl:ml-[10%] 10inch:ml-[19%]  grid mt-[4rem] w-[380px] ml-[80px] ">
         <div>
           <h1 className=" text-left 3xxl:w-[80%] 4xxl:w-[95%] 3xxl:text-[20px] 5xxl:w-[85%] 5xxl:text-[30px]  w-[360px] text-[40px] font-[600] text-[#222222] 820xxl:w-[650px] ">
             Our global technologists undergo rigorous technical evaluations to ensure their competence.

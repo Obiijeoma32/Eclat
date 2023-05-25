@@ -68,8 +68,8 @@ function Jobs2() {
       <>
         <div className=" bg-[#fff] md:w-[100%] 6xxl:w-[100%] 1halfxl:min-h-screen 6xxl:h-full 3xxl:w-[505px] h-[150vh]">
           <HeaderForSignup />
-          <div className="md:pt-[7%] 7xxl:ml-[25%] 10inch:ml-[20%] 1xl:ml-[25%] 6xxl:ml-[20%] 1halfxl:ml-[28%] 3xxl:pt-[11rem] 820xxl:ml-[16%] 820xxl:pt-[200px] pb-[20px] 1xl:pt-[15%] 2xl:pt-[10%] xl:pt-[10%] md:ml-[30%] 3xxl:ml-[50px] 3xl:ml-[33%] 3xl:pt-[10%] 6xl:ml-[33%] 4xl:ml-[35%] 5xl:ml-[38%] ">
-            <div className=" bg-white rounded-[5px] 3xxl:w-[380px]   shadow-lg md:w-[562px]  h-[636px] ">
+          <div className=" 7xxl:pt-[15%] 7xxl:ml-[25%] 10inch:ml-[20%] 1xl:ml-[25%] 6xxl:ml-[20%] 1halfxl:ml-[28%] 3xxl:pt-[11rem] 820xxl:ml-[16%] 820xxl:pt-[200px] pb-[20px] 1xl:pt-[15%] 2xl:pt-[10%] xl:pt-[10%]  3xxl:ml-[50px] 3xl:ml-[33%] 3xl:pt-[10%] 6xl:ml-[33%] 4xl:ml-[35%] 5xl:ml-[38%] ">
+            <div className=" bg-white rounded-[5px] 3xxl:w-[380px] 7xxl:w-[450px]   shadow-lg 820xxl:w-[562px]  h-[636px] ">
               <div className=" 3xxl:ml-[20px] pt-5 ">
                 <h4 className=" text-[14px] text-center text-[#0A0A0A] opacity-40">
                   Become An <span className=" text-[#38761D] ">ÉCLAT</span>
@@ -81,7 +81,7 @@ function Jobs2() {
                     required
                     placeholder="English Proficiency"
                     styles={customStyles}
-                    className="lg:w-[670px] 820xxl:w-[420px] 3xl:w-[420px] 1xl:w-[420px]  3xxl:w-[320px]  md:w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[420px] 2xl:w-[420px] "
+                    className="lg:w-[670px] 820xxl:w-[420px]  3xl:w-[420px] 1xl:w-[420px]  3xxl:w-[320px]   h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[420px] 2xl:w-[420px] "
                     options={englishProficiency}
                   />
                   <br />
@@ -89,7 +89,7 @@ function Jobs2() {
                     required
                     placeholder="Skill"
                     styles={customStyles}
-                    className="lg:w-[670px] 820xxl:w-[420px] 1xl:w-[420px] 3xxl:w-[320px] 3xl:w-[420px]  md:w-[640px] h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[420px] 2xl:w-[420px] "
+                    className="lg:w-[670px] 820xxl:w-[420px] 1xl:w-[420px] 3xxl:w-[320px] 3xl:w-[420px]   h-[40px]  mt-2 text-[#38761D]  outline-none  xl:w-[420px] 2xl:w-[420px] "
                     options={options}
                   />
                   <br />
@@ -97,18 +97,18 @@ function Jobs2() {
                     required
                     placeholder="Year of Experience"
                     styles={customStyles}
-                    className="lg:w-[670px] 820xxl:w-[420px] 3xl:w-[420px] 1xl:w-[420px] 3xxl:w-[320px] md:w-[640px] h-[40px]  mt-2 text-[#38761D]     outline-none  xl:w-[420px] 2xl:w-[420px] "
+                    className="lg:w-[670px] 820xxl:w-[420px] 3xl:w-[420px] 1xl:w-[420px] 3xxl:w-[320px]  h-[40px]  mt-2 text-[#38761D]     outline-none  xl:w-[420px] 2xl:w-[420px] "
                     options={years}
                   />
                   <br />
 
-                  <input required className=" 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Set Password" />
+                  <input required className=" 3xxl:w-[320px]  820xxl:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Set Password" />
                   <br />
-                  <input required className=" 3xxl:w-[320px] md:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Confirm Password" />
+                  <input required className=" 3xxl:w-[320px]  820xxl:w-[420px] mb-[15px] h-[50px] pl-[14px] bg-[#fff] outline-none rounded-[2px]  border-[1px]  shadow-lg " type="password" placeholder="Confirm Password" />
                   <br />
 
                   <Link to="/loginuser">
-                    <div className="mt-[35px] 3xxl:w-[320px] tracking-[2px] md:w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
+                    <div className="mt-[35px] 3xxl:w-[320px] tracking-[2px]  820xxl:w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
                       <h1>SUBMIT</h1>
                     </div>
                   </Link>

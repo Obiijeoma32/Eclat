@@ -47,26 +47,27 @@ function ResourceDetails3() {
             />
 
             <br />
-            <div className=" flex 3xxl:w-[320px] 6xxl:w-[90%] 4xl:w-[900px] 820xxl:w-[471px] 5xl:w-[900px] justify-between w-[471px]">
+            <div className="  3xxl:w-[320px] 6xxl:w-[90%] 4xl:w-[900px] 820xxl:w-[471px] 5xl:w-[900px]  w-[471px]">
               <div>
                 <label className=" 3xxl:w-[100px]  3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="period of employment">
                   Year of starting ?
                 </label>
                 <br />
                 <input
-                  className="text-[14px] 5xl:w-[430px] 6xxl:w-[220px] 4xl:w-[430px] 3xxl:w-[140px] 820xxl:w-[228px] pr-[14px]  border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                  className="text-[14px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                   placeholder="Starting year"
                   type="number"
                 />
+                <br />
               </div>
-              <br />
+
               <div>
                 <label className=" 3xxl:text-[10px] 820xxl:text-[16px] 3xxl:w-[100px] text-[#1E2757]" htmlFor="period of employment">
                   Year of graduation ?
                 </label>
                 <br />
                 <input
-                  className="text-[14px] 5xl:w-[430px] 6xxl:w-[220px] 4xl:w-[430px] 3xxl:w-[140px] pr-[14px] 820xxl:w-[228px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[228px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+                  className="text-[14px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
                   placeholder="End year"
                   type="number"
                 />

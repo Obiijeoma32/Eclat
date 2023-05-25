@@ -8,7 +8,7 @@ function FooterEnterprise() {
 
   return (
     <>
-      <div className="md:block hidden mt-[9rem]">
+      <div className="820xxl:block 7xxl:hidden hidden mt-[9rem]">
         <div className="footer-container-content">
           <div className="6xl:ml-[23%] 1halfxl:ml-[18%] 10inch:ml-[20%] 820xxl:w-[600px] 820xxl:ml-[110px] 5xl:w-[1200px] 2xl:w-[950px] 1xl:w-[800px] 1xl:ml-[140px] 2xl:ml-[17%] 3xl:ml-[23%] md:ml-[8.8rem] items-center rounded-[10px] footer-container 4xl:ml-[25%] 5xl:ml-[28%] ">
             <div className="w-[500px] 820xxl:ml-[10%]  ml-[25%] 5xl:ml-[31%] 2xl:ml-[25%] 1xl:ml-[20%] pt-[5%]">
@@ -311,7 +311,7 @@ function FooterEnterprise() {
         </div>
       </div>
       {/* small screens */}
-      <div className="md:hidden 3xxl:block block w-[100%] mt-[5rem]">
+      <div className="820xxl:hidden 7xxl:block 3xxl:block block w-[100%] mt-[5rem]">
         <div className="w-[450px] 5xxl:w-[400px] 7xxl:ml-[25%] 6xxl:ml-[17%] 5xxl:h-[250px] 5xxl:ml-[13%]  3xxl:w-[250px] 3xxl:h-[180px] 4xxl:ml-[15%] 4xxl:w-[320px] 3xxl:ml-[18%] h-[250px] bg-[#38761D] bg-[url('./Components/footerimg.jpeg')] bg-no-repeat object-cover bg-center bg-cover items-center rounded-[10px]   ">
           <div className="w-[400px] 5xxl:pt-[15%] 5xxl:w-[70%] 4xxl:ml-[17%] 3xxl:w-[220px] 3xxl:pt-[30px] 3xxl:ml-[20px]  pt-[10%]">
             <h1 className=" 820xxl:ml-[15%] 5xxl:text-[22px] 3xxl:text-[14px] 3xxl:ml-[0px] font-[700] 820xxl:text-[28px] text-center text-[#fff] ">Get started today on TechEclat now. </h1>
