@@ -85,7 +85,7 @@ function Test() {
         <AdminSideBar />
         <div className="3xxl:ml-[18%] 3xxl:overflow-x-auto md:ml-[18rem] ml-[18rem] pt-[30px] ">
           <h1 className=" text-[#38761D] text-[30px] font-[300px] ">Test</h1>
-          <div className="flex w-[955px] justify-end 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px]">
+          <div className="flex w-[955px] justify-end 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px]">
             <div onClick={handleCreateTest} className="w-[153px] cursor-pointer flex justify-evenly items-center h-[55px] bg-[#38761D] text-[#fff] rounded-[5px] ">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.125 10H16.875" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -95,9 +95,9 @@ function Test() {
               <h1>Create test</h1>
             </div>
           </div>
-          <div className="w-[950px] ml-1 mt-[19px] h-[620px]  rounded-[5px] border-[#E3E7EB] border-[1px] 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px]">
-            <div className="w-[920px] flex justify-between ml-[20px] mt-[19px] h-[60px]  rounded-[5px] bg-[#F4F4F6] 5xl:w-[1950px] 6xl:w-[1250px] 4xl:w-[1450px]">
-              <div className="w-[650px] pl-3 h-[40px] bg-[#fff] justify-between rounded-[4px] ml-[10px] mt-[10px] flex items-center border-[#E3E7EB] border-[1px] 5xl:w-[1650px] 6xl:w-[1000px] 4xl:w-[1150px]">
+          <div className="w-[950px] ml-1 mt-[19px] h-[620px]  rounded-[5px] border-[#E3E7EB] border-[1px] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px]">
+            <div className="w-[920px] flex justify-between ml-[20px] mt-[19px] h-[60px]  rounded-[5px] bg-[#F4F4F6] 5xl:w-[1950px] 6xl:w-[97%] 4xl:w-[1450px]">
+              <div className="w-[650px] pl-3 h-[40px] bg-[#fff] justify-between rounded-[4px] ml-[10px] mt-[10px] flex items-center border-[#E3E7EB] border-[1px] 5xl:w-[1650px] 6xl:w-[90%] 4xl:w-[1150px]">
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
@@ -111,7 +111,7 @@ function Test() {
                 </svg>
 
                 <input
-                  className=" w-[590px] h-[36px]  outline-none placeholder:text-[#38761D] placeholder:tracking-[0.8px] placeholder:text-[14px] font-[300] 5xl:w-[1600px] 6xl:w-[920px] 4xl:w-[1100px]"
+                  className=" w-[590px] h-[36px]  outline-none placeholder:text-[#38761D] placeholder:tracking-[0.8px] placeholder:text-[14px] font-[300] 5xl:w-[1600px] 6xl:w-[97%] 4xl:w-[1100px]"
                   type="text"
                   placeholder="Search for applicants, skills, job role etc..."
                 />
@@ -142,7 +142,7 @@ function Test() {
               </div>
             </div>
 
-            <table className="w-[920px] table ml-[17px] mt-[30px] text-center h-[450px] 5xl:w-[1950px] 6xl:w-[1250px] 4xl:w-[1450px]">
+            <table className="w-[920px] table ml-[17px] mt-[30px] text-center h-[450px] 5xl:w-[1950px] 6xl:w-[97%] 4xl:w-[1450px]">
               <thead className="text-[15px] pb-[10px] opacity-90 font-[400px] text-[#38761D]">
                 <tr className=" border-b-[#E3E7EB] border-b-[1px] ">
                   <th className="flex pb-[10px] items-center">
@@ -311,7 +311,7 @@ function Test() {
               </tbody>
             </table>
           </div>
-          <div className="w-[950px] flex justify-between pl-[17px] pr-[17px] items-center h-[60px] rounded-[5px] ml-[3px] mt-[30px] bg-[#f4f4f6] 5xl:w-[2000px] 6xl:w-[1300px] 4xl:w-[1500px]">
+          <div className="w-[950px] flex justify-between pl-[17px] pr-[17px] items-center h-[60px] rounded-[5px] ml-[3px] mt-[30px] bg-[#f4f4f6] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px]">
             <p className="text-[16px] text-[#38761D] font-[400]">1 - 11 of 1200 pages</p>
             <div className="flex items-center w-[350px]  justify-between">
               <p className="text-[16px] text-[#38761D] font-[400]">The page you’re on</p>
