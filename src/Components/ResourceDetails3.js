@@ -83,7 +83,7 @@ function ResourceDetails3() {
             className="mt-[40px]"
             to=""
           >
-            <h1 className="3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] w-[471px] h-[50px] rounded-[5px] bg-[#38761D] pt-[15px] opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">Continue</h1>
+            <h1 className="3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] w-[471px] h-[50px] rounded-[5px] bg-[#38761D] pt-[15px] opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">Submit</h1>
           </Link>
         </div>
       </div>

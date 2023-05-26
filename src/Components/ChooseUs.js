@@ -388,45 +388,45 @@ function ChooseUs() {
         </div>
         <div className=" max-w-[95%] 1xl:block   mt-[7rem] h-[300px] 3xxl:hidden ">
           <div className=" 1xl:ml-[10%] 4xl:w-[80%] 4xl:ml-[13%]  flex justify-between w-[85%] 1halfxl:ml-[10%] ">
-            <div className="   4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[315px] 2xl:w-[290px]    border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%] ">
+            <div className="   4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[35%] 2xl:w-[40%]    border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%] ">
               DevOps Engineer
             </div>
-            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[315px] 2xl:w-[290px]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
+            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[35%] 2xl:w-[40%]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
               Frontend Software Engineer
             </div>
-            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[315px] 2xl:w-[290px]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
+            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[35%] 2xl:w-[40%]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
               Backend Software Engineer
             </div>
-            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[315px] 2xl:w-[290px]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
+            <div className=" md:w-[240px]  4xl:w-[40%]  820xxl:mt-[20px] 820xxl:w-[500px] 13inch:w-[40%] 1xl:w-[25%] 3xl:w-[35%] 2xl:w-[40%]   border-[1px] bg-[#f4f4f6] pt-[10px] text-[11px] 1halfxl:w-[320px] 5xl:w-[40%] h-[40px] text-center rounded-[20px] border-[#38761d] 6xl:w-[40%]">
               Data Architects
             </div>
           </div>
           <div className=" 1xl:ml-[5%] flex justify-between mt-[25px] w-[95%] 1halfxl:ml-[5%] ">
-            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%] ">
+            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[35%] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%] ">
               Data Engineers/Analysts
             </div>
-            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%]">
+            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[35%] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%]">
               Software Testers
             </div>
-            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%]">
+            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[35%] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%]">
               Cloud Architects
             </div>
-            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[360px] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%] ">
+            <div className=" border-[1px]  bg-[#f4f4f6] h-[40px] text-center   rounded-[20px] border-[#38761d] pt-[10px] text-[11px] 5xl:w-[40%]  3xl:w-[35%] 820xxl:w-[500px] 820xxl:mt-[20px] 2xl:w-[35%] 13inch:w-[40%] 4xl:w-[40%]  1xl:w-[30%]    1halfxl:w-[40%] 6xl:w-[35%] ">
               Cloud Engineers
             </div>
           </div>
           <div className=" flex justify-between items-center 1xl:ml-[2%]  mt-[25px] w-[100%] 1halfxl:ml-[2.5%] ">
-            <div className=" whitespace-nowrap flex justify-center   border-[1px]  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[10px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 820xxl:pt-[10px] 1xl:w-[350px] 13inch:w-[40%] 2xl:pt-[6px] 1xl:pb-[3px] 13inch:text-[11px] 3xl:w-[400px] 1halfxl:w-[320px] 3xl:pt-[6px] md:pt-[2px] 6xl:w-[35%]  ">
+            <div className=" whitespace-nowrap flex justify-center   border-[1px] 13inch:pt-[11px]  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[15px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 820xxl:pt-[10px] 1xl:w-[350px] 13inch:w-[40%] 2xl:pt-[11px] 1xl:pb-[3px] 13inch:text-[11px] 3xl:w-[35%] 1halfxl:w-[320px] 3xl:pt-[6px] md:pt-[2px] 6xl:w-[35%]  ">
               <div>User Interface (UI)/User Experience (UX) Designer </div>
             </div>
 
-            <div className="   border-[1px] flex justify-center  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[10px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%]  3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] ">
+            <div className="   border-[1px] flex justify-center  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[10px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%]  3xl:w-[35%] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] ">
               <div>Data Engineers</div>
             </div>
-            <div className="  1halfxl:pt-[10px] flex justify-center  border-[1px]  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d]  text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%] 1xl:pt-[-3px] 3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] pt-[8px] ">
+            <div className="  1halfxl:pt-[10px] flex justify-center  border-[1px] 13inch:pt-[11px] bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d]  text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%] 1xl:pt-[-3px] 3xl:w-[35%] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] pt-[8px] ">
               <div>Security Architects/Cyber security Analysts</div>
             </div>
-            <div className="   border-[1px] flex justify-center  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[10px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%]  3xl:w-[400px] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] ">
+            <div className="   border-[1px] flex justify-center  bg-[#f4f4f6] h-[40px] text-center  rounded-[20px] border-[#38761d] pt-[10px] text-[9px] 5xl:w-[40%] 2xl:w-[380px] 820xxl:w-[500px] 4xl:w-[40%] 820xxl:mt-[20px] 1xl:w-[350px] 13inch:w-[40%]  3xl:w-[35%] 1halfxl:w-[320px] 3xxl:w-[250px] 13inch:text-[11px] 6xl:w-[35%] ">
               <div>Full Stack Developers</div>
             </div>
           </div>

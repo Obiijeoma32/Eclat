@@ -7,10 +7,10 @@ function Notification2() {
         <AdminSideBar />
         <div className="3xxl:ml-[18%] 3xxl:overflow-x-auto md:ml-[18rem] ml-[18rem] pt-[30px] ">
           <h1 className=" text-[#38761D] text-[30px] font-[300px] ">Notification</h1>
-          <div className=" ml-[10px] border-[#E3E7EB] border-[1px] opacity-90 bg-[#38761D] h-[312px] mt-[40px] rounded-[5px] w-[920px] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px] ">
-            <h3 className="  pb-[10px] pl-[18px] h-[50px] pt-[10px] text-[18px] bg-[#fff] text-[#38761D] font-[400]  w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1499px]">Today</h3>
+          <div className=" ml-[10px] border-[#E3E7EB] border-[1px] opacity-90 bg-[#38761D] h-[312px] mt-[40px] rounded-[5px] w-[95%] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px] ">
+            <h3 className="  pb-[10px] pl-[18px] h-[50px] pt-[10px] text-[18px] bg-[#fff] text-[#38761D] font-[400]  w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1499px]">Today</h3>
 
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#fff] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px]  ">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -42,7 +42,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#fff] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -74,7 +74,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px]  w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px]  w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#fff] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px]  ">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -107,9 +107,9 @@ function Notification2() {
               </div>
             </div>
           </div>
-          <div className=" ml-[10px] border-[#E3E7EB] border-[1px] h-[490px] mt-[40px] rounded-[5px] w-[920px] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px] ">
-            <h3 className=" mt-[15px] pb-[10px] pl-[18px] text-[18px] text-[#38761D] font-[400] border-[#E3E7EB] border-b-[1px] w-[920px] 6xl:w-[100%] 5xl:w-[2000px] 4xl:w-[1500px]">Earlier</h3>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+          <div className=" ml-[10px] border-[#E3E7EB] border-[1px] h-[490px] mt-[40px] rounded-[5px] w-[95%] 5xl:w-[2000px] 6xl:w-[95%] 4xl:w-[1500px] ">
+            <h3 className=" mt-[15px] pb-[10px] pl-[18px] text-[18px] text-[#38761D] font-[400] border-[#E3E7EB] border-b-[1px] w-[100%] 6xl:w-[100%] 5xl:w-[2000px] 4xl:w-[1500px]">Earlier</h3>
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#BEC2D0] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <div className=" bg-[#BEC2D0] w-[40px] h-[40px] rounded-[50%] items-center  flex justify-around">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +141,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#BEC2D0] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <div className=" bg-[#BEC2D0] w-[40px] h-[40px] rounded-[50%] items-center  flex justify-around">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +173,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#BEC2D0] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <div className=" bg-[#BEC2D0] w-[40px] h-[40px] rounded-[50%] items-center  flex justify-around">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#BEC2D0] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <div className=" bg-[#BEC2D0] w-[40px] h-[40px] rounded-[50%] items-center  flex justify-around">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,7 +237,7 @@ function Notification2() {
                 <h4 className="mt-[10px]">22nd September 2020</h4>
               </div>
             </div>
-            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[920px] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
+            <div className="  h-[65px] border-[#E3E7EB] border-b-[1px] w-[100%] 5xl:w-[2000px] 6xl:w-[100%] 4xl:w-[1500px]">
               <div className=" text-[14px] text-[#BEC2D0] font-[400] mt-[23px] w-[920px] flex justify-evenly 5xl:w-[1950px] 5xl:justify-between 5xl:ml-[20px] ">
                 <div className=" bg-[#BEC2D0] w-[40px] h-[40px] rounded-[50%] items-center  flex justify-around">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

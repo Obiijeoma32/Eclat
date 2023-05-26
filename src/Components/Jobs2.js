@@ -108,7 +108,7 @@ function Jobs2() {
                   <br />
 
                   <Link to="/loginuser">
-                    <div className="mt-[35px] 3xxl:w-[320px] tracking-[2px]  820xxl:w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]">
+                    <div className="mt-[35px] 3xxl:w-[320px] tracking-[2px]  820xxl:w-[420px] rounded-[2px] h-[55px] bg-[#38761D] text-center pt-[13px] opacity-90 text-[#fff]">
                       <h1>SUBMIT</h1>
                     </div>
                   </Link>

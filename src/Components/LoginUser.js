@@ -101,15 +101,15 @@ function LoginUser() {
                     </span>
                   </label>
                 </div>
-                <Link className="" to="/signintonetwork">
-                  <div className="mt-[30px] tracking-[2px] 3xxl:w-[350px] md:w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[11px] opacity-90 text-[#fff]">
+                <Link onClick={() => window.scrollTo(0, 0)} className="" to="/signintonetwork">
+                  <div className="mt-[30px] tracking-[2px] 3xxl:w-[350px] md:w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[13px] opacity-90 text-[#fff]">
                     <h1>Register</h1>
                   </div>
                 </Link>
               </form>
               <h1 className=" text-center text-[14px] tracking-[1px] mt-4 text-[#121D0E]  ">
                 Already a member?{" "}
-                <Link className=" text-[#38761D] hover:underline " to="/loginuser">
+                <Link onClick={() => window.scrollTo(0, 0)} className=" text-[#38761D] hover:underline " to="/loginuser">
                   Login
                 </Link>
               </h1>

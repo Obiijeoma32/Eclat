@@ -25,7 +25,7 @@ export default function DropdownMenu() {
 
       {isOpen && (
         <div className="w-[140px] 13inch:right-[2%] pt-[10px] fixed shadow-lg opacity-90 rounded-[5px] right-[27px] mt-2 z-[99] bg-[#fafafa] grid h-[100px] 4xl:right-[70px] 5xl:right-[120px]">
-          <Link className="opacity-80 hover:bg-[#F4F4F6] w-[120px] pl-[5px] ml-[10px] rounded-[5px] pt-[4px] font-[600] text-[#38761D] mt-1 h-[35px]" to="/loginuser">
+          <Link onClick={() => window.scrollTo(0, 0)} className="opacity-80 hover:bg-[#F4F4F6] w-[120px] pl-[5px] ml-[10px] rounded-[5px] pt-[4px] font-[600] text-[#38761D] mt-1 h-[35px]" to="/loginuser">
             User Login
           </Link>
           <Link onClick={handleScrollToTop} className="opacity-80 hover:bg-[#F4F4F6] w-[120px] pl-[5px] ml-[10px] rounded-[5px] pt-[4px] font-[600] text-[#38761D] mt-1 h-[30px]" to="/loginadmin">

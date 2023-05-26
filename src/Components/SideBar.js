@@ -64,7 +64,7 @@ function SideBar({ children }) {
             to={item.path}
             key={index}
             className={({ isActive }) =>
-              isActive ? " items-center text-[16px] m-[43px] text-left font-[400] flex justify-between w-[300px] text-[#b6d7a8]" : " items-center text-[16px] m-[43px]  text-left font-[400] flex justify-between w-[300px] text-[#38761d] "
+              isActive ? " items-center text-[16px] m-[43px] text-left font-[400] flex justify-between w-[300px] text-[#38761d]" : " items-center text-[16px] m-[43px]  text-left font-[400] flex justify-between w-[300px] text-[#b6d7a8] "
             }
           >
             <div className=" item-center text-right  justify-between flex">
