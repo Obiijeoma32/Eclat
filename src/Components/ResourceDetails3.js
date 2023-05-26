@@ -7,7 +7,7 @@ function ResourceDetails3() {
   return (
     <>
       <Heading />
-      <div className=" h-[200vh] 10inch:ml-[6%] 3xxl:mt-[10%] 6xxl:w-[90%] 6xxl:mt-[0px] 5xl:mt-[-5%] 820xxl:mt-[0] flex 5xl:ml-[5%]">
+      <div className=" h-[200vh] 10inch:ml-[0%] 3xxl:mt-[10%] 6xxl:w-[90%] 6xxl:mt-[0px] 5xl:mt-[-5%] 820xxl:mt-[0] flex 5xl:ml-[5%]">
         <SideBar />
         <div className="5xl:ml-[25rem] 4xl:ml-[24rem] 6xxl:w-[85%]  mt-[12%] 3xxl:ml-[1rem] 820xxl:ml-[16rem] ml-[25rem] 1xl:ml-[22rem]">
           <h1 className=" 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[600px] text-[#38761D] 3xxl:text-[20px] 820xxl:text-[30px] font-[600] opacity-80 ">Kindly fill in the details</h1>
