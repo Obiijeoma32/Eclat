@@ -6,6 +6,65 @@ function LoginUser() {
   const [terms, setTerms] = useState(false);
   const [privacy, setPrivacy] = useState(false);
 
+const [firstName, setFirstName] = useState();
+const [lastName, setLastName] = useState();
+const [email, setEmail] = useState();
+const [password, setPassword] = useState();
+const [phoneNumber, setPhoneNumber] = useState();
+const handleFirstName = (event) => {
+  setFirstName(event.target.value);
+};
+const handleLastName = (event) => {
+  setLastName(event.target.value);
+};
+const handleEmail = (event) => {
+  setEmail(event.target.value);
+};
+const handlePassword = (event) => {
+  setPassword(event.target.value);
+};
+const handlePhoneNumber = (event) => {
+  setPhoneNumber(event.target.value);
+};
+
+
+  const handleSendClick = async () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phoneNumber,
+        email: email,
+        password: password,
+      }),
+    };
+
+    console.log(requestOptions);
+    // setLoading(true); // start progress spinner
+    fetch(
+      "http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/signUp",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        console.log(data.id);
+
+        if (data.id !== null) {
+          localStorage.setItem("userId", data.id); // Save the id to localStorage
+
+          const redirectUrl = `/resourcedetails`;
+
+          window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      
+      });
+  };
   return (
     <>
       <div className=" bg-[#fff] w-[100%] 6xxl:h-[190vh] h-[150vh]">
@@ -13,10 +72,18 @@ function LoginUser() {
         <div className="7xxl:pt-[15%] 10inch:ml-[25%] 7xxl:ml-[20%] 1xl:ml-[25%] 6xxl:ml-[16%] 1halfxl:ml-[28%] 1halfxl:pt-[100px] 820xxl:ml-[20%] 820xxl:pt-[150px] 3xxl:pt-[8rem] 4xxl:ml-[-20px] 3xxl:ml-[-30px] 1xl:pt-[15%] pb-[20px]  6xl:ml-[33%] 3xl:ml-[33%] 3xl:pt-[10%] 4xl:ml-[35%] 5xl:ml-[38%]">
           <div className="md:w-[512px] 3xxl:w-[390px]  h-[636px] ">
             <div className=" pt-5 ">
-              <h4 className=" 3xxl:ml-[40px] text-[30px] text-center text-[#1E2757] ">Join the Network</h4>
+              <h4 className=" 3xxl:ml-[40px] text-[30px] text-center text-[#1E2757] ">
+                Join the Network
+              </h4>
               <div className=" md:w-[420px] 3xxl:w-[340px]   mt-[20px] mb-[20px] h-[50px]  border-[#DCDDE5]  ml-[50px]   rounded-[5px]  border-[1px] ">
                 <div className=" 3xxl:ml-[50px] w-[230px] md:ml-[90px] h-[50px] flex items-center justify-evenly">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M22.5006 12.2336C22.5006 11.3702 22.4291 10.7402 22.2744 10.0869H12.2148V13.9835H18.1196C18.0006 14.9519 17.3577 16.4102 15.9291 17.3902L15.909 17.5207L19.0897 19.9354L19.3101 19.9569C21.3339 18.1253 22.5006 15.4302 22.5006 12.2336Z"
                       fill="#4285F4"
@@ -34,30 +101,58 @@ function LoginUser() {
                       fill="#EB4335"
                     />
                   </svg>
-                  <h3 className=" text-[#97A6C6] text-[14px] ">Sign up with Google</h3>
+                  <h3 className=" text-[#97A6C6] text-[14px] ">
+                    Sign up with Google
+                  </h3>
                 </div>
               </div>
               <div className="md:w-[466px] 3xxl:w-[385px] rounded-[4px] mt-[20px] items-center flex justify-between">
-                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] ml-[50px] border-[#DCDDE5] ">{/* intentional break */}</h3>
-                <h4 className=" text-[#181819] m-[7px] text-opacity-[42%] text-[14px]">OR</h4>
-                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] border-[#DCDDE5] ">{/* intentional break */}</h3>
+                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] ml-[50px] border-[#DCDDE5] ">
+                  {/* intentional break */}
+                </h3>
+                <h4 className=" text-[#181819] m-[7px] text-opacity-[42%] text-[14px]">
+                  OR
+                </h4>
+                <h3 className=" 3xxl:w-[175px]  md:w-[200px] border-[1px] h-[0px] border-[#DCDDE5] ">
+                  {/* intentional break */}
+                </h3>
               </div>
               <form autoComplete="on" className="ml-[3rem] mt-7" action="">
                 <div className="md:w-[420px] 3xxl:w-[350px] flex justify-between items-center">
                   <div>
-                    <label className=" text-[16px]  text-[#1E2757]" htmlFor="fname">
+                    <label
+                      className=" text-[16px]  text-[#1E2757]"
+                      htmlFor="fname"
+                    >
                       First Name
                     </label>
                     <br />
-                    <input required className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
+                    <input
+                      required
+                      className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  "
+                      type="text"
+                      placeholder=""
+                      value={firstName}
+                      onChange={handleFirstName}
+                    />
                     <br />
                   </div>
                   <div>
-                    <label className=" text-[16px]  text-[#1E2757]" htmlFor="lname">
+                    <label
+                      className=" text-[16px]  text-[#1E2757]"
+                      htmlFor="lname"
+                    >
                       Last Name
                     </label>
                     <br />
-                    <input required className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  " type="text" placeholder="" />
+                    <input
+                      required
+                      className=" 3xxl:w-[165px] md:w-[200px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]  "
+                      type="text"
+                      placeholder=""
+                      value={lastName}
+                      onChange={handleLastName}
+                    />
                     <br />
                   </div>
                 </div>
@@ -65,21 +160,54 @@ function LoginUser() {
                   Email Address
                 </label>
                 <br />
-                <input required className=" 3xxl:w-[350px] md:w-[420px] mt-[11px]  mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="email" placeholder="" />
+                <input
+                  required
+                  className=" 3xxl:w-[350px] md:w-[420px] mt-[11px]  mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   "
+                  type="email"
+                  placeholder=""
+                  value={email}
+                  onChange={handleEmail}
+                />
                 <br />
                 <label className=" text-[16px]  text-[#1E2757]" htmlFor="Phone">
                   Phone Number
                 </label>
                 <br />
-                <input required className=" 3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="tel" placeholder="" /> <br />
-                <label className=" text-[16px]  text-[#1E2757]" htmlFor="password">
+                <input
+                  required
+                  className=" 3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   "
+                  type="tel"
+                  placeholder=""
+                  value={phoneNumber}
+                  onChange={handlePhoneNumber}
+                />{" "}
+                <br />
+                <label
+                  className=" text-[16px]  text-[#1E2757]"
+                  htmlFor="password"
+                >
                   Password
                 </label>
                 <br />
-                <input required className="  3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   " type="password" placeholder="" /> <br />
+                <input
+                  required
+                  className="  3xxl:w-[350px] md:w-[420px] mt-[11px] mb-[15px] h-[50px] pl-[14px] border-[#DCDDE5] outline-none rounded-[5px]  border-[1px]   "
+                  type="password"
+                  placeholder=""
+                  value={password}
+                  onChange={handlePassword}
+                />{" "}
+                <br />
                 <div className=" 3xxl:w-[350px] mt-[40px] mb-5 ml-[-2px] flex justify-between md:w-[420px] items-center ">
-                  <input className="w-[20px] h-[20px] border-[#568B3F] border-[1px] " type="checkbox" required />
-                  <label className="text-[#1E2757] 3xxl:w-[320px]   md:w-[380px]  text-[14px]   " htmlFor="privacy and Terms">
+                  <input
+                    className="w-[20px] h-[20px] border-[#568B3F] border-[1px] "
+                    type="checkbox"
+                    required
+                  />
+                  <label
+                    className="text-[#1E2757] 3xxl:w-[320px]   md:w-[380px]  text-[14px]   "
+                    htmlFor="privacy and Terms"
+                  >
                     I accept to the
                     <span
                       onClick={() => {
@@ -101,15 +229,22 @@ function LoginUser() {
                     </span>
                   </label>
                 </div>
-                <Link onClick={() => window.scrollTo(0, 0)} className="" to="/signintonetwork">
-                  <div className="mt-[30px] tracking-[2px] 3xxl:w-[350px] md:w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[13px] opacity-90 text-[#fff]">
-                    <h1>Register</h1>
-                  </div>
-                </Link>
+                {/* <Link onClick={() => window.scrollTo(0, 0)} className="" to="/signintonetwork"> */}
+                <div
+                  className="mt-[30px] tracking-[2px] 3xxl:w-[350px] md:w-[420px] rounded-[8px] h-[50px] bg-[#568B3F] text-center pt-[13px] opacity-90 text-[#fff]"
+                  onClick={handleSendClick}
+                >
+                  <h1>Register</h1>
+                </div>
+                {/* </Link> */}
               </form>
               <h1 className=" text-center text-[14px] tracking-[1px] mt-4 text-[#121D0E]  ">
                 Already a member?{" "}
-                <Link onClick={() => window.scrollTo(0, 0)} className=" text-[#38761D] hover:underline " to="/loginuser">
+                <Link
+                  onClick={() => window.scrollTo(0, 0)}
+                  className=" text-[#38761D] hover:underline "
+                  to="/signintonetwork"
+                >
                   Login
                 </Link>
               </h1>
@@ -130,48 +265,79 @@ function LoginUser() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path fillRule="evenodd" clipRule="evenodd" d="M38.55 3.55L35 0L19.275 15.75L3.55 0L0 3.55L15.75 19.275L0 35L3.55 38.55L19.275 22.8L35 38.55L38.55 35L22.8 19.275L38.55 3.55Z" fill="#fff" />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M38.55 3.55L35 0L19.275 15.75L3.55 0L0 3.55L15.75 19.275L0 35L3.55 38.55L19.275 22.8L35 38.55L38.55 35L22.8 19.275L38.55 3.55Z"
+                fill="#fff"
+              />
             </svg>
           </div>
 
           <div className="bg-[#fff] 7xxl:w-[70%] 6xxl:w-[70%] 5xxl:w-[70%] 4xxl:w-[70%] 820xxl:h-[900px] 820xxl:w-[600px] overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
             <div className="pt-[50px]  pl-[40px]">
-              <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 ">Terms and Conditions</h3>
+              <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 ">
+                Terms and Conditions
+              </h3>
               <div className=" 820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  “Third Party” means any party other than TechEclat, its holding and subsidiary companies or agents. Notwithstanding the foregoing, you may disclose Confidential information to TechEclat’s holding and subsidiary companies, or agents,
-                  professional partners and advisers on a need-to-know basis only.
+                  “Third Party” means any party other than TechEclat, its
+                  holding and subsidiary companies or agents. Notwithstanding
+                  the foregoing, you may disclose Confidential information to
+                  TechEclat’s holding and subsidiary companies, or agents,
+                  professional partners and advisers on a need-to-know basis
+                  only.
                 </p>
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%]  mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  All information and data provided to you by TechEclat shall be used exclusively for the purposes arising from this engagement. You shall prevent the use of TechEclat’s information, data, computers, equipment and other properties by
-                  third parties. Also, you shall notify TechEclat without undue delay of any misuse of TechEclat’s information, data, computers, equipment and other properties.{" "}
+                  All information and data provided to you by TechEclat shall be
+                  used exclusively for the purposes arising from this
+                  engagement. You shall prevent the use of TechEclat’s
+                  information, data, computers, equipment and other properties
+                  by third parties. Also, you shall notify TechEclat without
+                  undue delay of any misuse of TechEclat’s information, data,
+                  computers, equipment and other properties.{" "}
                 </p>
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  You shall not copy, reproduce, modify, alter, disassemble, reverse engineer or decompile any Confidential Information unless expressly permitted in writing by TechEclat. Also, you shall not print or copy, in whole or in part, any
-                  documents or other media containing any Confidential Information without the written consent of TechEclat other than copies for its officers, directors, employees, investors, consultants, advisors or partners who are working on the
-                  program or any transaction relating thereto.{" "}
+                  You shall not copy, reproduce, modify, alter, disassemble,
+                  reverse engineer or decompile any Confidential Information
+                  unless expressly permitted in writing by TechEclat. Also, you
+                  shall not print or copy, in whole or in part, any documents or
+                  other media containing any Confidential Information without
+                  the written consent of TechEclat other than copies for its
+                  officers, directors, employees, investors, consultants,
+                  advisors or partners who are working on the program or any
+                  transaction relating thereto.{" "}
                 </p>
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  You shall protect Confidential Information in your possession using the same standard of care that TechEclat applies to safeguard its own proprietary, secret or confidential information and you shall ensure that Confidential
-                  Information is stored and handled in such a way as to prevent any unauthorized disclosure or use thereof. Where there is a possible breach of Confidential Information, you will immediately inform your Partner Experience
-                  representative.
+                  You shall protect Confidential Information in your possession
+                  using the same standard of care that TechEclat applies to
+                  safeguard its own proprietary, secret or confidential
+                  information and you shall ensure that Confidential Information
+                  is stored and handled in such a way as to prevent any
+                  unauthorized disclosure or use thereof. Where there is a
+                  possible breach of Confidential Information, you will
+                  immediately inform your Partner Experience representative.
                 </p>
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  Where you are compelled by applicable regulatory and/or fiscal authorities and any other valid order carrying the force of law to disclose any confidential or proprietary information, you shall promptly notify TechEclat of such
-                  obligation to enable it to limit or mitigate the disclosure as may be practicable.
+                  Where you are compelled by applicable regulatory and/or fiscal
+                  authorities and any other valid order carrying the force of
+                  law to disclose any confidential or proprietary information,
+                  you shall promptly notify TechEclat of such obligation to
+                  enable it to limit or mitigate the disclosure as may be
+                  practicable.
                 </p>
               </div>
             </div>
@@ -191,19 +357,35 @@ function LoginUser() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path fillRule="evenodd" clipRule="evenodd" d="M38.55 3.55L35 0L19.275 15.75L3.55 0L0 3.55L15.75 19.275L0 35L3.55 38.55L19.275 22.8L35 38.55L38.55 35L22.8 19.275L38.55 3.55Z" fill="#fff" />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M38.55 3.55L35 0L19.275 15.75L3.55 0L0 3.55L15.75 19.275L0 35L3.55 38.55L19.275 22.8L35 38.55L38.55 35L22.8 19.275L38.55 3.55Z"
+                fill="#fff"
+              />
             </svg>
           </div>
 
           <div className="bg-[#fff] 7xxl:w-[70%] 6xxl:w-[70%] 5xxl:w-[70%] 4xxl:w-[70%] 820xxl:h-[900px] 820xxl:w-[600px]  overflow-y-scroll ml-[15%] w-[900px] h-[500px] pb-[40px] rounded-[10px] 4xl:ml-[25%] 4xl:mt-[7%] 5xl:ml-[35%] ">
             <div className="pt-[50px] pl-[40px]">
-              <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 "> Privacy Agreement</h3>
+              <h3 className=" text-[#38761D] text-[30px] text-center mb-[30px] mr-[10px] font-[600] opacity-80 ">
+                {" "}
+                Privacy Agreement
+              </h3>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[20px] mr-[10px] ">&#x2022;</span>
                 <p>
-                  TechEclat Clients. We also may receive PII from TechEclat Clients to perform services for them. Any PII used for such purposes will be limited to access by only those who require it given their job function at TechEclat, and except
-                  as otherwise provided herein, we only share the PII back with our respective Clients. TechEclat does not retain, use, or disclose any Personal Information collected on behalf of our Clients for any purpose (including any commercial
-                  purpose) other than the specific purpose of performing the services as specified in the applicable Master Services Agreement with the Client.{" "}
+                  TechEclat Clients. We also may receive PII from TechEclat
+                  Clients to perform services for them. Any PII used for such
+                  purposes will be limited to access by only those who require
+                  it given their job function at TechEclat, and except as
+                  otherwise provided herein, we only share the PII back with our
+                  respective Clients. TechEclat does not retain, use, or
+                  disclose any Personal Information collected on behalf of our
+                  Clients for any purpose (including any commercial purpose)
+                  other than the specific purpose of performing the services as
+                  specified in the applicable Master Services Agreement with the
+                  Client.{" "}
                 </p>
               </div>
               <div className="820xxl:w-[500px] mt-[30px] text-[#38761D] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[400] tracking-[2px] ml-[10px]  mb-[4px] w-[800px]  text-[16px] ">
@@ -215,49 +397,99 @@ function LoginUser() {
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
                 <span className=" text-[22px] mr-[10px] ">&#x2022;</span>
-                <p>To communicate with you, provide you with updates and other information relating to our Services, provide information that you request, respond to comments and questions, and otherwise provide customer service and support.</p>
+                <p>
+                  To communicate with you, provide you with updates and other
+                  information relating to our Services, provide information that
+                  you request, respond to comments and questions, and otherwise
+                  provide customer service and support.
+                </p>
               </div>
               <div className="820xxl:w-[500px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] mt-[20px] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
                 <p>
-                  For marketing purposes, such as developing and providing promotional and advertising materials that may be useful, relevant, valuable, or otherwise of interest to you, to market events, promotions, competitions, webinars, reports,
-                  our services, news, or relevant industry updates.{" "}
+                  For marketing purposes, such as developing and providing
+                  promotional and advertising materials that may be useful,
+                  relevant, valuable, or otherwise of interest to you, to market
+                  events, promotions, competitions, webinars, reports, our
+                  services, news, or relevant industry updates.{" "}
                 </p>
               </div>
               <div className="820xxl:w-[500px] mt-[20px] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] text-[#1E2757] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>To personalize your experience on our Services such as presenting tailored content. </p>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  To personalize your experience on our Services such as
+                  presenting tailored content.{" "}
+                </p>
               </div>
               <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>To conduct research to understand and analyze how you use our Services and develop new products, services, and features.</p>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  To conduct research to understand and analyze how you use our
+                  Services and develop new products, services, and features.
+                </p>
               </div>
               <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[280px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
                 <p>To process job applications.</p>
               </div>
               <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] font-[300] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] tracking-[2px] flex justify-between mb-[4px] w-[800px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>To process your submissions, including to become our talent, client or partner, join the TechEclat Learning Community, to download e-books, or attend webinars or events.</p>
-              </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>To find and prevent fraud and respond to trust and safety issues that may arise.</p>
-              </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>For compliance purposes, including enforcing our legal rights, or as may be required by applicable laws and regulations or requested by any judicial process or governmental agency.</p>
-              </div>
-              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
                 <p>
-                  To enforce and comply with the law, including to conduct an investigation, to protect the property and rights of TechEclat or a third party, to protect the safety of the public or any person, or to prevent or stop activity we may
-                  consider to be, or to pose a risk of being, illegal, fraudulent, unethical or legally actionable activity.{" "}
+                  To process your submissions, including to become our talent,
+                  client or partner, join the TechEclat Learning Community, to
+                  download e-books, or attend webinars or events.
                 </p>
               </div>
               <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
-                <span className=" text-[22px] mr-[10px] mt-[-5px] ">&#x2022;</span>
-                <p>For other purposes for which we provide specific notice at the time the Personal Information is collected.</p>
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  To find and prevent fraud and respond to trust and safety
+                  issues that may arise.
+                </p>
+              </div>
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  For compliance purposes, including enforcing our legal rights,
+                  or as may be required by applicable laws and regulations or
+                  requested by any judicial process or governmental agency.
+                </p>
+              </div>
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  To enforce and comply with the law, including to conduct an
+                  investigation, to protect the property and rights of TechEclat
+                  or a third party, to protect the safety of the public or any
+                  person, or to prevent or stop activity we may consider to be,
+                  or to pose a risk of being, illegal, fraudulent, unethical or
+                  legally actionable activity.{" "}
+                </p>
+              </div>
+              <div className="820xxl:w-[500px] mt-[20px] text-[#1E2757] 7xxl:w-[95%]  6xxl:w-[95%] 5xxl:w-[95%] 4xxl:w-[95%] font-[300] tracking-[2px] flex justify-between mb-[4px] w-[765px]  text-[14px] ">
+                <span className=" text-[22px] mr-[10px] mt-[-5px] ">
+                  &#x2022;
+                </span>
+                <p>
+                  For other purposes for which we provide specific notice at the
+                  time the Personal Information is collected.
+                </p>
               </div>
             </div>
           </div>

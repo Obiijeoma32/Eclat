@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ApplicantProfile from "./ApplicantProfile";
 import seun from "./seun.jpeg";
 import "../App.css";
@@ -8,6 +8,7 @@ function HomePageForApplicant() {
   const [isOpen, setIsOpen] = useState(false);
   const [history, setHistory] = useState(false);
   const [education, setEducation] = useState(false);
+   const [userInformation, setUserInfromation] = useState({});
 
   function handleIsOpen() {
     setIsOpen(!isOpen);
@@ -24,15 +25,44 @@ function HomePageForApplicant() {
     setIsOpen(false);
     setEducation(!education);
   }
+const userId = localStorage.getItem("userId"); // Retrieve the id from localStorage
+console.log(userId);
 
+useEffect(() => {
+  fetch(
+    `http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/${userId}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      //  console.log(data);
+      setUserInfromation(data);
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+}, [userId]);
+console.log(userInformation);
   return (
     <>
       <div className="w-[100%] bg-[#fff] h-[200vh]">
         <Link onClick={() => window.scrollTo(0, 0)} to="/dashboard">
           <div className="fixed z-[99] top-0 opacity-90 bg-[#fff] h-[50px] w-[100%] pl-[45px] pt-[12px] mb-2">
-            <svg className=" " width="180" height="50" viewBox="0 0 303 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M158 22.6821C157.281 22.724 156.604 22.825 156.056 23.6148C155.86 23.8985 155.413 23.9194 155 24C155.467 23.4533 156.08 23.0465 156.545 22.4603C157.128 21.7249 157.533 21.9236 158 22.6821Z" fill="#38761D" />
-              <path d="M158.927 24C158.533 23.6977 158.264 23.3774 158 23C158.663 23.1627 159.32 23.3824 160 23.6096C159.66 23.743 159.356 23.8625 158.927 24Z" fill="#38761D" />
+            <svg
+              className=" "
+              width="180"
+              height="50"
+              viewBox="0 0 303 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M158 22.6821C157.281 22.724 156.604 22.825 156.056 23.6148C155.86 23.8985 155.413 23.9194 155 24C155.467 23.4533 156.08 23.0465 156.545 22.4603C157.128 21.7249 157.533 21.9236 158 22.6821Z"
+                fill="#38761D"
+              />
+              <path
+                d="M158.927 24C158.533 23.6977 158.264 23.3774 158 23C158.663 23.1627 159.32 23.3824 160 23.6096C159.66 23.743 159.356 23.8625 158.927 24Z"
+                fill="#38761D"
+              />
               <path
                 d="M19.0905 30.1929C19.1634 30.1049 19.2363 30.0169 19.3185 29.788C18.7977 28.908 18.2201 28.9465 17.6805 29.7568C11.8101 29.7568 5.93982 29.7568 0 29.7568C0 26.5475 0 23.3454 0 20.0189C0.355947 20.0189 0.733797 20.0189 1.11164 20.0189C6.86951 20.0188 12.6281 19.9667 18.385 20.036C22.6652 20.0875 26.5984 21.3235 30.0156 23.5955C33.9082 26.1835 36.8118 29.5171 38.0901 33.7921C38.5542 35.3442 38.9107 36.9713 38.941 38.5699C39.0443 44.02 38.9805 49.4726 38.9805 55C35.3964 55 31.8292 55 28.0939 55C28.0939 54.7242 28.0939 54.3886 28.0939 54.0531C28.0939 48.9902 28.1106 43.9272 28.0769 38.8645C28.0715 38.0542 27.8404 37.2451 27.6893 36.28C22.3944 41.0338 17.251 45.6518 11.9972 50.3688C9.57767 48.173 7.25568 46.0658 4.96635 43.8568C5.04505 43.6333 5.0911 43.5117 5.17134 43.3264C9.58485 39.3178 13.9714 35.3793 18.3299 31.4159C18.682 31.0956 18.8415 30.6046 19.0905 30.1929Z"
                 fill="#38761D"
@@ -109,14 +139,38 @@ function HomePageForApplicant() {
                 d="M127 20C126.866 20.2589 126.667 20.7041 126.388 20.7788C124.337 21.3285 122.617 22.4402 121.225 24.2332C120.949 24.5882 120.473 24.7468 120 25C121.036 23.1699 122.528 21.7994 124.309 20.8741C125.117 20.4544 126.031 20.2932 127 20Z"
                 fill="#38761D"
               />
-              <path d="M163 24C162.63 23.8076 162.258 23.4945 161.862 23.2314C160.615 22.4041 159.361 21.5936 158.107 20.7812C157.745 20.5468 157.376 20.328 157 20C159.439 20.3251 161.478 21.5796 163 24Z" fill="#38761D" />
-              <path d="M59.5942 29.9077C59.5227 29.9945 59.4768 29.9963 59.3619 30C59.1916 29.775 58.9311 29.4552 59.0169 29.3374C59.3723 28.8495 61.4271 28.8968 62 29.4401C61.2164 29.6222 60.4181 29.7225 59.5942 29.9077Z" fill="#38761D" />
-              <path d="M163 42.6821C162.281 42.724 161.604 42.825 161.056 43.6148C160.86 43.8985 160.413 43.9194 160 44C160.467 43.4533 161.08 43.0465 161.545 42.4603C162.128 41.7249 162.533 41.9236 163 42.6821Z" fill="#38761D" />
-              <path d="M120 25C119.44 25.6503 118.777 26.3232 118 27C118.556 26.3435 119.227 25.683 120 25Z" fill="#38761D" />
-              <path d="M238 28C238.598 28.0712 239.243 28.1882 240 28.3078C239.775 28.5244 239.44 28.7384 239.03 29C238.671 28.6517 238.36 28.3487 238 28Z" fill="#38761D" />
-              <path d="M18 29.9723C18.2834 28.7163 18.6572 28.6579 19 29.9094C18.6885 30.0245 18.3771 30.0109 18 29.9723Z" fill="#38761D" />
-              <path d="M237 27C237.563 26.9987 237.877 27.3746 238 28C237.654 27.7132 237.335 27.3799 237 27Z" fill="#38761D" />
-              <path d="M163.463 44C163.267 43.6977 163.132 43.3774 163 43C163.331 43.1627 163.66 43.3824 164 43.6096C163.83 43.743 163.678 43.8625 163.463 44Z" fill="#38761D" />
+              <path
+                d="M163 24C162.63 23.8076 162.258 23.4945 161.862 23.2314C160.615 22.4041 159.361 21.5936 158.107 20.7812C157.745 20.5468 157.376 20.328 157 20C159.439 20.3251 161.478 21.5796 163 24Z"
+                fill="#38761D"
+              />
+              <path
+                d="M59.5942 29.9077C59.5227 29.9945 59.4768 29.9963 59.3619 30C59.1916 29.775 58.9311 29.4552 59.0169 29.3374C59.3723 28.8495 61.4271 28.8968 62 29.4401C61.2164 29.6222 60.4181 29.7225 59.5942 29.9077Z"
+                fill="#38761D"
+              />
+              <path
+                d="M163 42.6821C162.281 42.724 161.604 42.825 161.056 43.6148C160.86 43.8985 160.413 43.9194 160 44C160.467 43.4533 161.08 43.0465 161.545 42.4603C162.128 41.7249 162.533 41.9236 163 42.6821Z"
+                fill="#38761D"
+              />
+              <path
+                d="M120 25C119.44 25.6503 118.777 26.3232 118 27C118.556 26.3435 119.227 25.683 120 25Z"
+                fill="#38761D"
+              />
+              <path
+                d="M238 28C238.598 28.0712 239.243 28.1882 240 28.3078C239.775 28.5244 239.44 28.7384 239.03 29C238.671 28.6517 238.36 28.3487 238 28Z"
+                fill="#38761D"
+              />
+              <path
+                d="M18 29.9723C18.2834 28.7163 18.6572 28.6579 19 29.9094C18.6885 30.0245 18.3771 30.0109 18 29.9723Z"
+                fill="#38761D"
+              />
+              <path
+                d="M237 27C237.563 26.9987 237.877 27.3746 238 28C237.654 27.7132 237.335 27.3799 237 27Z"
+                fill="#38761D"
+              />
+              <path
+                d="M163.463 44C163.267 43.6977 163.132 43.3774 163 43C163.331 43.1627 163.66 43.3824 164 43.6096C163.83 43.743 163.678 43.8625 163.463 44Z"
+                fill="#38761D"
+              />
               <path
                 d="M273 39.2163C272.145 41.0093 270.481 41.8225 268.794 42.5596C268.142 42.8443 267.365 42.9755 266.639 42.9981C264.628 43.0607 263.631 41.5717 264.125 39.7002C264.669 37.6404 266.421 37.0795 268.195 36.6395C269.702 36.2656 271.301 36.2126 273 36C273 37.1353 273 38.1286 273 39.2163Z"
                 fill="white"
@@ -134,7 +188,11 @@ function HomePageForApplicant() {
           <div className="flex 1halfxl:flex 1halfxl:ml-[14rem] ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
             <div className="w-[600px] mr-[50px] 5xl:w-[1700px] 4xl:w-[950px]">
               <div className="flex items-center justify-between">
-                <img className=" rounded-[50%] w-[68px] h-[68px] " src={seun} alt="persona" />
+                <img
+                  className=" rounded-[50%] w-[68px] h-[68px] "
+                  src={seun}
+                  alt="persona"
+                />
                 <Link
                   onClick={() => {
                     window.scrollTo(0, 0);
@@ -145,25 +203,46 @@ function HomePageForApplicant() {
                 </Link>
               </div>
               <div className="mt-[19px]">
-                <h2 className=" text-[18px] text-[#1E2757] ">Orofin Oluwaseun</h2>
-                <p className=" mt-[10px] text-[14px] text-[#7D90B8]">Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. </p>
+                <h2 className=" text-[18px] text-[#1E2757] ">
+                  {userInformation.lastName} {userInformation.firstname}
+                </h2>
+                <p className=" mt-[10px] text-[14px] text-[#7D90B8]">
+                  {userInformation.description}{" "}
+                </p>
               </div>
               <div className=" w-[450px] mt-[25px] flex justify-between">
                 <div className=" w-[150px] text-[14px] text-[#7D90B8] flex justify-between items-center">
-                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M2.125 3.71875H14.875V12.75C14.875 12.8909 14.819 13.026 14.7194 13.1257C14.6198 13.2253 14.4846 13.2812 14.3438 13.2812H2.65625C2.51535 13.2812 2.38023 13.2253 2.2806 13.1257C2.18097 13.026 2.125 12.8909 2.125 12.75V3.71875Z"
                       stroke="#38761D"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                    <path d="M14.875 3.71875L8.5 9.5625L2.125 3.71875" stroke="#38761D" strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M14.875 3.71875L8.5 9.5625L2.125 3.71875"
+                      stroke="#38761D"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
 
-                  <h3>seun@gmail.com</h3>
+                  <h3>{userInformation.email}</h3>
                 </div>
                 <div className=" w-[120px] text-[14px] text-[#7D90B8] flex justify-between items-center">
-                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M6.141 8.28853C6.69207 9.41514 7.60529 10.3242 8.73439 10.8701C8.817 10.9093 8.90838 10.9262 8.99954 10.9193C9.09069 10.9124 9.17848 10.8819 9.25426 10.8308L10.9168 9.72219C10.9903 9.67316 11.0749 9.64325 11.1629 9.63517C11.2509 9.62708 11.3396 9.64108 11.4208 9.67589L14.5311 11.0089C14.6367 11.0537 14.7249 11.1318 14.7824 11.2311C14.8399 11.3305 14.8635 11.4459 14.8497 11.5598C14.7514 12.3291 14.3761 13.0361 13.794 13.5486C13.2119 14.061 12.463 14.3437 11.6875 14.3438C9.29226 14.3438 6.99513 13.3923 5.30144 11.6986C3.60775 10.0049 2.65625 7.70776 2.65625 5.31252C2.65629 4.53701 2.939 3.78811 3.45145 3.20603C3.9639 2.62396 4.67095 2.24863 5.4402 2.15032C5.55416 2.13653 5.66952 2.16015 5.76889 2.21762C5.86826 2.27509 5.94627 2.3633 5.99115 2.46895L7.32529 5.58194C7.35979 5.66246 7.37386 5.75026 7.36622 5.83753C7.35858 5.9248 7.32948 6.00883 7.2815 6.08213L6.17674 7.77015C6.12646 7.84609 6.09674 7.93377 6.09047 8.02463C6.08421 8.11549 6.10162 8.20642 6.141 8.28853V8.28853Z"
                       stroke="#38761D"
@@ -171,10 +250,16 @@ function HomePageForApplicant() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <h3>081234567890</h3>
+                  <h3>{userInformation.phoneNumber}</h3>
                 </div>
                 <div className=" w-[129px] text-[14px] text-[#7D90B8] flex justify-between items-center">
-                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M8.5 9.03125C9.67361 9.03125 10.625 8.07986 10.625 6.90625C10.625 5.73264 9.67361 4.78125 8.5 4.78125C7.32639 4.78125 6.375 5.73264 6.375 6.90625C6.375 8.07986 7.32639 9.03125 8.5 9.03125Z"
                       stroke="#38761D"
@@ -188,29 +273,63 @@ function HomePageForApplicant() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <h3>Lagos, Nigeria</h3>
+                  <h3>{userInformation.location}</h3>
                 </div>
               </div>
               <div className="w-[600px] pl-[30px] pt-[21px] bg-[#ECF2E9] h-[238px] rounded-[20px] mt-[24px] 5xl:w-[1700px] 4xl:w-[950px]">
-                <h2 className=" text-[18px] text-[#1E2757] ">Your profile status</h2>
+                <h2 className=" text-[18px] text-[#1E2757] ">
+                  Your profile status
+                </h2>
                 <form className=" mt-[27px]">
-                  <label className="text-[14px] items-center h-[15px] flex justify-between w-[220px] text-[#7D90B8]" htmlFor="review">
-                    <input className=" file:bg-[#97A6C6] w-[14px] h-[14px]  " name="review" value="review" type="radio" />
+                  <label
+                    className="text-[14px] items-center h-[15px] flex justify-between w-[220px] text-[#7D90B8]"
+                    htmlFor="review"
+                  >
+                    <input
+                      className=" file:bg-[#97A6C6] w-[14px] h-[14px]  "
+                      name="review"
+                      value="review"
+                      type="radio"
+                    />
                     Your profile is under review
                   </label>
                   <br />
-                  <label className="text-[14px] items-center h-[15px] flex justify-between w-[250px] text-[#7D90B8]" htmlFor="approved">
-                    <input className=" file:bg-[#97A6C6] w-[14px] h-[14px]  " type="radio" name="review" value="approved" />
+                  <label
+                    className="text-[14px] items-center h-[15px] flex justify-between w-[250px] text-[#7D90B8]"
+                    htmlFor="approved"
+                  >
+                    <input
+                      className=" file:bg-[#97A6C6] w-[14px] h-[14px]  "
+                      type="radio"
+                      name="review"
+                      value="approved"
+                    />
                     Your profile has been approved
                   </label>
                   <br />
-                  <label className="text-[14px] items-center h-[15px] flex justify-between w-[350px] text-[#7D90B8]" htmlFor="submitted">
-                    <input className=" file:bg-[#97A6C6] w-[14px] h-[14px]  " type="radio" name="review" value="submitted" />
+                  <label
+                    className="text-[14px] items-center h-[15px] flex justify-between w-[350px] text-[#7D90B8]"
+                    htmlFor="submitted"
+                  >
+                    <input
+                      className=" file:bg-[#97A6C6] w-[14px] h-[14px]  "
+                      type="radio"
+                      name="review"
+                      value="submitted"
+                    />
                     Your profile has been submitted for interview
                   </label>
                   <br />
-                  <label className="text-[14px] items-center h-[15px] flex justify-between w-[124px] text-[#7D90B8]" htmlFor="setup">
-                    <input className=" file:bg-[#97A6C6] w-[14px] h-[14px]  " type="radio" name="review" value="setup" />
+                  <label
+                    className="text-[14px] items-center h-[15px] flex justify-between w-[124px] text-[#7D90B8]"
+                    htmlFor="setup"
+                  >
+                    <input
+                      className=" file:bg-[#97A6C6] w-[14px] h-[14px]  "
+                      type="radio"
+                      name="review"
+                      value="setup"
+                    />
                     Setup project
                   </label>
                   <br />
@@ -220,24 +339,55 @@ function HomePageForApplicant() {
               <div className=" w-[601px] mt-[26px] pl-[10px] h-[51px]  border-b-[#F3F3F3]  border-b-[1.5px] 5xl:w-[1700px]">
                 <div className=" flex justify-between text-[16px]  w-[400px]">
                   <div>
-                    <h3 onClick={handleIsOpen} className={isOpen ? " h-[40px] w-[80px] cursor-pointer  text-[16px] text-[#38761D]" : " w-[80px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"}>
+                    <h3
+                      onClick={handleIsOpen}
+                      className={
+                        isOpen
+                          ? " h-[40px] w-[80px] cursor-pointer  text-[16px] text-[#38761D]"
+                          : " w-[80px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"
+                      }
+                    >
                       Portfolio
                     </h3>
                   </div>
-                  <h3 onClick={handleStatus} className={history ? " h-[40px] w-[200px] cursor-pointer  text-[16px] text-[#38761D]" : " w-[200px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"}>
+                  <h3
+                    onClick={handleStatus}
+                    className={
+                      history
+                        ? " h-[40px] w-[200px] cursor-pointer  text-[16px] text-[#38761D]"
+                        : " w-[200px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"
+                    }
+                  >
                     Employment History
                   </h3>
-                  <h3 onClick={handleEducation} className={education ? " h-[40px] w-[80px] cursor-pointer  text-[16px] text-[#38761D]" : " w-[80px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"}>
+                  <h3
+                    onClick={handleEducation}
+                    className={
+                      education
+                        ? " h-[40px] w-[80px] cursor-pointer  text-[16px] text-[#38761D]"
+                        : " w-[80px] h-[40px] cursor-pointer text-[16px] text-[#7D90B8]"
+                    }
+                  >
                     Education
                   </h3>
                 </div>
               </div>
               {isOpen && (
                 <div className=" 820xxl:h-[50vh] ml-[10px]">
-                  <div className=" w-[65px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
+                  <div className=" w-[65px] border-[3px] rounded-lg h-0 border-[#38761D]  ">
+                    {/* hi */}
+                  </div>
                   <div className="w-[600px] mt-[36px] flex justify-between">
-                    <h2 className=" text-[20px] text-[#192850]">Product Designer</h2>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2 className=" text-[20px] text-[#192850]">
+                      Product Designer
+                    </h2>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
                         stroke="#38761D"
@@ -245,35 +395,76 @@ function HomePageForApplicant() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path
+                        d="M15.9375 7.5L22.5 14.0625"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M25.3125 25.3124H11.25L4.74719 18.8096"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                   <div className=" mt-[29px]">
-                    <h3 className=" text-[16px] font-[300] text-[#7D90B8] ">Primary Skills</h3>
+                    <h3 className=" text-[16px] font-[300] text-[#7D90B8] ">
+                      Primary Skills
+                    </h3>
                     <div className="mt-[11px] flex justify-between items-center w-[261px] ">
-                      <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.JS</h3>
-                      <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.NATIVE</h3>
-                      <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">JAVASCRIPT</h3>
+                      <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                        {userInformation.mainService}
+                      </h3>
+                      <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                        REACT.NATIVE
+                      </h3>
+                      <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                        JAVASCRIPT
+                      </h3>
                     </div>
                     <div className="mt-[24px]">
-                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]"> Skills</h3>
+                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]">
+                        {" "}
+                        Skills
+                      </h3>
                       <div className="mt-[11px] flex justify-between items-center w-[261px] ">
-                        <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.JS</h3>
-                        <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.NATIVE</h3>
-                        <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">JAVASCRIPT</h3>
+                        <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                          {userInformation.skill}
+                        </h3>
+                        <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                          REACT.NATIVE
+                        </h3>
+                        <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">
+                          JAVASCRIPT
+                        </h3>
                       </div>
                     </div>
                     <div className="mt-[24px]">
-                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]">Skill Level</h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">INTERMEDIATE</h4>
+                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]">
+                        Skill Level
+                      </h3>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">
+                        {userInformation.expertiseLevel}
+                      </h4>
                     </div>
                     <div className="mt-[24px]">
-                      <h4 className=" text-[#1E2757] font-[500] mt-[10px] text-[18px] ">Portfolio Links</h4>
+                      <h4 className=" text-[#1E2757] font-[500] mt-[10px] text-[18px] ">
+                        Portfolio Links
+                      </h4>
                     </div>
                     <div className="mt-[24px]">
                       <h3 className=" text-[16px] flex justify-between  w-[170px] font-[300] text-[#7D90B8]">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
                           <path
                             d="M15.8808 11.4757C15.8913 11.4516 15.9 11.4267 15.907 11.4014C16.4479 9.84549 16.4476 8.15258 15.9063 6.59686C15.8996 6.5727 15.8912 6.54902 15.8813 6.52599C15.3705 5.1107 14.4363 3.88704 13.2057 3.02137C11.975 2.1557 10.5076 1.69002 9.00295 1.68763L9 1.68506L8.99705 1.68763C7.49255 1.69001 6.02529 2.1556 4.79468 3.02112C3.56408 3.88664 2.62984 5.11009 2.11895 6.52519C2.10874 6.54882 2.10017 6.57312 2.09331 6.59793C1.55191 8.15459 1.55224 9.8485 2.09423 11.405C2.10078 11.4281 2.1088 11.4509 2.11827 11.473C2.62886 12.8886 3.56305 14.1125 4.7938 14.9784C6.02456 15.8443 7.49214 16.3102 8.99698 16.3126L9 16.3152L9.00302 16.3126C10.5074 16.3102 11.9745 15.8446 13.2051 14.9793C14.4356 14.1139 15.3698 12.8906 15.8808 11.4757ZM9 3.20344C9.81643 4.04944 10.4301 5.06983 10.7945 6.1876H7.20545C7.56994 5.06983 8.18356 4.04944 9 3.20344ZM7.20548 11.8126H10.7945C10.43 12.9304 9.81641 13.9508 9 14.7968C8.18358 13.9508 7.56998 12.9304 7.20548 11.8126ZM6.91098 10.6876C6.69634 9.57284 6.69634 8.42736 6.91098 7.3126H11.089C11.3037 8.42736 11.3037 9.57284 11.089 10.6876H6.91098ZM12.2364 7.3126H14.9536C15.2655 8.41598 15.2655 9.58421 14.9536 10.6876H12.2364C12.4212 9.57019 12.4212 8.43001 12.2364 7.3126ZM14.5105 6.1876H11.9818C11.645 5.00227 11.0674 3.89914 10.285 2.94716C11.1855 3.14013 12.0319 3.531 12.7627 4.09146C13.4935 4.65191 14.0906 5.36792 14.5105 6.1876H14.5105ZM10.2849 15.0531C11.0673 14.1011 11.645 12.9979 11.9818 11.8126H14.5105C14.0906 12.6323 13.4935 13.3483 12.7627 13.9088C12.0318 14.4692 11.1855 14.8601 10.2849 15.0531Z"
                             fill="#7D90B8"
@@ -281,11 +472,19 @@ function HomePageForApplicant() {
                         </svg>
                         Personal Website
                       </h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">https://www.amara.com</h4>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">
+                        https://www.amara.com
+                      </h4>
                     </div>
                     <div className="mt-[24px]">
                       <h3 className=" text-[16px] flex justify-between  w-[100px] font-[300] text-[#7D90B8]">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
                           <path
                             d="M14.9062 1.96875H3.09375C2.79549 1.96909 2.50953 2.08772 2.29863 2.29863C2.08772 2.50953 1.96909 2.79549 1.96875 3.09375V14.9062C1.96909 15.2045 2.08773 15.4905 2.29863 15.7014C2.50954 15.9123 2.79549 16.0309 3.09375 16.0312H14.9062C15.2045 16.0309 15.4905 15.9123 15.7014 15.7014C15.9123 15.4905 16.0309 15.2045 16.0312 14.9062V3.09375C16.0309 2.79549 15.9123 2.50953 15.7014 2.29863C15.4905 2.08772 15.2045 1.96909 14.9062 1.96875ZM6.75 12.3751C6.75 12.5243 6.69074 12.6673 6.58525 12.7728C6.47976 12.8783 6.33668 12.9376 6.1875 12.9376C6.03832 12.9376 5.89524 12.8783 5.78975 12.7728C5.68426 12.6673 5.625 12.5243 5.625 12.3751V7.87507C5.625 7.72589 5.68426 7.58281 5.78975 7.47732C5.89524 7.37183 6.03832 7.31257 6.1875 7.31257C6.33668 7.31257 6.47976 7.37183 6.58525 7.47732C6.69074 7.58281 6.75 7.72589 6.75 7.87507V12.3751ZM6.1875 6.46875C6.02062 6.46875 5.85749 6.41927 5.71874 6.32655C5.57998 6.23384 5.47184 6.10206 5.40798 5.94789C5.34412 5.79371 5.32741 5.62406 5.35996 5.46039C5.39252 5.29672 5.47288 5.14638 5.59088 5.02838C5.70888 4.91038 5.85922 4.83002 6.02289 4.79746C6.18656 4.76491 6.35621 4.78162 6.51039 4.84548C6.66456 4.90934 6.79634 5.01748 6.88905 5.15624C6.98177 5.29499 7.03125 5.45812 7.03125 5.625C7.03125 5.84878 6.94236 6.06339 6.78412 6.22162C6.62589 6.37986 6.41128 6.46875 6.1875 6.46875ZM12.9375 12.3751C12.9375 12.5243 12.8782 12.6673 12.7727 12.7728C12.6673 12.8783 12.5242 12.9376 12.375 12.9376C12.2258 12.9376 12.0827 12.8783 11.9773 12.7728C11.8718 12.6673 11.8125 12.5243 11.8125 12.3751V9.84382C11.8125 9.47086 11.6643 9.11317 11.4006 8.84945C11.1369 8.58573 10.7792 8.43757 10.4062 8.43757C10.0333 8.43757 9.6756 8.58573 9.41188 8.84945C9.14816 9.11317 9 9.47086 9 9.84382V12.3751C9 12.5243 8.94074 12.6673 8.83525 12.7728C8.72976 12.8783 8.58668 12.9376 8.4375 12.9376C8.28832 12.9376 8.14524 12.8783 8.03975 12.7728C7.93426 12.6673 7.875 12.5243 7.875 12.3751V7.87507C7.87495 7.7368 7.92585 7.60336 8.01798 7.50024C8.1101 7.39713 8.23699 7.33157 8.37439 7.3161C8.51179 7.30063 8.65008 7.33632 8.76283 7.41637C8.87557 7.49641 8.95488 7.61519 8.98558 7.75001C9.36599 7.4915 9.80967 7.34158 10.2689 7.31637C10.7282 7.29117 11.1856 7.39163 11.592 7.60696C11.9984 7.82228 12.3385 8.14433 12.5755 8.53846C12.8126 8.93259 12.9377 9.38389 12.9375 9.84382V12.3751Z"
                             fill="#7D90B8"
@@ -293,17 +492,29 @@ function HomePageForApplicant() {
                         </svg>
                         LinkedIn
                       </h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">https://www.linkedin.com/amara</h4>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[10px] text-[16px] ">
+                        https://www.linkedin.com/amara
+                      </h4>
                     </div>
                   </div>
                 </div>
               )}
               {history && (
                 <div className=" 820xxl:h-[53vh] ml-[10px]">
-                  <div className=" ml-[95px]  w-[172px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
+                  <div className=" ml-[95px]  w-[172px] border-[3px] rounded-lg h-0 border-[#38761D]  ">
+                    {/* hi */}
+                  </div>
                   <div className="w-[600px] mt-[36px]  flex justify-between">
-                    <h2 className=" text-[20px] text-[#192850]">Front End Developer</h2>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2 className=" text-[20px] text-[#192850]">
+                      {userInformation.jobTitle}
+                    </h2>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
                         stroke="#38761D"
@@ -311,60 +522,118 @@ function HomePageForApplicant() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path
+                        d="M15.9375 7.5L22.5 14.0625"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M25.3125 25.3124H11.25L4.74719 18.8096"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                   <div className=" mt-[29px]">
                     <div className="mt-[19px]">
-                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]">Company</h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">TechEclat</h4>
+                      <h3 className=" text-[16px] font-[300] text-[#7D90B8]">
+                        Company
+                      </h3>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">
+                        {userInformation.nameOfCompany}
+                      </h4>
                     </div>
 
                     <div className="mt-[19px]">
-                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">Industry</h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">Information Technology & Services</h4>
+                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">
+                        Industry
+                      </h3>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">
+                        {userInformation.industryOfCompany}
+                      </h4>
                     </div>
                     <div className="mt-[19px]">
-                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">Duration</h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">May 2019 - June 2021</h4>
+                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">
+                        Duration
+                      </h3>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">
+                        {userInformation.jobStart} - {userInformation.jobEnd}
+                      </h4>
                     </div>
                     <div className="mt-[19px]">
-                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">Job Type</h3>
-                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">Full Time</h4>
+                      <h3 className=" text-[16px]  font-[300] text-[#7D90B8]">
+                        Job Type
+                      </h3>
+                      <h4 className=" text-[#1E2757] font-[400] mt-[6px] text-[16px] ">
+                        {userInformation.employmentStatus}
+                      </h4>
                     </div>
                     <div className="mt-[19px]">
-                      <h3 className=" text-[16px] mb-[9px] font-[300] text-[#7D90B8]">Job Description</h3>
+                      <h3 className=" text-[16px] mb-[9px] font-[300] text-[#7D90B8]">
+                        Job Description
+                      </h3>
                       <h4 className=" text-[#1E2757] font-[400] mb-[4px] text-[16px] ">
-                        <span className=" mr-[5px]">&#x2022;</span> Fixing bugs existing in the current codebase
+                        <span className=" mr-[5px]">&#x2022;</span>{" "}
+                        {userInformation.jobDescription}
+                      </h4>
+                      {/* <h4 className=" text-[#1E2757] font-[400] mb-[4px]  text-[16px] ">
+                        <span className=" mr-[5px]">&#x2022;</span> Working
+                        closely with PM to make the V2 release of their
+                        application.
                       </h4>
                       <h4 className=" text-[#1E2757] font-[400] mb-[4px]  text-[16px] ">
-                        <span className=" mr-[5px]">&#x2022;</span> Working closely with PM to make the V2 release of their application.
-                      </h4>
-                      <h4 className=" text-[#1E2757] font-[400] mb-[4px]  text-[16px] ">
-                        <span className=" mr-[5px]">&#x2022;</span> Worked on difficult tasks and problems in the project
+                        <span className=" mr-[5px]">&#x2022;</span> Worked on
+                        difficult tasks and problems in the project
                       </h4>
                       <h4 className=" text-[#1E2757] font-[400] flex justify-between mb-[4px] w-[515px]  text-[16px] ">
                         <span className=" ">&#x2022;</span>
-                        <span className="ml-[px] w-[500px]"> Helped my teammates and other teams in multiple live coding sessions to finish</span>
-                      </h4>
+                        <span className="ml-[px] w-[500px]">
+                          {" "}
+                          Helped my teammates and other teams in multiple live
+                          coding sessions to finish
+                        </span>
+                      </h4> */}
                     </div>
                   </div>
                 </div>
               )}
               {education && (
                 <div className=" 820xxl:h-[10vh] ml-[10px]">
-                  <div className=" ml-[324px] w-[80px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
+                  <div className=" ml-[324px] w-[80px] border-[3px] rounded-lg h-0 border-[#38761D]  ">
+                    {/* hi */}
+                  </div>
                   <div className="w-[600px] mt-[36px] flex justify-between">
                     <div className="w-[320px] flex justify-between items-center">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           opacity="0.2"
                           d="M4.5 13.8667V20.6818C4.49959 20.8975 4.56932 21.1075 4.69869 21.2802C5.54077 22.4007 9.09339 26.5 16 26.5C22.9066 26.5 26.4592 22.4007 27.3013 21.2802C27.4307 21.1075 27.5004 20.8975 27.5 20.6818V13.8667L16 20L4.5 13.8667Z"
                           fill="#38761D"
                         />
-                        <path d="M1 12L16 4L31 12L16 20L1 12Z" stroke="#38761D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M23.5 30V16L16 12" stroke="#38761D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path
+                          d="M1 12L16 4L31 12L16 20L1 12Z"
+                          stroke="#38761D"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M23.5 30V16L16 12"
+                          stroke="#38761D"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                         <path
                           d="M27.5 13.8667V20.6818C27.5004 20.8975 27.4307 21.1075 27.3013 21.2802C26.4592 22.4007 22.9066 26.5 16 26.5C9.09339 26.5 5.54077 22.4007 4.69869 21.2802C4.56932 21.1075 4.49959 20.8975 4.5 20.6818V13.8667"
                           stroke="#38761D"
@@ -374,14 +643,27 @@ function HomePageForApplicant() {
                         />
                       </svg>
                       <div>
-                        <h2 className=" font-[400] text-[16px] text-[#192850]">American University of Nigeria</h2>
-                        <h2 className=" font-[400] text-[14px] mt-[3px] text-[#192850]">
-                          Computer Science <span className=" ml-[3px] mr-[3px] ">&#x2022;</span> BSc
+                        <h2 className=" font-[400] text-[16px] text-[#192850]">
+                          {userInformation.school}
                         </h2>
-                        <h3 className=" text-[14px] mt-[6px] font-[400] text-[#7D90B8]">2017-2021</h3>
+                        <h2 className=" font-[400] text-[14px] mt-[3px] text-[#192850]">
+                          {userInformation.areaOfStudy}{" "}
+                          <span className=" ml-[3px] mr-[3px] ">&#x2022;</span>{" "}
+                          {userInformation.degree}
+                        </h2>
+                        <h3 className=" text-[14px] mt-[6px] font-[400] text-[#7D90B8]">
+                          {userInformation.schoolStart} -{" "}
+                          {userInformation.schoolEnd}
+                        </h3>
                       </div>
                     </div>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
                         stroke="#38761D"
@@ -389,8 +671,20 @@ function HomePageForApplicant() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path
+                        d="M15.9375 7.5L22.5 14.0625"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M25.3125 25.3124H11.25L4.74719 18.8096"
+                        stroke="#38761D"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -398,11 +692,23 @@ function HomePageForApplicant() {
             </div>
             <div className="w-[300px] mt-[-30px] mr-[30px]">
               <div className="flex w-[200px] 820xxl:hidden ml-[100px] justify-between items-center">
-                <img className="w-[39.6px] rounded-[50%] h-[40.42px]" src={seun} alt="persona" />
-                <h3 className=" text-[#1E2757] text-[14px]">Your profile history</h3>
+                <img
+                  className="w-[39.6px] rounded-[50%] h-[40.42px]"
+                  src={seun}
+                  alt="persona"
+                />
+                <h3 className=" text-[#1E2757] text-[14px]">
+                  Your profile history
+                </h3>
               </div>
               <div className="bg-[#ECF2E9] pt-[20px] pl-[18px] h-[340px] mt-[21px] rounded-[20px]">
-                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="45"
+                  height="45"
+                  viewBox="0 0 45 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M28.4259 15.8028L13.869 19.9085C13.7466 19.9431 13.6376 20.0142 13.5566 20.1123C13.4756 20.2105 13.4265 20.331 13.4159 20.4578C13.4052 20.5846 13.4336 20.7116 13.497 20.8219C13.5605 20.9322 13.6562 21.0204 13.7711 21.0749L20.4595 24.2431C20.5899 24.3049 20.695 24.4099 20.7568 24.5404L23.9249 31.2287C23.9794 31.3437 24.0677 31.4393 24.1779 31.5028C24.2882 31.5663 24.4152 31.5946 24.542 31.584C24.6688 31.5733 24.7894 31.5242 24.8875 31.4433C24.9857 31.3623 25.0568 31.2533 25.0913 31.1308L29.1971 16.574C29.2272 16.467 29.2284 16.354 29.2003 16.2465C29.1723 16.139 29.1161 16.0409 29.0375 15.9624C28.9589 15.8838 28.8609 15.8276 28.7534 15.7995C28.6459 15.7715 28.5328 15.7726 28.4259 15.8028Z"
                     stroke="#38761D"
@@ -410,15 +716,39 @@ function HomePageForApplicant() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <path d="M20.6611 24.3392L24.1967 20.8037" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                  <circle cx="22.5" cy="22.5" r="22.5" fill="#38761D" fill-opacity="0.2" />
+                  <path
+                    d="M20.6611 24.3392L24.1967 20.8037"
+                    stroke="#38761D"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <circle
+                    cx="22.5"
+                    cy="22.5"
+                    r="22.5"
+                    fill="#38761D"
+                    fill-opacity="0.2"
+                  />
                 </svg>
-                <h2 className=" text-[18px] text-[#38761D] mt-[16px] ">Weekly newsletter</h2>
+                <h2 className=" text-[18px] text-[#38761D] mt-[16px] ">
+                  Weekly newsletter
+                </h2>
 
-                <p className=" mt-[10px] text-[14px] w-[250px] text-[#7D90B8]">We’ll keep you updated when the best new remote jobs pop up on Techeclat</p>
+                <p className=" mt-[10px] text-[14px] w-[250px] text-[#7D90B8]">
+                  We’ll keep you updated when the best new remote jobs pop up on
+                  Techeclat
+                </p>
                 <form>
-                  <input className=" pl-[10px] outline-none text-[#7D90B8] text-[14px] h-[45px] bg-[#fff] rounded-[10px] mt-[8px] w-[250px] border-[#97A6C6] border-[1px] border-opacity-[50%] " type="email" placeholder="Enter your email" />
-                  <button type="submit" className="w-[250px] mt-[36px] h-[45px] rounded-[50px] text-[16px] font-[400] text-[#fff] bg-[#38761D] ">
+                  <input
+                    className=" pl-[10px] outline-none text-[#7D90B8] text-[14px] h-[45px] bg-[#fff] rounded-[10px] mt-[8px] w-[250px] border-[#97A6C6] border-[1px] border-opacity-[50%] "
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    className="w-[250px] mt-[36px] h-[45px] rounded-[50px] text-[16px] font-[400] text-[#fff] bg-[#38761D] "
+                  >
                     Subscribe
                   </button>
                 </form>
