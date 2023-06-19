@@ -52,7 +52,7 @@ function Enterprise() {
             Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
           </p>
           <div className=" mt-[30px] ">
-            <Link className="w-[186px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/jobs">
+            <Link onClick={() => window.scrollTo(0, 0)} className="w-[186px] rounded-[5px] h-[45px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/jobs">
               Access Network
               <svg className="mt-1" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 5H12M12 5L7.5 1M12 5L7.5 9.5" stroke="currentColor" strokeWidth="2" />
@@ -76,7 +76,11 @@ function Enterprise() {
             Become a part of the Eclat Talent Network and enjoy the satisfaction of stable employment, alongside trustworthy employers and attractive remuneration packages.
           </p>
           <div className=" ml-[20px] mt-[30px] ">
-            <Link className="w-[186px] rounded-[5px] h-[45px] 3xxl:text-[10px] 3xxl:w-[140px] 3xxl:h-[40px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]" to="/jobs">
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
+              className="w-[186px] rounded-[5px] h-[45px] 3xxl:text-[10px] 3xxl:w-[140px] 3xxl:h-[40px]  text-[16px] bg-[#38761D] flex items-center justify-evenly opacity-95  font-[600] text-[#fff]"
+              to="/jobs"
+            >
               Access Network
               <svg className="mt-1 3xxl:mt-[0px]  " width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 5H12M12 5L7.5 1M12 5L7.5 9.5" stroke="currentColor" strokeWidth="2" />

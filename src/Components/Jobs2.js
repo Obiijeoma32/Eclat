@@ -53,6 +53,7 @@ function Jobs2() {
     control: (base) => ({
       ...base,
       height: 50,
+
       minHeight: 50,
       backgroundColor: "#fff",
       color: "rgba(10, 10, 10, 0.5)",

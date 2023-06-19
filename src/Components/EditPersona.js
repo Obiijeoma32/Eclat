@@ -2,12 +2,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ApplicantProfile from "./ApplicantProfile";
 import seun from "./seun.jpeg";
+import { useEffect } from "react";
 
 function EditPersona() {
   const [isOpen, setIsOpen] = useState(false);
   const [history, setHistory] = useState(false);
   const [education, setEducation] = useState(false);
-
+  const [userInformation, setUserInfromation] = useState("");
+  const userId = localStorage.getItem("userId"); // Retrieve the id from localStorage
+  // console.log(userId);
   function handleIsOpen() {
     setIsOpen(!isOpen);
     setHistory(false);
@@ -23,6 +26,19 @@ function EditPersona() {
     setIsOpen(false);
     setEducation(!education);
   }
+
+  useEffect(() => {
+    fetch(`http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/${userId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        //  console.log(data);
+        setUserInfromation(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, [userId]);
+  console.log(userInformation);
 
   return (
     <>
@@ -144,7 +160,11 @@ function EditPersona() {
                   Full Name
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]" type="text" placeholder="Oluwaseun Orofin" />
+                <input
+                  className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]"
+                  type="text"
+                  placeholder={`${userInformation.firstname} ${userInformation.lastName}`}
+                />
                 <br />
                 <label className="text-[14px] text-[#98A2B3]" htmlFor="about">
                   About You
@@ -153,20 +173,28 @@ function EditPersona() {
                 <input
                   className="  mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[72px] border-[1px] border-[#D0D5DD] placeholder:w-[500px] placeholder:h-[50px] 5xl:w-[1650px] 4xl:w-[1000px]"
                   type="text"
-                  placeholder="Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. "
+                  placeholder={userInformation.description}
                 />
                 <br />
                 <label className="text-[14px] text-[#98A2B3]" htmlFor="number">
                   Phone Number
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px] " type="tel" placeholder="081234567890" />
+                <input
+                  className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px] "
+                  type="tel"
+                  placeholder={userInformation.phoneNumber}
+                />
                 <br />
                 <label className="text-[14px] text-[#98A2B3]" htmlFor="email">
                   Email Address
                 </label>
                 <br />
-                <input className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]" type="email" placeholder="seun@gmail.com" />
+                <input
+                  className=" mb-[20px] outline-none rounded-[4px] text-[14px] mt-[14.5px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[1650px] 4xl:w-[1000px]"
+                  type="email"
+                  placeholder={userInformation.email}
+                />
               </form>
 
               <div className=" w-[601px] mt-[26px] pl-[10px] h-[51px]  border-b-[#F3F3F3]  border-b-[1.5px] 4xl:w-[1000px] 5xl:w-[1650px]">
@@ -192,16 +220,16 @@ function EditPersona() {
                       Role
                     </label>
                     <br />
-                    <input className="  outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Product Designer" />
+                    <input className="  outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.jobTitle} />
                     <br />
                   </div>
                   <div className=" mt-[12px]">
                     <h3 className=" text-[16px] font-[300] text-[#7D90B8] ">Primary Skills</h3>
                     <div className="mt-[6px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD]  rounded-[4px] 5xl:w-[950px]">
                       <div className="flex justify-evenly mt-[4px] items-center w-[320px]">
-                        <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.JS</h3>
-                        <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.NATIVE</h3>
-                        <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">JAVASCRIPT</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
                       </div>
                     </div>
                   </div>
@@ -209,9 +237,9 @@ function EditPersona() {
                     <h3 className=" text-[16px] font-[300] text-[#7D90B8] "> Other skills </h3>
                     <div className="mt-[6px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD]  rounded-[4px] 5xl:w-[950px]">
                       <div className="flex justify-evenly mt-[4px] items-center w-[320px]">
-                        <h3 className="w-[74px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.JS</h3>
-                        <h3 className="w-[109.23px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">REACT.NATIVE</h3>
-                        <h3 className="w-[94.09px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">JAVASCRIPT</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
+                        <h3 className="w-[130px] h-[27px] pt-[7px] rounded-[70px] text-center text-[#38761D] bg-[#F2FAFD] border-[1px] border-[#fff] text-[10px] ">{userInformation.skill}</h3>
                       </div>
                     </div>
                   </div>
@@ -220,7 +248,7 @@ function EditPersona() {
                       Skill Level
                     </label>
                     <br />
-                    <input className="  outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Intermediate" />
+                    <input className="  outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.skillLevel} />
                     <br />
                   </div>
                   <div className="mt-[12px]">
@@ -252,25 +280,25 @@ function EditPersona() {
                       Role
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Product Designer" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.jobTitle} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="company">
                       Company
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] " type="text" placeholder="TechEclat" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] " type="text" placeholder={userInformation.nameOfCompany} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="industry">
                       Industry
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Information Technology & Services" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.industryOfCompany} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="job-type">
                       Job Type
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Full Time" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.employmentStatus} />
                     <br />
                     <div className="mt-[12px]">
                       <h4 className=" text-[#1E2757] font-[500] mt-[10px] text-[18px] ">Portfolio Links</h4>
@@ -281,14 +309,22 @@ function EditPersona() {
                           Duration
                         </label>
                         <br />
-                        <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pr-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px]" type="date" placeholder="22-08-2023" />
+                        <input
+                          className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pr-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px]"
+                          type="date"
+                          placeholder={userInformation.schoolStart}
+                        />
                       </div>
                       <div>
                         <label className="text-[14px] text-[#98A2B3]" htmlFor="duration">
                           Duration
                         </label>
                         <br />
-                        <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pr-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px] " type="date" placeholder="22-08-2023" />
+                        <input
+                          className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pr-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px] "
+                          type="date"
+                          placeholder={userInformation.schoolEnd}
+                        />
                       </div>
                     </div>
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="job-description">
@@ -296,7 +332,7 @@ function EditPersona() {
                     </label>
                     <br />
                     <div className=" mb-[12px] rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pt-[16px]  w-[600px] h-[72px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] 5xl:pr-[10px]">
-                      <h4>Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. </h4>
+                      <h4>{userInformation.jobDescription} </h4>
                     </div>
                     <br />
                   </form>
@@ -310,25 +346,25 @@ function EditPersona() {
                       University Name
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Product Designer" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.school} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="course">
                       Course Name
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Computer Science" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.areaOfStudy} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="Certificate">
                       Certificate
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="B.S.c" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.degree} />
                     <br />
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="job-type">
                       Job Type
                     </label>
                     <br />
-                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder="Full Time" />
+                    <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[600px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[950px]" type="text" placeholder={userInformation.employmentStatus} />
                     <br />
                     <div className="mt-[12px]">
                       <h4 className=" text-[#1E2757] font-[500] mt-[10px] text-[18px] ">Portfolio Links</h4>
@@ -339,14 +375,22 @@ function EditPersona() {
                           Duration
                         </label>
                         <br />
-                        <input className=" mb-[12px] outline-none rounded-[4px] pr-[14px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px]" type="date" placeholder="22-08-2023" />
+                        <input
+                          className=" mb-[12px] outline-none rounded-[4px] pr-[14px] text-[14px] mt-[6px] text-[#667085] pl-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px]"
+                          type="date"
+                          placeholder={userInformation.schoolStart}
+                        />
                       </div>
                       <div>
                         <label className="text-[14px] text-[#98A2B3]" htmlFor="duration">
                           Duration
                         </label>
                         <br />
-                        <input className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] pr-[14px] text-[#667085] pl-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px] " type="date" placeholder="22-08-2023" />
+                        <input
+                          className=" mb-[12px] outline-none rounded-[4px] text-[14px] mt-[6px] pr-[14px] text-[#667085] pl-[14px] w-[296px] h-[37px] border-[1px] border-[#D0D5DD] 5xl:w-[455px] "
+                          type="date"
+                          placeholder={userInformation.schoolEnd}
+                        />
                       </div>
                     </div>
                     <label className="text-[14px] text-[#98A2B3]" htmlFor="job-description">
@@ -354,7 +398,7 @@ function EditPersona() {
                     </label>
                     <br />
                     <div className=" mb-[12px] rounded-[4px] text-[14px] mt-[6px] text-[#667085] pl-[14px] pt-[16px] w-[600px] h-[72px] border-[1px] border-[#D0D5DD] 5xl:w-[950px] 5xl:pr-[10px] ">
-                      <h4>Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. </h4>
+                      <h4>{userInformation.jobDescription} </h4>
                     </div>
                     <br />
                   </form>

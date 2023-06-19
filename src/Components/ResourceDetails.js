@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Select from "react-select";
 import Heading from "./Heading";
 import SideBar from "./SideBar";
+import { useState } from "react";
 
 const jobRole = [
   { value: "entry", label: "Entry Level" },
@@ -73,16 +74,78 @@ const customStyles = {
   }),
 };
 function ResourceDetails() {
-  // const [location, setLocation] = useState("");
+  const [service, setService] = useState("");
+  const [skill, setSkill] = useState("");
+  const [level, setLevel] = useState("");
+  const [year, setYear] = useState("");
+  const [location, setLocation] = useState("");
+  const [description, setDescription] = useState("");
 
+  const handleMainService = (selectedOption) => {
+    const value = selectedOption.value;
+    setService(value);
+  };
+  const handleSkill = (selectedOption) => {
+    const value = selectedOption.value;
+    setSkill(value);
+  };
+  const handleExpertiseLevel = (selectedOption) => {
+    const value = selectedOption.value;
+    setLevel(value);
+  };
+  const handleLocation = (event) => {
+    setLocation(event.target.value);
+  };
+  const handleDescription = (event) => {
+    setDescription(event.target.value);
+  };
+
+  const handleYearOfExperience = (selectedOption) => {
+    const value = selectedOption.value;
+    setYear(value);
+  };
+  const handleSign2Click = async () => {
+    const requestOptions = {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        mainService: service,
+        skill: skill,
+        expertiseLevel: level,
+        yearOfExperience: 1,
+        location: location,
+        description: description,
+      }),
+    };
+
+    // console.log(requestOptions);
+    // setLoading(true); // start progress spinner
+    fetch(`http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/${userId}/signUp2`, requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data);
+
+        if (data.message === "User information updated successfully") {
+          const redirectUrl = `/resourcedetails/resourcesdetails2`;
+
+          window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+        }
+      })
+      .catch((err) => {
+        // console.log(err.message);
+        // setLoading(false); // stop progress spinner
+      });
+  };
   // const handleLocationChange = (e) => {
   //   setLocation(e.target.value);
   // };
   // Geocode.setLanguage("en");
+  const userId = localStorage.getItem("userId"); // Retrieve the id from localStorage
+  console.log(userId);
   return (
     <>
       <Heading />
-      <div className=" h-[250vh] 10inch:ml-[0%] 6xxl:w-[90%] 6xxl:mt-[0%]  5xl:mt-[-5%] 820xxl:mt-[0] 3xxl:mt-[10%] 4xl:mt-[0%] flex 5xl:ml-[5%]">
+      <div className=" h-[250vh]   6xxl:w-[90%] 6xxl:mt-[0%]  5xl:mt-[-5%] 820xxl:mt-[0] 3xxl:mt-[10%] 4xl:mt-[0%] flex 5xl:ml-[5%]">
         <SideBar />
         <div className=" mt-[12%] 6xxl:w-[85%] 4xl:ml-[24rem] 3xxl:ml-[1rem] 5xl:ml-[25rem] ml-[25rem] 820xxl:ml-[16rem] 1xl:ml-[22rem]">
           <h1 className=" 3xxl:w-[350px] 820xxl:w-[471px] text-[#38761D] 820xxl:text-[30px] 3xxl:text-[20px] font-[600] opacity-80 ">Kindly fill in the details</h1>
@@ -115,6 +178,8 @@ function ResourceDetails() {
               What is the main service you offer ?
             </label>
             <Select
+              value={options.find((option) => option.value === service)}
+              onChange={handleMainService}
               required
               placeholder="E.g  Front-End Developer"
               styles={customStyles}
@@ -127,21 +192,44 @@ function ResourceDetails() {
             </label>
 
             <br />
-            <Select required placeholder="Select skill" styles={customStyles} className=" mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={skills} />
+            <Select
+              value={skills.find((option) => option.value === skill)}
+              onChange={handleSkill}
+              required
+              placeholder="Select skill"
+              styles={customStyles}
+              className=" mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] 6xxl:w-[90%] 820xxl:w-[471px] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+              options={skills}
+            />
 
             <label className="3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               What is your expertise level ?
             </label>
 
             <br />
-            <Select required placeholder="Select expertise level" styles={customStyles} className=" mb-[20px] 820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={years} />
+            <Select
+              value={jobRole.find((option) => option.value === level)}
+              onChange={handleExpertiseLevel}
+              required
+              placeholder="Select expertise level"
+              styles={customStyles}
+              className=" mb-[20px] 820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] w-[471px] h-[50px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+              options={jobRole}
+            />
 
             <label className=" 3xxl:text-[10px] 820xxl:text-[16px] 3xxl:w-[200px] text-[#1E2757]" htmlFor="offer">
               How many years of experience do you have in this field ?
             </label>
 
             <br />
-            <Select placeholder="Select years of experience" styles={customStyles} className=" 820xxl:w-[471px] mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] 6xxl:w-[90%] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] " options={jobRole} />
+            <Select
+              value={years.find((options) => options.value === year)}
+              onChange={handleYearOfExperience}
+              placeholder="Select years of experience"
+              styles={customStyles}
+              className=" 820xxl:w-[471px] mb-[20px] w-[471px] h-[50px] 3xxl:w-[300px] 6xxl:w-[90%] mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
+              options={years}
+            />
 
             <label className="3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
               Where are you located ?
@@ -153,8 +241,8 @@ function ResourceDetails() {
               placeholder="Enter location"
               type="text"
               id="location"
-              // value={location}
-              // onChange={handleLocationChange}
+              onChange={handleLocation}
+              value={location}
             />
             <br />
             <label className=" 3xxl:text-[10px] 820xxl:text-[16px] text-[#1E2757]" htmlFor="offer">
@@ -163,6 +251,8 @@ function ResourceDetails() {
 
             <br />
             <input
+              onChange={handleDescription}
+              value={description}
               className=" 3xxl:text-[10px] 820xxl:text-[14px] 820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] border-[#DCDDE5] border-[1px] rounded-[5px] bg-[#fafaf4] pl-[14px] mb-[20px] w-[471px] h-[80px]  mt-[11px] text-[#7D90B8]  outline-none  2xl:w-[900px] "
               placeholder="Describe your top skills, strengths, and experiences."
               type="text"
@@ -170,13 +260,7 @@ function ResourceDetails() {
           </form>
           <br />
 
-          <Link
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            className="mt-[40px]"
-            to="/resourcedetails/resourcesdetails2"
-          >
+          <Link onClick={handleSign2Click} className="mt-[40px]" to="">
             <h1 className=" w-[471px] 820xxl:w-[471px] 3xxl:w-[300px] 6xxl:w-[90%] h-[50px] rounded-[5px] bg-[#38761D] pt-[15px] opacity-95 text-[#fff] text-center tracking-[2px] text-[14px] font-[400]  ">Continue</h1>
           </Link>
         </div>

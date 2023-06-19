@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ApplicantProfile from "./ApplicantProfile";
 import seun from "./seun.jpeg";
 import "../App.css";
@@ -8,6 +8,22 @@ function HomePageForApplicant() {
   const [isOpen, setIsOpen] = useState(false);
   const [history, setHistory] = useState(false);
   const [education, setEducation] = useState(false);
+  const [userInformation, setUserInfromation] = useState({});
+  const userId = localStorage.getItem("userId"); // Retrieve the id from localStorage
+  console.log(userId);
+
+  useEffect(() => {
+    fetch(`http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/${userId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        //  console.log(data);
+        setUserInfromation(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, [userId]);
+  console.log(userInformation);
 
   function handleIsOpen() {
     setIsOpen(!isOpen);
@@ -128,7 +144,7 @@ function HomePageForApplicant() {
             </svg>
           </div>
         </Link>
-        <div className=" ml-[80px] 4xl:ml-[80px]  820xxl:ml-[10px] 820xxl:pl-[5px] flex  pt-[101px]  ">
+        <div className="  4xl:ml-[80px]  820xxl:ml-[10px] 820xxl:pl-[5px] flex  1halfxl:ml-[40px]  pt-[101px]  ">
           <ApplicantProfile />
 
           <div className="flex 1halfxl:flex 1halfxl:ml-[14rem] ml-[12rem] 820xxl:pl-[5px] 820xxl:ml-[10.5rem] 820xxl:grid 820xxl:h-[100vh] 5xl:w-[2200px] 5xl:justify-between 4xl:w-[1700px] 4xl:justify-between">
@@ -145,11 +161,13 @@ function HomePageForApplicant() {
                 </Link>
               </div>
               <div className="mt-[19px]">
-                <h2 className=" text-[18px] text-[#1E2757] ">Orofin Oluwaseun</h2>
-                <p className=" mt-[10px] text-[14px] text-[#7D90B8]">Seun is a UI/UX designer experienced in gathering and evaluating user requirements, collaborating with product managers and engineers. </p>
+                <h2 className=" text-[18px] text-[#1E2757] ">
+                  {userInformation.firstname} {userInformation.lastName}
+                </h2>
+                <p className=" mt-[10px] text-[14px] text-[#7D90B8]"> {userInformation.description} </p>
               </div>
-              <div className=" w-[450px] mt-[25px] flex justify-between">
-                <div className=" w-[150px] text-[14px] text-[#7D90B8] flex justify-between items-center">
+              <div className=" w-[85%] mt-[25px] flex justify-between">
+                <div className=" w-[205px] text-[14px] text-[#7D90B8] flex justify-between items-center">
                   <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.125 3.71875H14.875V12.75C14.875 12.8909 14.819 13.026 14.7194 13.1257C14.6198 13.2253 14.4846 13.2812 14.3438 13.2812H2.65625C2.51535 13.2812 2.38023 13.2253 2.2806 13.1257C2.18097 13.026 2.125 12.8909 2.125 12.75V3.71875Z"
@@ -160,9 +178,9 @@ function HomePageForApplicant() {
                     <path d="M14.875 3.71875L8.5 9.5625L2.125 3.71875" stroke="#38761D" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
-                  <h3>seun@gmail.com</h3>
+                  <h3>{userInformation.email}</h3>
                 </div>
-                <div className=" w-[120px] text-[14px] text-[#7D90B8] flex justify-between items-center">
+                <div className=" w-[135px] text-[14px] text-[#7D90B8] flex justify-between items-center">
                   <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.141 8.28853C6.69207 9.41514 7.60529 10.3242 8.73439 10.8701C8.817 10.9093 8.90838 10.9262 8.99954 10.9193C9.09069 10.9124 9.17848 10.8819 9.25426 10.8308L10.9168 9.72219C10.9903 9.67316 11.0749 9.64325 11.1629 9.63517C11.2509 9.62708 11.3396 9.64108 11.4208 9.67589L14.5311 11.0089C14.6367 11.0537 14.7249 11.1318 14.7824 11.2311C14.8399 11.3305 14.8635 11.4459 14.8497 11.5598C14.7514 12.3291 14.3761 13.0361 13.794 13.5486C13.2119 14.061 12.463 14.3437 11.6875 14.3438C9.29226 14.3438 6.99513 13.3923 5.30144 11.6986C3.60775 10.0049 2.65625 7.70776 2.65625 5.31252C2.65629 4.53701 2.939 3.78811 3.45145 3.20603C3.9639 2.62396 4.67095 2.24863 5.4402 2.15032C5.55416 2.13653 5.66952 2.16015 5.76889 2.21762C5.86826 2.27509 5.94627 2.3633 5.99115 2.46895L7.32529 5.58194C7.35979 5.66246 7.37386 5.75026 7.36622 5.83753C7.35858 5.9248 7.32948 6.00883 7.2815 6.08213L6.17674 7.77015C6.12646 7.84609 6.09674 7.93377 6.09047 8.02463C6.08421 8.11549 6.10162 8.20642 6.141 8.28853V8.28853Z"
@@ -171,7 +189,7 @@ function HomePageForApplicant() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <h3>081234567890</h3>
+                  <h3>{userInformation.phoneNumber}</h3>
                 </div>
                 <div className=" w-[129px] text-[14px] text-[#7D90B8] flex justify-between items-center">
                   <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,7 +206,7 @@ function HomePageForApplicant() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <h3>Lagos, Nigeria</h3>
+                  <h3>{userInformation.location}</h3>
                 </div>
               </div>
               <div className="w-[600px] pl-[30px] pt-[21px] bg-[#ECF2E9] h-[238px] rounded-[20px] mt-[24px] 5xl:w-[1700px] 4xl:w-[950px]">
@@ -237,17 +255,19 @@ function HomePageForApplicant() {
                   <div className=" w-[65px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
                   <div className="w-[600px] mt-[36px] flex justify-between">
                     <h2 className=" text-[20px] text-[#192850]">Product Designer</h2>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
-                        stroke="#38761D"
-                        strokeWidth="1.4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    <Link to="/editpersona2">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
+                          stroke="#38761D"
+                          strokeWidth="1.4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </Link>
                   </div>
                   <div className=" mt-[29px]">
                     <h3 className=" text-[16px] font-[300] text-[#7D90B8] ">Primary Skills</h3>
@@ -303,17 +323,19 @@ function HomePageForApplicant() {
                   <div className=" ml-[95px]  w-[172px] border-[3px] rounded-lg h-0 border-[#38761D]  ">{/* hi */}</div>
                   <div className="w-[600px] mt-[36px]  flex justify-between">
                     <h2 className=" text-[20px] text-[#192850]">Front End Developer</h2>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
-                        stroke="#38761D"
-                        strokeWidth="1.4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    <Link to="/editpersona2">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
+                          stroke="#38761D"
+                          strokeWidth="1.4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </Link>
                   </div>
                   <div className=" mt-[29px]">
                     <div className="mt-[19px]">
@@ -373,6 +395,7 @@ function HomePageForApplicant() {
                           strokeLinejoin="round"
                         />
                       </svg>
+
                       <div>
                         <h2 className=" font-[400] text-[16px] text-[#192850]">American University of Nigeria</h2>
                         <h2 className=" font-[400] text-[14px] mt-[3px] text-[#192850]">
@@ -381,17 +404,19 @@ function HomePageForApplicant() {
                         <h3 className=" text-[14px] mt-[6px] font-[400] text-[#7D90B8]">2017-2021</h3>
                       </div>
                     </div>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
-                        stroke="#38761D"
-                        strokeWidth="1.4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    <Link to="/editpersona2">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.25 25.3124H5.625C5.37636 25.3124 5.1379 25.2136 4.96209 25.0378C4.78627 24.862 4.6875 24.6235 4.6875 24.3749V19.1382C4.6875 19.0151 4.71175 18.8932 4.75886 18.7794C4.80598 18.6657 4.87503 18.5623 4.96209 18.4753L19.0246 4.41277C19.2004 4.23696 19.4389 4.13818 19.6875 4.13818C19.9361 4.13818 20.1746 4.23696 20.3504 4.41277L25.5871 9.64945C25.7629 9.82526 25.8617 10.0637 25.8617 10.3124C25.8617 10.561 25.7629 10.7995 25.5871 10.9753L11.25 25.3124Z"
+                          stroke="#38761D"
+                          strokeWidth="1.4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path d="M15.9375 7.5L22.5 14.0625" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M25.3125 25.3124H11.25L4.74719 18.8096" stroke="#38761D" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
               )}
