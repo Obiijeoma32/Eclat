@@ -34,7 +34,7 @@ function LoginAdmin() {
       <div className=" bg-[#fff]  w-[100%] h-[150vh]">
         <div className="pt-[8%] pb-[20px] 3xxl:ml-[10px] 1halfxl:ml-[30%] ml-[30%] 5xl:ml-[40%] 4xl:ml-[37%]">
           <h2 className=" 3xxl:ml-[30px] 1halfxl:ml-[90px] text-[#38761D] 3xxl:whitespace-nowrap text-[36px] text-left ml-[90px] mb-[50px] font-[600] ">Admin Dashboard</h2>
-          <div className=" bg-white 3xxl:w-[390px] 1halfxl:w-[512px] rounded-[20px] shadow-xl  shadow-[rgba(0, 0, 0, 0.1)] w-[512px]  h-[640px] ">
+          <div className=" bg-white 3xxl:w-[390px] 1halfxl:w-[512px] rounded-[20px] shadow-xl  shadow-[rgba(0, 0, 0, 0.1)] w-[512px]  h-[660px] ">
             <div className=" pt-5 ">
               <h1 className=" text-[30px]  text-center text-[#2F2E2E] font-[600] opacity-90">Log In</h1>
               <p className=" pt-4  text-[14px] text-center text-[#0A0A0A] opacity-40">
@@ -112,6 +112,17 @@ function LoginAdmin() {
                     )}
                   </button>
                 </div>
+
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/forgotpasswordadmin"
+                >
+                  <div className="md:w-[420px] 3xxl:w-[100%] flex justify-end">
+                    <h3 className=" text-[#38761E] text-[14px]">Forgot Password</h3>
+                  </div>
+                </Link>
                 <br />
                 <div className="w-[160px] flex justify-between items-center">
                   <input className=" w-[13.5px] h-[13.5px] border-[#919294]" type="checkbox" required />

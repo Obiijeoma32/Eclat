@@ -5,7 +5,7 @@ import seun from "./seun.jpeg";
 import "../App.css";
 
 function HomePageForApplicant() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [history, setHistory] = useState(false);
   const [education, setEducation] = useState(false);
   const [userInformation, setUserInfromation] = useState({});

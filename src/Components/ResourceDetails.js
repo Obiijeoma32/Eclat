@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import Heading from "./Heading";
 import SideBar from "./SideBar";
@@ -80,6 +80,7 @@ function ResourceDetails() {
   const [year, setYear] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const navigate = useNavigate();
 
   const handleMainService = (selectedOption) => {
     const value = selectedOption.value;
@@ -126,9 +127,9 @@ function ResourceDetails() {
         // console.log(data);
 
         if (data.message === "User information updated successfully") {
-          const redirectUrl = `/resourcedetails/resourcesdetails2`;
-
-          window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+          // const redirectUrl = ``;
+          navigate("/resourcedetails/resourcesdetails2");
+          // window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
         }
       })
       .catch((err) => {

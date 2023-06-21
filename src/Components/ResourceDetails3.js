@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Heading from "./Heading";
 import SideBar from "./SideBar";
 import "../App.css";
@@ -10,6 +10,8 @@ function ResourceDetails3() {
   const [degree, setDegree] = useState("");
   const [periodGraduationStart, setPeriodGraduationStart] = useState("");
   const [periodGraduationEnd, setPeriodGraduationEnd] = useState("");
+  const navigate = useNavigate();
+
   const handleUniversity = (e) => {
     setUniversity(e.target.value);
   };
@@ -47,9 +49,9 @@ function ResourceDetails3() {
         console.log(data);
 
         if (data.message === "User information updated successfully") {
-          const redirectUrl = `/homeforapplicant`;
-
-          window.location.href = redirectUrl; // Redirect to "/home for applicant" page
+          // const redirectUrl = ``;
+          navigate("/homeforapplicant");
+          // window.location.href = redirectUrl; // Redirect to "/home for applicant" page
         }
       })
       .catch((err) => {

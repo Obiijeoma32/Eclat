@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeaderForSignup from "./HeaderForSignup";
 import { useState } from "react";
 
@@ -7,6 +7,7 @@ function SignToNetwork() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(" ");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -36,9 +37,9 @@ function SignToNetwork() {
         if (data.message === "login successful") {
           localStorage.setItem("userId", data.data.id); // Save the id to localStorage
 
-          const redirectUrl = `/homeforapplicant`;
-
-          window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+          // const redirectUrl = `/homeforapplicant`;
+          navigate("/homeforapplicant");
+          // window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
         } else {
           setError(data.message);
         }

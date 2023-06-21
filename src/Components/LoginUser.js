@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeaderForSignup from "./HeaderForSignup";
 
 function LoginUser() {
@@ -12,6 +12,7 @@ function LoginUser() {
   const [email, SetEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleFName(e) {
     setFName(e.target.value);
@@ -53,9 +54,10 @@ function LoginUser() {
         if (data.message === "Eclat user created successfully") {
           localStorage.setItem("userId", data.data.id); // Save the id to localStorage
 
-          const redirectUrl = `/resourcedetails`;
+          // const redirectUrl = ``;
+          navigate("/resourcedetails");
           // setError("");
-          window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+          // window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
         } else {
           setError(data.message);
         }
