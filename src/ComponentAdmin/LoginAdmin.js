@@ -166,17 +166,17 @@ function LoginAdmin() {
                     Keep me logged in
                   </label>
                 </div>
-                {/* <Link
+                <Link
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
                   className=" "
                   to="/applicant"
-                > */}
-                <div className="mt-[35px] 3xxl:w-[300px] 1halfxl:w-[420px] tracking-[2px] w-[420px] rounded-[2px] h-[50px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]" onClick={handleLogin}>
-                  <h1>SUBMIT</h1>
-                </div>
-                {/* </Link> */}
+                >
+                  <div className="mt-[35px] 3xxl:w-[300px] 1halfxl:w-[420px] tracking-[2px] w-[420px] rounded-[2px] h-[50px] bg-[#38761D] text-center pt-[11px] opacity-90 text-[#fff]" onClick={handleLogin}>
+                    <h1>SUBMIT</h1>
+                  </div>
+                </Link>
               </form>
             </div>
           </div>
