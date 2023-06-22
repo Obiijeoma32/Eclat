@@ -40,6 +40,9 @@ import PageForTalentRequest from "./Components/PageForTalentRequest";
 import PageForTalentRequest2 from "./Components/PageForTalentRequest2";
 import PageForTalentRequest3 from "./Components/PageForTalentRequest3";
 import "./App.css";
+import ForgotPasswordAdmin from "./ComponentAdmin/ForgotPasswordAdmin";
+import OtpAdmin from "./ComponentAdmin/OtpAdmin";
+import CreatePasswordAdmin from "./ComponentAdmin/CreatePasswordAdmin";
 
 function App() {
   return (
@@ -95,6 +98,9 @@ function App() {
             <Route path="/otp" element={<Otp />} />
             <Route path="/pagefortalentrequest/pagefortalentrequest2" element={<PageForTalentRequest2 />} />
             <Route path="/pagefortalentrequest/pagefortalentrequest2/pagefortalentrequest3" element={<PageForTalentRequest3 />} />
+            <Route path="/forgotpasswordadmin" element={<ForgotPasswordAdmin />} />
+            <Route path="/otpadmin" element={<OtpAdmin />} />
+            <Route path="/createpasswordadmin" element={<CreatePasswordAdmin />} />
           </Routes>
         </BrowserRouter>
       </div>
