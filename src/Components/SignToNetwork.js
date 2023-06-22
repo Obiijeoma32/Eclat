@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeaderForSignup from "./HeaderForSignup";
 import { useState } from "react";
 
@@ -7,6 +7,7 @@ function SignToNetwork() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(" ");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -15,39 +16,39 @@ function SignToNetwork() {
     setPassword(e.target.value);
   };
 
-  // const handleLogin = async () => {
-  //   const requestOptions = {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({
-  //       email: email,
-  //       password: password,
-  //     }),
-  //   };
+  const handleLogin = async () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    };
 
-  //   console.log(requestOptions);
-  //   // setLoading(true); // start progress spinner
-  //   fetch("http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/login", requestOptions)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       // console.log(data.data.id);
+    console.log(requestOptions);
+    // setLoading(true); // start progress spinner
+    fetch("http://nubeero-deployment-server.uksouth.cloudapp.azure.com:9009/api/Eclat/user/login", requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        // console.log(data.data.id);
 
-  //       if (data.message === "login successful") {
-  //         localStorage.setItem("userId", data.data.id); // Save the id to localStorage
+        if (data.message === "login successful") {
+          localStorage.setItem("userId", data.data.id); // Save the id to localStorage
 
-  //         const redirectUrl = `/homeforapplicant`;
-
-  //         window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
-  //       } else {
-  //         setError(data.message);
-  //       }
-  //     });
-  //   // .catch((err) => {
-  //   //   console.log(err.message);
-  //   //   // setLoading(false); // stop progress spinner
-  //   // });
-  // };
+          // const redirectUrl = `/homeforapplicant`;
+          navigate("/homeforapplicant");
+          // window.location.href = redirectUrl; // Redirect to "/resourcedetails" page
+        } else {
+          setError(data.message);
+        }
+      });
+    // .catch((err) => {
+    //   console.log(err.message);
+    //   // setLoading(false); // stop progress spinner
+    // });
+  };
   return (
     <>
       <div className=" bg-[#fff] w-[100%] 6xxl:h-[150vh] h-[130vh]">
@@ -125,9 +126,9 @@ function SignToNetwork() {
                   </div>
                 </Link>
                 <Link
-                  // onClick={handleLogin}
+                  onClick={handleLogin}
                   className=""
-                  to="/homeforapplicant"
+                  // to="/homeforapplicant"
                 >
                   <div className="mt-[20px] tracking-[2px] md:w-[420px] 3xxl:w-[100%] rounded-[8px] h-[50px] bg-[#38761E] text-center pt-[13px] opacity-90 text-[#fff]">
                     <h1>Sign In</h1>
